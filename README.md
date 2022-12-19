@@ -11,3 +11,7 @@ https://www.drivethrurpg.com/product/417702/Hopefinder-Apocalypse-Bundle-BUNDLE
 --
 
 This Foundry VTT module is designed to help narrator's run their Hopefinder games.
+
+To install use this manifest link on the main Foundry page
+
+https://raw.githubusercontent.com/TikaelSol/hopefinder/master/module.json

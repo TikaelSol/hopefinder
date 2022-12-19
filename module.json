@@ -2,8 +2,10 @@
   "id": "hopefinder",
   "title": "Hopefinder for Pathfinder 2e",
   "description": "Hopefinder, a post-apocalyptic system hack for the PF2e system",
-  "url": "",
-  "version": "1.0",
+  "url": "https://github.com/TikaelSol/PF2e-Kitsune-of-Golarion",
+  "manifest": "https://raw.githubusercontent.com/TikaelSol/hopefinder/master/module.json",
+  "download": "https://github.com/TikaelSol/hopefinder/archive/refs/heads/main.zip",
+  "version": "0.9",
   "authors": [{
     "name": "Jason Buhlman"
   }],
