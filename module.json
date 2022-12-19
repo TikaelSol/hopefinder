@@ -1,0 +1,284 @@
+{
+  "id": "hopefinder",
+  "title": "Hopefinder for Pathfinder 2e",
+  "description": "Hopefinder, a post-apocalyptic system hack for the PF2e system",
+  "url": "",
+  "version": "1.0",
+  "authors": [{
+    "name": "Jason Buhlman"
+  }],
+  "compatibility": {
+    "minimum": "10.291",
+    "verified": "10.291"
+  },
+  "relationships": {
+    "systems": [{
+      "id": "pf2e",
+      "type": "system",
+      "manifest": "https://github.com/foundryvtt/pf2e/releases/latest/download/system.json",
+      "compatibility": {
+        "minimum": "4.4"
+      }
+    }]
+  },
+  "packs": [{
+    "label": "Hopefinder - Actions",
+    "name": "actions",
+    "path": "packs/actions.db",
+    "system": "pf2e",
+    "private": false,
+    "type": "Item"
+  }, {
+    "label": "Hopefinder - Backgrounds",
+    "name": "backgrounds",
+    "path": "packs/backgrounds.db",
+    "system": "pf2e",
+    "private": false,
+    "type": "Item"
+  }, {
+    "label": "Hopefinder - Effects",
+    "name": "effects",
+    "path": "packs/effects.db",
+    "system": "pf2e",
+    "private": false,
+    "type": "Item"
+  }, {
+    "label": "Hopefinder - Equipment",
+    "name": "equipment",
+    "path": "packs/equiment.db",
+    "system": "pf2e",
+    "private": false,
+    "type": "Item"
+  }, {
+    "label": "Hopefinder - Feats",
+    "name": "feats",
+    "path": "packs/feats.db",
+    "system": "pf2e",
+    "private": false,
+    "type": "Item"
+  }, {
+    "label": "Hopefinder - Features",
+    "name": "features",
+    "path": "packs/features.db",
+    "system": "pf2e",
+    "private": false,
+    "type": "Item"
+  }, {
+    "label": "Hopefinder Journals",
+    "name": "hopefinder-journals",
+    "path": "packs/journals.db",
+    "system": "pf2e",
+    "private": false,
+    "type": "JournalEntry"
+  }, {
+    "label": "Hopefinder - Roles",
+    "name": "roles",
+    "path": "packs/roles.db",
+    "system": "pf2e",
+    "private": false,
+    "type": "Item"
+  }],
+  "esmodules": [
+    "scripts/register-journal-style.mjs"
+  ],
+  "styles": [
+    "styles/hopefinder.css"
+  ],
+  "flags": {
+    "hopefinder": {
+      "pf2e-homebrew": {
+        "baseWeapons": {
+          "baseball-bat": "Baseball Bat",
+          "branch": "Branch",
+          "brass-knuckles ": "Brass Knuckles ",
+          "brick": "Brick",
+          "crafted-spear": "Crafted Spear",
+          "crude-spear": "Crude Spear",
+          "garden-shears": "Garden Shears",
+          "golf-club": "Golf Club",
+          "hand-axe": "Hand Axe",
+          "kitchen-knife": "Kitchen Knife",
+          "pocket-knife": "Pocket Knife",
+          "screwdriver": "Screwdriver",
+          "shiv": "Shiv",
+          "chainsaw": "Chainsaw",
+          "combat-knife": "Combat Knife",
+          "crude-sword": "Crude Sword",
+          "fire-axe": "Fire Axe",
+          "katana": "Katana",
+          "machete": "Machete",
+          "sledgehammer": "Sledgehammer",
+          "bottle": "Bottle",
+          "crafted-bow": "Crafted Bow",
+          "crude-bow": "Crude Bow",
+          "crude-pistol": "Crude Pistol",
+          "crude-rifle": "Crude Rifle",
+          "double-barrel-shotgun": "Double Barrel Shotgun",
+          "hunting-rifle": "Hunting Rifle",
+          "molotov-cocktail": "Molotov Cocktail",
+          "pocket-pistol": "Pocket Pistol",
+          "revolver": "Revolver",
+          "frag-grenade": "Frag Grenade",
+          "incendiary-grenade": "Incendiary Grenade",
+          "tear-gas-grenade": "Tear Gas Grenade",
+          "compound-bow": "Compound Bow",
+          "crossbow": "Crossbow",
+          "hand-cannon": "Hand Cannon",
+          "heavy-machinegun": "Heavy Machinegun",
+          "light-machinegun": "Light Machinegun",
+          "military-machinegun": "Military Machinegun",
+          "pump-shotgun": "Pump Shotgun",
+          "semiauto-pistol": "Semiauto Pistol",
+          "semiauto-shotgun": "Semiauto Shotgun",
+          "sniper-rifle": "Sniper Rifle",
+          "heavy-tool": "Heavy Tool"
+        },
+        "equipmentTraits": {
+          "bullet": "Bullet",
+          "cloth": "Cloth",
+          "cover": {
+            "label": "Cover",
+            "description": "You can use the take cover action to hide behind this shield, granting you a +2 bonus to your AC until the start of your next turn. After you take cover, the shield provides its resistance against attacks until the start of your next turn or until it is broken."
+          },
+          "electronic": "Electronic",
+          "fuel": "Fuel",
+          "hazardous": {
+            "label": "Hazardous",
+            "description": "This armor provides protection against hazardous substances and environments. You get a +4 item bonus on saving throws against acid, fire, infections, poison, and smoke while wearing this armor. The bonus is reduced to +2 if the armor is broken (and 0 if the armor is destroyed)."
+          },
+          "helmet": {
+            "label":"Helmet",
+            "description": "This armor includes a helmet, offering protection against critical hits."
+          },
+          "leather": "Leather",
+          "medicine": "Medicine",
+          "patchwork": "Patchwork",
+          "power": "Power",
+          "sealed": {
+            "label": "Sealed",
+            "description": "This armor provides total protection against hazardous substances and environments. You automatically succeed on all saving throws against acid, fire, infection, poison, and smoke while wearing this armor. If the armor is broken, you get a +4 item bonus against these effects instead (and 0 if the armor is destroyed)."
+          },
+          "synthetic": "Synthetic",
+          "tool": {
+            "label": "Tool",
+            "description": "This weapon is also a tool and can be used in a number of skill checks."
+          },
+          "warm": {
+            "label": "Warm",
+            "description": "This armor will keep you warm, giving a +4 item bonus on saving throws made against cold. It also gives a -2 item penalty on saving throws against hot weather."
+          }
+        },
+        "featTraits": {
+          "advanced": "Advanced",
+          "agility": "Agility",
+          "basic": "Basic",
+          "brawn": "Brawn",
+          "building": "Building",
+          "close": "Close",
+          "cunning": "Cunning",
+          "greater": "Greater",
+          "healing": "Healing",
+          "leadership": "Leadership",
+          "ranged": "Ranged",
+          "role": "Role",
+          "technology": "Technology"
+        },
+        "weaponGroups": {
+          "blade": "Blade",
+          "fuel": "Fuel",
+          "grenade": "Grenade",
+          "pistol": "Pistol",
+          "rifle": "Rifle",
+          "shotgun": "Shotgun",
+          "tool": "Tool",
+          "patchwork": "Patchwork"
+        },
+        "weaponTraits": {
+          "burst": {
+            "label": "Burst",
+            "description": "This weapon is capable of burst firing, which means that your multiple attack penalty does not increase until you take an action that is not a strike or your turn ends."
+          },
+          "clip-1": {
+            "label": "Clip 1",
+            "description": "This trait indicates how many attacks a weapon can make before it needs to be reloaded."
+          },
+          "clip-2": {
+            "label": "Clip 2",
+            "description": "This trait indicates how many attacks a weapon can make before it needs to be reloaded."
+          },
+          "clip-5": {
+            "label": "Clip 5",
+            "description": "This trait indicates how many attacks a weapon can make before it needs to be reloaded."
+          },
+          "clip-6": {
+            "label": "Clip 6",
+            "description": "This trait indicates how many attacks a weapon can make before it needs to be reloaded."
+          },
+          "clip-10": {
+            "label": "Clip 10",
+            "description": "This trait indicates how many attacks a weapon can make before it needs to be reloaded."
+          },
+          "clip-12": {
+            "label": "Clip 12",
+            "description": "This trait indicates how many attacks a weapon can make before it needs to be reloaded."
+          },
+          "clip-20": {
+            "label": "Clip 20",
+            "description": "This trait indicates how many attacks a weapon can make before it needs to be reloaded."
+          },
+          "clip-30": {
+            "label": "Clip 30",
+            "description": "This trait indicates how many attacks a weapon can make before it needs to be reloaded."
+          },
+          "clip-60": {
+            "label": "Clip 60",
+            "description": "This trait indicates how many attacks a weapon can make before it needs to be reloaded."
+          },
+          "deadly": {
+            "label": "Deadly",
+            "description": "Weapons with this trait are especially dangerous. If they score a critical hit, the target takes triple damage (instead of double). If the attack roll result is 20 higher than the target's AC, the attack automatically reduces the target to 0 hit points."
+          },
+          "nonlethal": {
+            "label": "Nonlethal",
+            "description": "This weapon does not deal damage. Instead, the target takes 1 bruise on a hit (2 on a critical hit). If the attacker has a Strength bonus of +3 or more, add 1 bruise. Nonlethal attacks have no effect on zombies. These bruises usually bypass armor resistance, but armor with a resistance of 5 or more reduces the number of bruises from a nonlethal attack by 1."
+          },
+          "strength-0": {
+            "label": "Strength +0",
+            "description": "Damage rolls made with ranged weapons with this trait may add up to the listed Strength bonus to the damage. If the wielder has a Strength penalty, it is subtracted from the damage roll."
+          },
+          "strength-1": {
+            "label": "Strength +1",
+            "description": "Damage rolls made with ranged weapons with this trait may add up to the listed Strength bonus to the damage. If the wielder has a Strength penalty, it is subtracted from the damage roll."
+          },
+          "strength-2": {
+            "label": "Strength +2",
+            "description": "Damage rolls made with ranged weapons with this trait may add up to the listed Strength bonus to the damage. If the wielder has a Strength penalty, it is subtracted from the damage roll."
+          },
+          "strength-3": {
+            "label": "Strength +3",
+            "description": "Damage rolls made with ranged weapons with this trait may add up to the listed Strength bonus to the damage. If the wielder has a Strength penalty, it is subtracted from the damage roll."
+          },
+          "strength-4": {
+            "label": "Strength +4",
+            "description": "Damage rolls made with ranged weapons with this trait may add up to the listed Strength bonus to the damage. If the wielder has a Strength penalty, it is subtracted from the damage roll."
+          },
+          "axe": "Axe",
+          "blade": "Blade",
+          "bow": "Bow",
+          "club": "Club",
+          "pistol": "Pistol",
+          "rifle": "Rifle",
+          "grenade": "Grenade",
+          "fuel": "Fuel",
+          "patchwork": "Patchwork",
+          "shotgun": "Shotgun",
+          "gas": "Gas",
+          "tool": {
+            "label": "Tool",
+            "description": "This weapon is also a tool and can be used in a number of skill checks."
+          }
+        }
+      }
+    }
+  }
+}
