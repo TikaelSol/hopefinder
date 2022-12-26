@@ -1,0 +1,17 @@
+.pf2e-hopefinder {
+	--hf-light-grey: #D3D3D3;
+	--hf-blue: #002244;
+}
+
+.pf2e-hopefinder blockquote {
+	background-color: var(--hf-light-grey);
+}
+
+.pf2e-hopefinder a.hf-link {
+	color: var(--hf-blue);
+}
+
+.pf2e-hopefinder p.hf-link {
+	text-align: center;
+	font-size: 20px;
+}

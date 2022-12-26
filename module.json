@@ -5,81 +5,102 @@
   "url": "https://github.com/TikaelSol/hopefinder",
   "manifest": "https://raw.githubusercontent.com/TikaelSol/hopefinder/master/module.json",
   "download": "https://github.com/TikaelSol/hopefinder/archive/refs/heads/main.zip",
-  "version": "0.9",
-  "authors": [{
-    "name": "Jason Buhlman"
-  }],
+  "version": "1",
+  "authors": [
+    {
+      "name": "Jason Buhlman"
+    }
+  ],
   "compatibility": {
     "minimum": "10.291",
     "verified": "10.291"
   },
   "relationships": {
-    "systems": [{
-      "id": "pf2e",
-      "type": "system",
-      "manifest": "https://github.com/foundryvtt/pf2e/releases/latest/download/system.json",
-      "compatibility": {
-        "minimum": "4.4"
+    "systems": [
+      {
+        "id": "pf2e",
+        "type": "system",
+        "manifest": "https://github.com/foundryvtt/pf2e/releases/latest/download/system.json",
+        "compatibility": {
+          "minimum": "4.5.1"
+        }
       }
-    }]
+    ]
   },
-  "packs": [{
-    "label": "Hopefinder - Actions",
-    "name": "actions",
-    "path": "packs/actions.db",
-    "system": "pf2e",
-    "private": false,
-    "type": "Item"
-  }, {
-    "label": "Hopefinder - Backgrounds",
-    "name": "backgrounds",
-    "path": "packs/backgrounds.db",
-    "system": "pf2e",
-    "private": false,
-    "type": "Item"
-  }, {
-    "label": "Hopefinder - Effects",
-    "name": "effects",
-    "path": "packs/effects.db",
-    "system": "pf2e",
-    "private": false,
-    "type": "Item"
-  }, {
-    "label": "Hopefinder - Equipment",
-    "name": "equipment",
-    "path": "packs/equiment.db",
-    "system": "pf2e",
-    "private": false,
-    "type": "Item"
-  }, {
-    "label": "Hopefinder - Feats",
-    "name": "feats",
-    "path": "packs/feats.db",
-    "system": "pf2e",
-    "private": false,
-    "type": "Item"
-  }, {
-    "label": "Hopefinder - Features",
-    "name": "features",
-    "path": "packs/features.db",
-    "system": "pf2e",
-    "private": false,
-    "type": "Item"
-  }, {
-    "label": "Hopefinder Journals",
-    "name": "hopefinder-journals",
-    "path": "packs/journals.db",
-    "system": "pf2e",
-    "private": false,
-    "type": "JournalEntry"
-  }, {
-    "label": "Hopefinder - Roles",
-    "name": "roles",
-    "path": "packs/roles.db",
-    "system": "pf2e",
-    "private": false,
-    "type": "Item"
-  }],
+  "packs": [
+    {
+      "label": "Hopefinder - Actions",
+      "name": "actions",
+      "path": "packs/actions.db",
+      "system": "pf2e",
+      "private": false,
+      "type": "Item"
+    },
+    {
+      "label": "Hopefinder - Backgrounds",
+      "name": "backgrounds",
+      "path": "packs/backgrounds.db",
+      "system": "pf2e",
+      "private": false,
+      "type": "Item"
+    },
+    {
+      "label": "Hopefinder - Effects",
+      "name": "effects",
+      "path": "packs/effects.db",
+      "system": "pf2e",
+      "private": false,
+      "type": "Item"
+    },
+    {
+      "label": "Hopefinder - Equipment",
+      "name": "equipment",
+      "path": "packs/equiment.db",
+      "system": "pf2e",
+      "private": false,
+      "type": "Item"
+    },
+    {
+      "label": "Hopefinder - Feats",
+      "name": "feats",
+      "path": "packs/feats.db",
+      "system": "pf2e",
+      "private": false,
+      "type": "Item"
+    },
+    {
+      "label": "Hopefinder - Features",
+      "name": "features",
+      "path": "packs/features.db",
+      "system": "pf2e",
+      "private": false,
+      "type": "Item"
+    },
+    {
+      "label": "Hopefinder Journals",
+      "name": "hopefinder-journals",
+      "path": "packs/journals.db",
+      "system": "pf2e",
+      "private": false,
+      "type": "JournalEntry"
+    },
+    {
+      "label": "Hopefinder - Bestiary",
+      "name": "hopefinder-bestiary",
+      "path": "packs/bestiary.db",
+      "system": "pf2e",
+      "private": false,
+      "type": "Actor"
+    },
+    {
+      "label": "Hopefinder - Roles",
+      "name": "roles",
+      "path": "packs/roles.db",
+      "system": "pf2e",
+      "private": false,
+      "type": "Item"
+    }
+  ],
   "esmodules": [
     "scripts/register-journal-style.mjs"
   ],
@@ -149,7 +170,7 @@
             "description": "This armor provides protection against hazardous substances and environments. You get a +4 item bonus on saving throws against acid, fire, infections, poison, and smoke while wearing this armor. The bonus is reduced to +2 if the armor is broken (and 0 if the armor is destroyed)."
           },
           "helmet": {
-            "label":"Helmet",
+            "label": "Helmet",
             "description": "This armor includes a helmet, offering protection against critical hits."
           },
           "leather": "Leather",

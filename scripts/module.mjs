@@ -1,5 +1,5 @@
 export default {
-  moduleId: "hopefinder",
+  moduleID: "hopefinder",
   packName: "hopefinder",
   journalFlag: "isHopefinder",
   cssClass: "pf2e-hopefinder",
