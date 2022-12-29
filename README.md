@@ -10,8 +10,6 @@ https://www.drivethrurpg.com/product/417702/Hopefinder-Apocalypse-Bundle-BUNDLE
 
 --
 
-This Foundry VTT module is designed to help narrator's run their Hopefinder games.
-
-This module is designed to automate the process of making a survivor, automating new traits, feats, and equipment, as well as giving players and the narrator the tools needed to run the Hopefinder game using the PF2e system.
+This Foundry VTT module is designed to automate the process of making a survivor, automating new traits, feats, and equipment, as well as giving players and the narrator the tools needed to run the Hopefinder game using the PF2e system.
 
 ![image](https://user-images.githubusercontent.com/80183198/210011550-10383996-4ccc-4adb-a918-9809873f406b.png)
