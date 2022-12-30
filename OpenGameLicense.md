@@ -34,6 +34,8 @@ The following text is the property of Wizards of the Coast, Inc. and is Copyrigh
 15. COPYRIGHT NOTICE
 * Open Game License v 1.0 Copyright 2000, Wizards of the Coast, Inc.
 
-*  Pathfinder Core Rulebook (Second Edition) © 2019, Paizo Inc.; Designers: Logan Bonner, Jason Bulmahn, Stephen Radney-MacFarland, and Mark Seifter.
+* Pathfinder Core Rulebook (Second Edition) © 2019, Paizo Inc.; Designers: Logan Bonner, Jason Bulmahn, Stephen Radney-MacFarland, and Mark Seifter.
 
 * Hopefinder Survivor’s Guide © 2022 Minotaur Games; Authors: Jason Bulmahn.
+
+* Hopefinder Narrator's Guide © 2022 Minotaur Games; Authors: Jason Bulmahn.

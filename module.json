@@ -5,10 +5,11 @@
   "url": "https://github.com/TikaelSol/hopefinder",
   "manifest": "https://raw.githubusercontent.com/TikaelSol/hopefinder/master/module.json",
   "download": "https://github.com/TikaelSol/hopefinder/archive/refs/heads/main.zip",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "authors": [
     {
-      "name": "Jason Buhlman"
+      "name": "Jason Bulmahn",
+      "flags": {}
     }
   ],
   "compatibility": {
@@ -34,7 +35,8 @@
       "path": "packs/actions.db",
       "system": "pf2e",
       "private": false,
-      "type": "Item"
+      "type": "Item",
+      "flags": {}
     },
     {
       "label": "Hopefinder - Backgrounds",
@@ -42,7 +44,8 @@
       "path": "packs/backgrounds.db",
       "system": "pf2e",
       "private": false,
-      "type": "Item"
+      "type": "Item",
+      "flags": {}
     },
     {
       "label": "Hopefinder - Effects",
@@ -50,7 +53,8 @@
       "path": "packs/effects.db",
       "system": "pf2e",
       "private": false,
-      "type": "Item"
+      "type": "Item",
+      "flags": {}
     },
     {
       "label": "Hopefinder - Equipment",
@@ -58,7 +62,8 @@
       "path": "packs/equiment.db",
       "system": "pf2e",
       "private": false,
-      "type": "Item"
+      "type": "Item",
+      "flags": {}
     },
     {
       "label": "Hopefinder - Feats",
@@ -66,7 +71,8 @@
       "path": "packs/feats.db",
       "system": "pf2e",
       "private": false,
-      "type": "Item"
+      "type": "Item",
+      "flags": {}
     },
     {
       "label": "Hopefinder - Features",
@@ -74,7 +80,8 @@
       "path": "packs/features.db",
       "system": "pf2e",
       "private": false,
-      "type": "Item"
+      "type": "Item",
+      "flags": {}
     },
     {
       "label": "Hopefinder Journals",
@@ -82,7 +89,8 @@
       "path": "packs/journals.db",
       "system": "pf2e",
       "private": false,
-      "type": "JournalEntry"
+      "type": "JournalEntry",
+      "flags": {}
     },
     {
       "label": "Hopefinder - Bestiary",
@@ -90,7 +98,8 @@
       "path": "packs/bestiary.db",
       "system": "pf2e",
       "private": false,
-      "type": "Actor"
+      "type": "Actor",
+      "flags": {}
     },
     {
       "label": "Hopefinder - Roles",
@@ -98,7 +107,8 @@
       "path": "packs/roles.db",
       "system": "pf2e",
       "private": false,
-      "type": "Item"
+      "type": "Item",
+      "flags": {}
     }
   ],
   "esmodules": [
