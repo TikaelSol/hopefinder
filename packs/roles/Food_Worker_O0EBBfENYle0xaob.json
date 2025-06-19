@@ -1,0 +1,79 @@
+{
+  "name": "Food Worker",
+  "type": "heritage",
+  "img": "systems/pf2e/icons/default-icons/heritage.svg",
+  "system": {
+    "description": {
+      "value": "<p>The world took you for granted before the complete collapse of civilization, and you just had to smile and take it. Now they can only dream of the fast and easy food that you used to prepare and serve. Few people cook anymore and most meals these days come from a can, but you have the skill to make sure your meals are healthy and delicious.</p>\n<p><strong>Survivor's Feast</strong> (Exploration, Manipulate) Once per day, you can spend 1 hour at a firepit creating a feast. Anyone who spends at least 10 minutes eating this feast heals 1 bruise and a number of hit points equal to 1d4 + your Survival proficiency bonus. In addition, they gain 1 temporary Hope that can only be used on a reroll and if not spent in the next hour, it is lost. This feast uses up and counts as 2 food and 1 hydration for each participant.</p>\n<p><strong>Skills</strong>: Increase your Deception or Survival by 1 step.</p>\n<p><strong>Feats</strong>: You can select from Brawn, Close, Healing</p>",
+      "gm": ""
+    },
+    "traits": {
+      "value": [],
+      "rarity": "common",
+      "otherTags": []
+    },
+    "rules": [
+      {
+        "choices": [
+          {
+            "label": "PF2E.Skill.Deception",
+            "value": "deception"
+          },
+          {
+            "label": "PF2E.Skill.Survival",
+            "value": "survival"
+          }
+        ],
+        "flag": "skill",
+        "key": "ChoiceSet",
+        "prompt": "PF2E.SpecificRule.Prompt.Skill"
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.skills.{item|flags.pf2e.rulesSelections.skill}.rank",
+        "value": 1
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.hopefinder.actions.8YxowRkW2HAQ9LRS"
+      }
+    ],
+    "slug": null,
+    "ancestry": null,
+    "publication": {
+      "title": "",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "_migration": {
+      "version": 0.94,
+      "previous": {
+        "schema": 0.935,
+        "foundry": "13.345",
+        "system": "7.2.0"
+      }
+    }
+  },
+  "effects": [],
+  "flags": {
+    "core": {}
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "7.2.0",
+    "coreVersion": "13.345",
+    "compendiumSource": "Compendium.hopefinder.roles.Item.O0EBBfENYle0xaob",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_id": "O0EBBfENYle0xaob",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "wzla4PE5p61vlV6O": 3
+  },
+  "_key": "!items!O0EBBfENYle0xaob"
+}

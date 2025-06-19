@@ -1,0 +1,1327 @@
+{
+  "name": "Raider",
+  "type": "npc",
+  "prototypeToken": {
+    "flags": {
+      "pf2e": {
+        "linkToActorSize": true
+      }
+    },
+    "height": 1,
+    "width": 1,
+    "name": "zomb",
+    "displayName": 0,
+    "actorLink": false,
+    "texture": {
+      "src": "systems/pf2e/icons/default-icons/npc.svg",
+      "scaleX": 1,
+      "scaleY": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "rotation": 0,
+      "tint": "#ffffff",
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "fit": "contain",
+      "alphaThreshold": 0.75
+    },
+    "lockRotation": false,
+    "rotation": 0,
+    "alpha": 1,
+    "disposition": -1,
+    "displayBars": 0,
+    "bar1": {
+      "attribute": "attributes.hp"
+    },
+    "bar2": {
+      "attribute": null
+    },
+    "light": {
+      "alpha": 0.5,
+      "angle": 360,
+      "bright": 0,
+      "color": null,
+      "coloration": 1,
+      "dim": 0,
+      "attenuation": 0.5,
+      "luminosity": 0.5,
+      "saturation": 0,
+      "contrast": 0,
+      "shadows": 0,
+      "animation": {
+        "type": null,
+        "speed": 5,
+        "intensity": 5,
+        "reverse": false
+      },
+      "darkness": {
+        "min": 0,
+        "max": 1
+      },
+      "negative": false,
+      "priority": 0
+    },
+    "sight": {
+      "enabled": false,
+      "range": 0,
+      "angle": 360,
+      "visionMode": "basic",
+      "color": null,
+      "attenuation": 0.1,
+      "brightness": 0,
+      "saturation": 0,
+      "contrast": 0
+    },
+    "detectionModes": [],
+    "randomImg": false,
+    "appendNumber": false,
+    "prependAdjective": false,
+    "occludable": {
+      "radius": 0
+    },
+    "ring": {
+      "enabled": false,
+      "colors": {
+        "ring": null,
+        "background": null
+      },
+      "effects": 1,
+      "subject": {
+        "scale": 1,
+        "texture": null
+      }
+    },
+    "turnMarker": {
+      "mode": 1,
+      "animation": null,
+      "src": null,
+      "disposition": false
+    },
+    "movementAction": null
+  },
+  "img": "systems/pf2e/icons/default-icons/npc.svg",
+  "system": {
+    "attributes": {
+      "hp": {
+        "value": 14,
+        "temp": 0,
+        "max": 14,
+        "details": ""
+      },
+      "speed": {
+        "value": 25,
+        "otherSpeeds": [],
+        "details": ""
+      },
+      "ac": {
+        "value": 13,
+        "details": ""
+      },
+      "allSaves": {
+        "value": ""
+      }
+    },
+    "initiative": {
+      "statistic": "perception"
+    },
+    "details": {
+      "languages": {
+        "value": [],
+        "details": ""
+      },
+      "level": {
+        "value": 0
+      },
+      "blurb": "",
+      "publicNotes": "",
+      "privateNotes": "",
+      "publication": {
+        "title": "Hopefinder Narrator's Guide",
+        "authors": "Jason Bulmahn",
+        "license": "OGL",
+        "remaster": false
+      },
+      "creatureType": ""
+    },
+    "resources": {},
+    "_migration": {
+      "version": 0.94,
+      "previous": {
+        "schema": 0.935,
+        "foundry": "13.345",
+        "system": "7.2.0"
+      }
+    },
+    "abilities": {
+      "str": {
+        "mod": 2
+      },
+      "dex": {
+        "mod": 1
+      },
+      "con": {
+        "mod": 2
+      },
+      "int": {
+        "mod": 0
+      },
+      "wis": {
+        "mod": 1
+      },
+      "cha": {
+        "mod": 0
+      }
+    },
+    "perception": {
+      "details": "",
+      "mod": 3,
+      "senses": [],
+      "vision": true
+    },
+    "saves": {
+      "fortitude": {
+        "value": 6,
+        "saveDetail": ""
+      },
+      "reflex": {
+        "value": 5,
+        "saveDetail": ""
+      },
+      "will": {
+        "value": 3,
+        "saveDetail": ""
+      }
+    },
+    "skills": {
+      "athletics": {
+        "base": 4
+      },
+      "intimidation": {
+        "base": 2
+      },
+      "stealth": {
+        "base": 3
+      },
+      "thievery": {
+        "base": 3
+      }
+    },
+    "traits": {
+      "value": [
+        "human"
+      ],
+      "rarity": "common",
+      "size": {
+        "value": "med"
+      },
+      "di": {
+        "value": [],
+        "custom": ""
+      },
+      "dr": [
+        {
+          "type": "bludgeoning",
+          "value": 2,
+          "exceptions": ""
+        },
+        {
+          "type": "piercing",
+          "value": 2,
+          "exceptions": ""
+        },
+        {
+          "type": "slashing",
+          "value": 2,
+          "exceptions": ""
+        }
+      ],
+      "dv": []
+    }
+  },
+  "items": [
+    {
+      "name": "Crude Pistol",
+      "type": "weapon",
+      "img": "systems/pf2e/icons/default-icons/weapon.svg",
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p><strong>Break</strong> 2</p>"
+        },
+        "rules": [],
+        "slug": null,
+        "_migration": {
+          "version": 0.94,
+          "lastMigration": null,
+          "previous": {
+            "schema": 0.935,
+            "foundry": "13.345",
+            "system": "7.2.0"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [
+            "clip-1",
+            "deadly",
+            "pistol"
+          ],
+          "rarity": "common",
+          "custom": ""
+        },
+        "publication": {
+          "title": "Hopefinder Survivor's Guide",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "level": {
+          "value": 0
+        },
+        "quantity": 1,
+        "baseItem": "crude-pistol",
+        "bulk": {
+          "value": 0.1
+        },
+        "hp": {
+          "value": 0,
+          "max": 0
+        },
+        "hardness": 0,
+        "price": {
+          "value": {
+            "gp": 2
+          }
+        },
+        "equipped": {
+          "carryType": "worn",
+          "invested": null,
+          "handsHeld": 0
+        },
+        "containerId": null,
+        "size": "med",
+        "material": {
+          "type": null,
+          "grade": null
+        },
+        "identification": {
+          "status": "identified",
+          "unidentified": {
+            "name": "Unusual Weapon",
+            "img": "systems/pf2e/icons/unidentified_item_icons/weapon.webp",
+            "data": {
+              "description": {
+                "value": ""
+              }
+            }
+          },
+          "misidentified": {}
+        },
+        "usage": {
+          "value": "held-in-one-hand"
+        },
+        "category": "simple",
+        "group": "pistol",
+        "bonus": {
+          "value": 0
+        },
+        "damage": {
+          "dice": 1,
+          "die": "d6",
+          "damageType": "piercing",
+          "persistent": null,
+          "value": ""
+        },
+        "splashDamage": {
+          "value": 0
+        },
+        "range": 10,
+        "expend": 1,
+        "reload": {
+          "value": "2"
+        },
+        "runes": {
+          "potency": 0,
+          "striking": 0,
+          "property": []
+        },
+        "specific": null,
+        "subitems": [],
+        "bonusDamage": {
+          "value": 0
+        },
+        "property1": {
+          "value": "",
+          "dice": 0,
+          "die": "",
+          "damageType": "",
+          "critDice": 0,
+          "critDie": "",
+          "critDamage": "",
+          "critDamageType": "",
+          "strikeConditionType": "",
+          "strikeConditionValue": null,
+          "criticalConditionType": "",
+          "criticalConditionValue": null
+        }
+      },
+      "effects": [],
+      "flags": {
+        "core": {}
+      },
+      "_stats": {
+        "systemId": "pf2e",
+        "systemVersion": "4.5.1",
+        "coreVersion": "13.345",
+        "compendiumSource": "Compendium.hopefinder.equipment.mwsitJXQ4Wincu2C",
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_id": "3Qneiw5T28CFF8OL",
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "wzla4PE5p61vlV6O": 3
+      },
+      "_key": "!actors.items!L5aK64M0hVXt0lia.3Qneiw5T28CFF8OL"
+    },
+    {
+      "name": "Crude Spear",
+      "type": "weapon",
+      "img": "systems/pf2e/icons/default-icons/weapon.svg",
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p><strong>Break</strong> 1</p>"
+        },
+        "rules": [],
+        "slug": null,
+        "_migration": {
+          "version": 0.94,
+          "lastMigration": null,
+          "previous": {
+            "schema": 0.935,
+            "foundry": "13.345",
+            "system": "7.2.0"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [
+            "patchwork",
+            "thrown-10",
+            "two-hand-d6"
+          ],
+          "rarity": "common",
+          "custom": ""
+        },
+        "publication": {
+          "title": "Hopefinder Survivor's Guide",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "level": {
+          "value": 0
+        },
+        "quantity": 1,
+        "baseItem": "crude-spear",
+        "bulk": {
+          "value": 1
+        },
+        "hp": {
+          "value": 0,
+          "max": 0
+        },
+        "hardness": 0,
+        "price": {
+          "value": {
+            "gp": 1
+          }
+        },
+        "equipped": {
+          "carryType": "worn",
+          "invested": null,
+          "handsHeld": 0
+        },
+        "containerId": null,
+        "size": "med",
+        "material": {
+          "type": null,
+          "grade": null
+        },
+        "identification": {
+          "status": "identified",
+          "unidentified": {
+            "name": "Unusual Weapon",
+            "img": "systems/pf2e/icons/unidentified_item_icons/weapon.webp",
+            "data": {
+              "description": {
+                "value": ""
+              }
+            }
+          },
+          "misidentified": {}
+        },
+        "usage": {
+          "value": "held-in-one-hand"
+        },
+        "category": "simple",
+        "group": null,
+        "bonus": {
+          "value": 0
+        },
+        "damage": {
+          "dice": 1,
+          "die": "d4",
+          "damageType": "piercing",
+          "persistent": null,
+          "value": ""
+        },
+        "splashDamage": {
+          "value": 0
+        },
+        "range": null,
+        "expend": null,
+        "reload": {
+          "value": null
+        },
+        "runes": {
+          "potency": 0,
+          "striking": 0,
+          "property": []
+        },
+        "specific": null,
+        "subitems": [],
+        "bonusDamage": {
+          "value": 0
+        },
+        "property1": {
+          "value": "",
+          "dice": 0,
+          "die": "",
+          "damageType": "",
+          "critDice": 0,
+          "critDie": "",
+          "critDamage": "",
+          "critDamageType": "",
+          "strikeConditionType": "",
+          "strikeConditionValue": null,
+          "criticalConditionType": "",
+          "criticalConditionValue": null
+        }
+      },
+      "effects": [],
+      "flags": {
+        "core": {}
+      },
+      "_stats": {
+        "systemId": "pf2e",
+        "systemVersion": "4.5.1",
+        "coreVersion": "13.345",
+        "compendiumSource": "Compendium.hopefinder.equipment.7DiC3MJqkBP64XFr",
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_id": "KXevPSzUB0tf9MEQ",
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "wzla4PE5p61vlV6O": 3
+      },
+      "_key": "!actors.items!L5aK64M0hVXt0lia.KXevPSzUB0tf9MEQ"
+    },
+    {
+      "name": "Wrench",
+      "type": "weapon",
+      "img": "systems/pf2e/icons/default-icons/weapon.svg",
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p><strong>Break</strong> 4</p>"
+        },
+        "rules": [],
+        "slug": null,
+        "_migration": {
+          "version": 0.94,
+          "lastMigration": null,
+          "previous": {
+            "schema": 0.935,
+            "foundry": "13.345",
+            "system": "7.2.0"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [
+            "tool"
+          ],
+          "rarity": "common",
+          "custom": ""
+        },
+        "publication": {
+          "title": "Hopefinder Survivor's Guide",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "level": {
+          "value": 0
+        },
+        "quantity": 1,
+        "baseItem": "heavy-tool",
+        "bulk": {
+          "value": 1
+        },
+        "hp": {
+          "value": 0,
+          "max": 0
+        },
+        "hardness": 0,
+        "price": {
+          "value": {
+            "gp": 1
+          }
+        },
+        "equipped": {
+          "carryType": "worn",
+          "invested": null,
+          "handsHeld": 0
+        },
+        "containerId": null,
+        "size": "med",
+        "material": {
+          "type": null,
+          "grade": null
+        },
+        "identification": {
+          "status": "identified",
+          "unidentified": {
+            "name": "Unusual Weapon",
+            "img": "systems/pf2e/icons/unidentified_item_icons/weapon.webp",
+            "data": {
+              "description": {
+                "value": ""
+              }
+            }
+          },
+          "misidentified": {}
+        },
+        "usage": {
+          "value": "held-in-one-hand"
+        },
+        "category": "simple",
+        "group": "tool",
+        "bonus": {
+          "value": 0
+        },
+        "damage": {
+          "dice": 1,
+          "die": "d6",
+          "damageType": "bludgeoning",
+          "persistent": null,
+          "value": ""
+        },
+        "splashDamage": {
+          "value": 0
+        },
+        "range": null,
+        "expend": null,
+        "reload": {
+          "value": null
+        },
+        "runes": {
+          "potency": 0,
+          "striking": 0,
+          "property": []
+        },
+        "specific": null,
+        "subitems": [],
+        "bonusDamage": {
+          "value": 0
+        },
+        "property1": {
+          "value": "",
+          "dice": 0,
+          "die": "",
+          "damageType": "",
+          "critDice": 0,
+          "critDie": "",
+          "critDamage": "",
+          "critDamageType": "",
+          "strikeConditionType": "",
+          "strikeConditionValue": null,
+          "criticalConditionType": "",
+          "criticalConditionValue": null
+        }
+      },
+      "effects": [],
+      "flags": {
+        "core": {}
+      },
+      "_stats": {
+        "systemId": "pf2e",
+        "systemVersion": "4.5.1",
+        "coreVersion": "13.345",
+        "compendiumSource": "Compendium.hopefinder.equipment.SkyOKlGJoEBimAA2",
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_id": "G47mMgVRXi2faBTh",
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "wzla4PE5p61vlV6O": 3
+      },
+      "_key": "!actors.items!L5aK64M0hVXt0lia.G47mMgVRXi2faBTh"
+    },
+    {
+      "name": "Bullets (Pistol)",
+      "type": "consumable",
+      "img": "systems/pf2e/icons/default-icons/consumable.svg",
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>Standard round of ammunition. Deals the damage listed in the weapon's description.</p>\n<hr />\n<p><strong>Break</strong> 1</p>"
+        },
+        "rules": [],
+        "slug": null,
+        "_migration": {
+          "version": 0.94,
+          "lastMigration": null,
+          "previous": {
+            "schema": 0.935,
+            "foundry": "13.345",
+            "system": "7.2.0"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [
+            "bullet"
+          ],
+          "rarity": "common",
+          "custom": ""
+        },
+        "publication": {
+          "title": "Hopefinder Survivor's Guide",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "level": {
+          "value": 0
+        },
+        "quantity": 10,
+        "baseItem": null,
+        "bulk": {
+          "value": 0.1
+        },
+        "hp": {
+          "value": 0,
+          "max": 0
+        },
+        "hardness": 0,
+        "price": {
+          "value": {
+            "gp": 2
+          },
+          "per": 10
+        },
+        "equipped": {
+          "carryType": "worn"
+        },
+        "containerId": null,
+        "size": "med",
+        "material": {
+          "type": null,
+          "grade": null
+        },
+        "identification": {
+          "status": "identified",
+          "unidentified": {
+            "name": "Unusual Object",
+            "img": "systems/pf2e/icons/unidentified_item_icons/other-consumables.webp",
+            "data": {
+              "description": {
+                "value": ""
+              }
+            }
+          },
+          "misidentified": {}
+        },
+        "category": "ammo",
+        "uses": {
+          "value": 1,
+          "max": 1,
+          "autoDestroy": true,
+          "per": null
+        },
+        "damage": null,
+        "usage": {
+          "value": "held-in-one-hand"
+        },
+        "stackGroup": null,
+        "spell": null,
+        "activation": {
+          "type": "",
+          "cost": 0,
+          "condition": ""
+        },
+        "duration": {
+          "value": null,
+          "units": ""
+        },
+        "target": {
+          "value": null,
+          "units": "",
+          "type": ""
+        },
+        "range": {
+          "value": null,
+          "long": null,
+          "units": ""
+        }
+      },
+      "effects": [],
+      "flags": {
+        "core": {}
+      },
+      "_stats": {
+        "systemId": "pf2e",
+        "systemVersion": "4.5.1",
+        "coreVersion": "13.345",
+        "compendiumSource": "Compendium.hopefinder.equipment.C03kLhxaPPIVvXbK",
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_id": "e2t5sIlyXQIKZkxK",
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "wzla4PE5p61vlV6O": 3
+      },
+      "_key": "!actors.items!L5aK64M0hVXt0lia.e2t5sIlyXQIKZkxK"
+    },
+    {
+      "name": "Canned Goods (Expired)",
+      "type": "consumable",
+      "img": "systems/pf2e/icons/default-icons/consumable.svg",
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>Counts as 1 food. If you eat expired food, you must attempt a @Check[type:fortitude|dc:15] save or be @Compendium[pf2e.conditionitems.fesd1n5eVhpCSS18]{Sickened} for 1 day.</p>\n<hr />\n<p><strong>Break</strong> 1</p>"
+        },
+        "rules": [],
+        "slug": null,
+        "_migration": {
+          "version": 0.94,
+          "lastMigration": null,
+          "previous": {
+            "schema": 0.935,
+            "foundry": "13.345",
+            "system": "7.2.0"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [],
+          "rarity": "common",
+          "custom": ""
+        },
+        "publication": {
+          "title": "Hopefinder Survivor's Guide",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "level": {
+          "value": 0
+        },
+        "quantity": 1,
+        "baseItem": null,
+        "bulk": {
+          "value": 0.1
+        },
+        "hp": {
+          "value": 0,
+          "max": 0
+        },
+        "hardness": 0,
+        "price": {
+          "value": {
+            "gp": 1
+          }
+        },
+        "equipped": {
+          "carryType": "worn"
+        },
+        "containerId": null,
+        "size": "med",
+        "material": {
+          "type": null,
+          "grade": null
+        },
+        "identification": {
+          "status": "identified",
+          "unidentified": {
+            "name": "Unusual Object",
+            "img": "systems/pf2e/icons/unidentified_item_icons/other-consumables.webp",
+            "data": {
+              "description": {
+                "value": ""
+              }
+            }
+          },
+          "misidentified": {}
+        },
+        "category": "other",
+        "uses": {
+          "value": 1,
+          "max": 1,
+          "autoDestroy": true,
+          "per": null
+        },
+        "damage": null,
+        "usage": {
+          "value": "held-in-one-hand"
+        },
+        "stackGroup": null,
+        "spell": null,
+        "activation": {
+          "type": "",
+          "cost": 0,
+          "condition": ""
+        },
+        "duration": {
+          "value": null,
+          "units": ""
+        },
+        "target": {
+          "value": null,
+          "units": "",
+          "type": ""
+        },
+        "range": {
+          "value": null,
+          "long": null,
+          "units": ""
+        }
+      },
+      "effects": [],
+      "flags": {
+        "core": {}
+      },
+      "_stats": {
+        "systemId": "pf2e",
+        "systemVersion": "4.5.1",
+        "coreVersion": "13.345",
+        "compendiumSource": "Compendium.hopefinder.equipment.Msbzd5JEGcMoGbrQ",
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_id": "OtR7T3IVy3sgcLvn",
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "wzla4PE5p61vlV6O": 3
+      },
+      "_key": "!actors.items!L5aK64M0hVXt0lia.OtR7T3IVy3sgcLvn"
+    },
+    {
+      "name": "Workwear",
+      "type": "armor",
+      "img": "systems/pf2e/icons/default-icons/armor.svg",
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p><strong>Resist</strong> 2 B/P/S</p>\n<p><strong>Break</strong> 10</p>"
+        },
+        "rules": [
+          {
+            "key": "Resistance",
+            "type": [
+              "bludgeoning",
+              "piercing",
+              "slashing"
+            ],
+            "value": 2
+          }
+        ],
+        "slug": null,
+        "_migration": {
+          "version": 0.94,
+          "lastMigration": null,
+          "previous": {
+            "schema": 0.935,
+            "foundry": "13.345",
+            "system": "7.2.0"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [
+            "leather"
+          ],
+          "rarity": "common",
+          "custom": ""
+        },
+        "publication": {
+          "title": "Hopefinder Survivor's Guide",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "level": {
+          "value": 0
+        },
+        "quantity": 1,
+        "baseItem": null,
+        "bulk": {
+          "value": 0
+        },
+        "hp": {
+          "value": 10,
+          "max": 10
+        },
+        "hardness": 0,
+        "price": {
+          "value": {
+            "gp": 1
+          }
+        },
+        "equipped": {
+          "carryType": "worn",
+          "invested": null,
+          "inSlot": false
+        },
+        "containerId": null,
+        "size": "med",
+        "material": {
+          "type": null,
+          "grade": null
+        },
+        "identification": {
+          "status": "identified",
+          "unidentified": {
+            "name": "Unusual Armor",
+            "img": "systems/pf2e/icons/unidentified_item_icons/armor.webp",
+            "data": {
+              "description": {
+                "value": ""
+              }
+            }
+          },
+          "misidentified": {}
+        },
+        "category": "light",
+        "group": null,
+        "acBonus": 0,
+        "strength": 0,
+        "dexCap": 5,
+        "checkPenalty": 0,
+        "speedPenalty": 0,
+        "runes": {
+          "potency": 0,
+          "resilient": 0,
+          "property": []
+        },
+        "subitems": [],
+        "dex": {
+          "value": 10
+        }
+      },
+      "effects": [],
+      "flags": {
+        "core": {}
+      },
+      "_stats": {
+        "systemId": "pf2e",
+        "systemVersion": "4.5.1",
+        "coreVersion": "13.345",
+        "compendiumSource": "Item.hn65IrsPbxjGUjOw",
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_id": "UN4TGHYHyInuva1W",
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "wzla4PE5p61vlV6O": 3
+      },
+      "_key": "!actors.items!L5aK64M0hVXt0lia.UN4TGHYHyInuva1W"
+    },
+    {
+      "name": "Crude Spear",
+      "type": "melee",
+      "system": {
+        "description": {
+          "value": "",
+          "gm": ""
+        },
+        "traits": {
+          "value": [],
+          "otherTags": []
+        },
+        "rules": [],
+        "slug": null,
+        "damageRolls": {
+          "rBQvT0kvSXnfvmWN": {
+            "damage": "1d6+2",
+            "damageType": "piercing",
+            "category": null
+          }
+        },
+        "bonus": {
+          "value": 4
+        },
+        "attackEffects": {
+          "value": []
+        },
+        "publication": {
+          "title": "",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "_migration": {
+          "version": 0.94,
+          "previous": {
+            "schema": 0.935,
+            "foundry": "13.345",
+            "system": "7.2.0"
+          }
+        }
+      },
+      "flags": {
+        "pf2e": {
+          "linkedWeapon": "KXevPSzUB0tf9MEQ"
+        }
+      },
+      "_id": "McgoUuTmCUMP2Eqg",
+      "img": "systems/pf2e/icons/default-icons/melee.svg",
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "wzla4PE5p61vlV6O": 3
+      },
+      "_stats": {
+        "systemId": "pf2e",
+        "systemVersion": "4.5.1",
+        "coreVersion": "13.345",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!actors.items!L5aK64M0hVXt0lia.McgoUuTmCUMP2Eqg"
+    },
+    {
+      "name": "Crude Pistol",
+      "type": "melee",
+      "system": {
+        "description": {
+          "value": "",
+          "gm": ""
+        },
+        "traits": {
+          "value": [
+            "reload-2"
+          ],
+          "otherTags": []
+        },
+        "rules": [],
+        "slug": null,
+        "damageRolls": {
+          "ZfxiuhwCYyrpXGPF": {
+            "damage": "1d6",
+            "damageType": "piercing",
+            "category": null
+          }
+        },
+        "bonus": {
+          "value": 5
+        },
+        "attackEffects": {
+          "value": []
+        },
+        "publication": {
+          "title": "",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "_migration": {
+          "version": 0.94,
+          "previous": {
+            "schema": 0.935,
+            "foundry": "13.345",
+            "system": "7.2.0"
+          }
+        }
+      },
+      "flags": {
+        "pf2e": {
+          "linkedWeapon": "3Qneiw5T28CFF8OL"
+        }
+      },
+      "_id": "yofInl5IaLbkdEgt",
+      "img": "systems/pf2e/icons/default-icons/melee.svg",
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "wzla4PE5p61vlV6O": 3
+      },
+      "_stats": {
+        "systemId": "pf2e",
+        "systemVersion": "4.5.1",
+        "coreVersion": "13.345",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!actors.items!L5aK64M0hVXt0lia.yofInl5IaLbkdEgt"
+    },
+    {
+      "type": "action",
+      "img": "systems/pf2e/icons/actions/Passive.webp",
+      "name": "Menace",
+      "system": {
+        "description": {
+          "value": "<p>The raider gets a +1 circumstance bonus on Intimidation checks made to @Compendium[pf2e.actionspf2e.2u915NdUyQan6uKF]{Demoralize} for each other visible raider or road warrior in the area (maximum +4).</p>\n<p>@UUID[Compendium.hopefinder.effects.SIbzbl01JvQibJFx]{Effect: Menace 1}</p>",
+          "gm": ""
+        },
+        "traits": {
+          "value": [],
+          "otherTags": []
+        },
+        "rules": [],
+        "slug": null,
+        "actionType": {
+          "value": "passive"
+        },
+        "actions": {
+          "value": null
+        },
+        "deathNote": false,
+        "publication": {
+          "title": "",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "_migration": {
+          "version": 0.94,
+          "previous": {
+            "schema": 0.935,
+            "foundry": "13.345",
+            "system": "7.2.0"
+          }
+        },
+        "category": null
+      },
+      "_id": "XCasLO311zFoFy7Q",
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "wzla4PE5p61vlV6O": 3
+      },
+      "flags": {},
+      "_stats": {
+        "systemId": "pf2e",
+        "systemVersion": "4.5.1",
+        "coreVersion": "13.345",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!actors.items!L5aK64M0hVXt0lia.XCasLO311zFoFy7Q"
+    },
+    {
+      "type": "action",
+      "img": "systems/pf2e/icons/actions/OneAction.webp",
+      "name": "Reckless Charge",
+      "system": {
+        "description": {
+          "value": "<p>The raider Strides and makes a melee Strike at the end of that movement. The raider is @Compendium[pf2e.conditionitems.Off-Guard]{Off-Guard} until the start of its next turn.</p>",
+          "gm": ""
+        },
+        "traits": {
+          "value": [],
+          "otherTags": []
+        },
+        "rules": [],
+        "slug": null,
+        "actionType": {
+          "value": "action"
+        },
+        "actions": {
+          "value": 1
+        },
+        "deathNote": false,
+        "publication": {
+          "title": "",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "_migration": {
+          "version": 0.94,
+          "previous": {
+            "schema": 0.935,
+            "foundry": "13.345",
+            "system": "7.2.0"
+          }
+        },
+        "category": null
+      },
+      "_id": "wMiUdk7di0uNJmAX",
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "wzla4PE5p61vlV6O": 3
+      },
+      "flags": {},
+      "_stats": {
+        "systemId": "pf2e",
+        "systemVersion": "4.5.1",
+        "coreVersion": "13.345",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!actors.items!L5aK64M0hVXt0lia.wMiUdk7di0uNJmAX"
+    }
+  ],
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "7.2.0",
+    "coreVersion": "13.345",
+    "compendiumSource": "Compendium.hopefinder.hopefinder-bestiary.Actor.L5aK64M0hVXt0lia",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_id": "L5aK64M0hVXt0lia",
+  "ownership": {
+    "default": 0,
+    "wzla4PE5p61vlV6O": 3
+  },
+  "folder": null,
+  "sort": 0,
+  "_key": "!actors!L5aK64M0hVXt0lia"
+}

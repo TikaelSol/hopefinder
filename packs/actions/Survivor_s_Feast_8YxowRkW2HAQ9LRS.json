@@ -1,0 +1,66 @@
+{
+  "name": "Survivor's Feast",
+  "type": "action",
+  "img": "systems/pf2e/icons/actions/Passive.webp",
+  "system": {
+    "description": {
+      "value": "<p>Once per day, you can spend 1 hour at a firepit creating a feast. Anyone who spends at least 10 minutes eating this feast heals 1 bruise and a number of hit points equal to 1d4 + your Survival proficiency bonus. In addition, they gain 1 temporary Hope that can only be used on a reroll and if not spent in the next hour, it is lost. This feast uses up and counts as 2 food and 1 hydration for each participant.</p>",
+      "gm": ""
+    },
+    "traits": {
+      "value": [
+        "exploration",
+        "manipulate"
+      ],
+      "otherTags": []
+    },
+    "rules": [],
+    "slug": null,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "deathNote": false,
+    "frequency": {
+      "max": 1,
+      "per": "day"
+    },
+    "publication": {
+      "title": "",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "_migration": {
+      "version": 0.94,
+      "previous": {
+        "schema": 0.935,
+        "foundry": "13.345",
+        "system": "7.2.0"
+      }
+    },
+    "category": "offensive"
+  },
+  "effects": [],
+  "flags": {
+    "core": {}
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "7.2.0",
+    "coreVersion": "13.345",
+    "compendiumSource": "Compendium.hopefinder.actions.Item.8YxowRkW2HAQ9LRS",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_id": "8YxowRkW2HAQ9LRS",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "wzla4PE5p61vlV6O": 3
+  },
+  "_key": "!items!8YxowRkW2HAQ9LRS"
+}

@@ -1,0 +1,158 @@
+{
+  "name": "Adept",
+  "type": "feat",
+  "img": "systems/pf2e/icons/default-icons/feats.webp",
+  "system": {
+    "description": {
+      "value": "<p>You are really good at one skill. Increase your proficiency in one skill by 1 step. You gain the @Compendium[pf2e.feats-srd.W6Gl9ePmItfDHji0]{Assurance} skill feat in that skill.</p>",
+      "gm": ""
+    },
+    "traits": {
+      "value": [],
+      "rarity": "common",
+      "otherTags": []
+    },
+    "rules": [
+      {
+        "choices": [
+          {
+            "label": "PF2E.Skill.Acrobatics",
+            "value": "acrobatics"
+          },
+          {
+            "label": "PF2E.Skill.Arcana",
+            "value": "arcana"
+          },
+          {
+            "label": "PF2E.Skill.Athletics",
+            "value": "athletics"
+          },
+          {
+            "label": "PF2E.Skill.Crafting",
+            "value": "crafting"
+          },
+          {
+            "label": "PF2E.Skill.Deception",
+            "value": "deception"
+          },
+          {
+            "label": "PF2E.Skill.Diplomacy",
+            "value": "diplomacy"
+          },
+          {
+            "label": "PF2E.Skill.Intimidation",
+            "value": "intimidation"
+          },
+          {
+            "label": "PF2E.Skill.Medicine",
+            "value": "medicine"
+          },
+          {
+            "label": "PF2E.Skill.Nature",
+            "value": "nature"
+          },
+          {
+            "label": "PF2E.Skill.Occultism",
+            "value": "occultism"
+          },
+          {
+            "label": "PF2E.Skill.Performance",
+            "value": "performance"
+          },
+          {
+            "label": "PF2E.Skill.Religion",
+            "value": "religion"
+          },
+          {
+            "label": "PF2E.Skill.Society",
+            "value": "society"
+          },
+          {
+            "label": "PF2E.Skill.Stealth",
+            "value": "stealth"
+          },
+          {
+            "label": "PF2E.Skill.Survival",
+            "value": "survival"
+          },
+          {
+            "label": "PF2E.Skill.Thievery",
+            "value": "thievery"
+          }
+        ],
+        "flag": "skill",
+        "key": "ChoiceSet",
+        "prompt": "PF2E.SpecificRule.Prompt.Skill"
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.skills.{item|flags.pf2e.rulesSelections.skill}.rank",
+        "value": 1
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.feats-srd.W6Gl9ePmItfDHji0",
+        "preselectChoices": {
+          "assurance": "{item|flags.pf2e.rulesSelections.skill}"
+        }
+      }
+    ],
+    "slug": null,
+    "level": {
+      "value": 1
+    },
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": []
+    },
+    "location": null,
+    "publication": {
+      "title": "",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "_migration": {
+      "version": 0.94,
+      "previous": {
+        "schema": 0.935,
+        "foundry": "13.345",
+        "system": "7.2.0"
+      }
+    },
+    "category": "bonus",
+    "subfeatures": {
+      "proficiencies": {},
+      "senses": {},
+      "suppressedFeatures": []
+    }
+  },
+  "effects": [],
+  "flags": {
+    "core": {}
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "7.2.0",
+    "coreVersion": "13.345",
+    "compendiumSource": "Compendium.hopefinder.feats.Item.fBSmn1hW6GWmnQvL",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_id": "fBSmn1hW6GWmnQvL",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "wzla4PE5p61vlV6O": 3
+  },
+  "_key": "!items!fBSmn1hW6GWmnQvL"
+}

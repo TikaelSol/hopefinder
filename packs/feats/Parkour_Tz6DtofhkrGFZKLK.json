@@ -1,0 +1,80 @@
+{
+  "name": "Parkour",
+  "type": "feat",
+  "img": "systems/pf2e/icons/default-icons/feats.webp",
+  "system": {
+    "description": {
+      "value": "<p>Gathering up momentum, you move easily through a space, jumping over, sliding around, and dodging all obstacles. Stride twice. This movement ignores difficult terrain and does not trigger reactions. During this move, you can move over objects up to 4 feet high and under objects with at least 2 feet of clearance without making skill checks or slowing down your movement.</p>",
+      "gm": ""
+    },
+    "traits": {
+      "value": [],
+      "rarity": "common",
+      "otherTags": []
+    },
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "value": 1,
+        "mode": "add",
+        "path": "flags.pf2e.hopefinder.agilityFeats.count"
+      }
+    ],
+    "slug": null,
+    "level": {
+      "value": 1
+    },
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "action"
+    },
+    "actions": {
+      "value": 2
+    },
+    "prerequisites": {
+      "value": []
+    },
+    "location": null,
+    "publication": {
+      "title": "",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "_migration": {
+      "version": 0.94,
+      "previous": {
+        "schema": 0.935,
+        "foundry": "13.345",
+        "system": "7.2.0"
+      }
+    },
+    "category": "bonus",
+    "subfeatures": {
+      "proficiencies": {},
+      "senses": {},
+      "suppressedFeatures": []
+    }
+  },
+  "effects": [],
+  "flags": {
+    "core": {}
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "7.2.0",
+    "coreVersion": "13.345",
+    "compendiumSource": "Compendium.hopefinder.feats.Item.Tz6DtofhkrGFZKLK",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_id": "Tz6DtofhkrGFZKLK",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "wzla4PE5p61vlV6O": 3
+  },
+  "_key": "!items!Tz6DtofhkrGFZKLK"
+}

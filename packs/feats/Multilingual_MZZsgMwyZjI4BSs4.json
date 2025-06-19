@@ -1,0 +1,73 @@
+{
+  "name": "Multilingual",
+  "type": "feat",
+  "img": "systems/pf2e/icons/default-icons/feats.webp",
+  "system": {
+    "description": {
+      "value": "<p>Communication is key in apocalypse. Add two languages to your list of languages known.</p>",
+      "gm": ""
+    },
+    "traits": {
+      "value": [],
+      "rarity": "common",
+      "otherTags": []
+    },
+    "rules": [],
+    "slug": null,
+    "level": {
+      "value": 1
+    },
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": []
+    },
+    "location": null,
+    "publication": {
+      "title": "",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "_migration": {
+      "version": 0.94,
+      "previous": {
+        "schema": 0.935,
+        "foundry": "13.345",
+        "system": "7.2.0"
+      }
+    },
+    "category": "bonus",
+    "subfeatures": {
+      "proficiencies": {},
+      "senses": {},
+      "suppressedFeatures": []
+    }
+  },
+  "effects": [],
+  "flags": {
+    "core": {}
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "7.2.0",
+    "coreVersion": "13.345",
+    "compendiumSource": "Compendium.hopefinder.feats.Item.MZZsgMwyZjI4BSs4",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_id": "MZZsgMwyZjI4BSs4",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "wzla4PE5p61vlV6O": 3
+  },
+  "_key": "!items!MZZsgMwyZjI4BSs4"
+}

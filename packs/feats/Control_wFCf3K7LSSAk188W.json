@@ -1,0 +1,75 @@
+{
+  "name": "Control",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p><strong>Requirements</strong> You have access to a system or device that is not locked or encrypted.</p>\n<hr />\n<p>You infiltrate a system quickly to gain basic control over its function. Attempt a Computers or Machinery skill check (DC set by the narrator based on the complexity of the device). On a success you gain basic control over the system and can make it do any of the things it was designed to do (make a vending machine spit out beverages, redirect a CCTV system, etc). On a critical success you can make it do something that it was not meant to do but within its capabilities.</p>",
+      "gm": ""
+    },
+    "traits": {
+      "value": [
+        "manipulate"
+      ],
+      "rarity": "common",
+      "otherTags": []
+    },
+    "rules": [],
+    "slug": null,
+    "level": {
+      "value": 1
+    },
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": []
+    },
+    "location": null,
+    "publication": {
+      "title": "",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "_migration": {
+      "version": 0.94,
+      "previous": {
+        "schema": 0.935,
+        "foundry": "13.345",
+        "system": "7.2.0"
+      }
+    },
+    "category": "bonus",
+    "subfeatures": {
+      "proficiencies": {},
+      "senses": {},
+      "suppressedFeatures": []
+    }
+  },
+  "img": "systems/pf2e/icons/default-icons/feats.webp",
+  "effects": [],
+  "flags": {
+    "core": {}
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "7.2.0",
+    "coreVersion": "13.345",
+    "compendiumSource": "Compendium.hopefinder.feats.Item.wFCf3K7LSSAk188W",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_id": "wFCf3K7LSSAk188W",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "wzla4PE5p61vlV6O": 3
+  },
+  "_key": "!items!wFCf3K7LSSAk188W"
+}

@@ -1,0 +1,90 @@
+{
+  "name": "Careful Hacker",
+  "type": "feat",
+  "img": "systems/pf2e/icons/default-icons/feats.webp",
+  "system": {
+    "description": {
+      "value": "<p>When you @Compendium[hopefinder.actions.tXtfx1ZQnyySXnUH]{Hack} using the Computer skill, failed checks do not register in the system (and therefore do not count toward lockout). Critical failures still count as normal.</p>",
+      "gm": ""
+    },
+    "traits": {
+      "value": [],
+      "rarity": "common",
+      "otherTags": []
+    },
+    "rules": [
+      {
+        "key": "Note",
+        "selector": "computer",
+        "text": "{item|system.details.description.value}",
+        "title": "{item|name}",
+        "predicate": [
+          "action:hack"
+        ],
+        "outcome": [
+          "failure"
+        ]
+      }
+    ],
+    "slug": null,
+    "level": {
+      "value": 1
+    },
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "expert in Computer"
+        }
+      ]
+    },
+    "location": null,
+    "publication": {
+      "title": "",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "_migration": {
+      "version": 0.94,
+      "previous": {
+        "schema": 0.935,
+        "foundry": "13.345",
+        "system": "7.2.0"
+      }
+    },
+    "category": "bonus",
+    "subfeatures": {
+      "proficiencies": {},
+      "senses": {},
+      "suppressedFeatures": []
+    }
+  },
+  "effects": [],
+  "flags": {
+    "core": {}
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "7.2.0",
+    "coreVersion": "13.345",
+    "compendiumSource": "Compendium.hopefinder.feats.Item.hjv6EniJrr9utPGK",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_id": "hjv6EniJrr9utPGK",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "wzla4PE5p61vlV6O": 3
+  },
+  "_key": "!items!hjv6EniJrr9utPGK"
+}

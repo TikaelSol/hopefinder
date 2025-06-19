@@ -1,0 +1,58 @@
+{
+  "name": "Teacher",
+  "type": "heritage",
+  "img": "systems/pf2e/icons/default-icons/heritage.svg",
+  "system": {
+    "description": {
+      "value": "<p>You have no idea what happened to all the children you educated when the world came apart. You can only hope that some of them survived, using what you taught them to get along. You were a teacher before the Fall, educating young people in the skills they might have used to thrive in the world that was. Some of those things might still be useful today and you have certainly kept yourself busy in the apocalypse, sharing knowledge with other survivors.</p>\n<p><strong>Educate</strong> (Exploration) By spending 10 minutes talking and working through problems with a target, you can give them the basic knowledge needed to attempt a skill check for any skill in which you are at least trained. They gain half your proficiency bonus on this check. This only applies to the first check they attempt and if not used within 1 hour, the benefit is lost. If they are trained in this skill, this ability grants them a +1 circumstance bonus as long as your proficiency is greater than theirs.</p>\n<p><strong>Skills</strong>: Increase any two Lore skills by 1 step.</p>\n<p><strong>Feats</strong>: You can select Cunning, Leadership, or Technology.</p>",
+      "gm": ""
+    },
+    "traits": {
+      "value": [],
+      "rarity": "common",
+      "otherTags": []
+    },
+    "rules": [
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.hopefinder.actions.zIF4iAMkj1tLj5xq"
+      }
+    ],
+    "slug": null,
+    "ancestry": null,
+    "publication": {
+      "title": "",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "_migration": {
+      "version": 0.94,
+      "previous": {
+        "schema": 0.935,
+        "foundry": "13.345",
+        "system": "7.2.0"
+      }
+    }
+  },
+  "effects": [],
+  "flags": {
+    "core": {}
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "7.2.0",
+    "coreVersion": "13.345",
+    "compendiumSource": "Compendium.hopefinder.roles.Item.Pay0LfES2S9p9ByK",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_id": "Pay0LfES2S9p9ByK",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "wzla4PE5p61vlV6O": 3
+  },
+  "_key": "!items!Pay0LfES2S9p9ByK"
+}

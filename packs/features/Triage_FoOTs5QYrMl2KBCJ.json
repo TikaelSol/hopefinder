@@ -1,0 +1,73 @@
+{
+  "name": "Triage",
+  "type": "feat",
+  "img": "systems/pf2e/icons/spells/heal-companion.webp",
+  "system": {
+    "description": {
+      "value": "<p>You can perform First Aid or @Compendium[pf2e.actionspf2e.Treat Wounds]{Treat Wounds} on up to 6 people in 20 minutes. When you successfully Treat Wounds, you heal an additional amount of Hit Points equal to your level.</p>",
+      "gm": ""
+    },
+    "traits": {
+      "value": [],
+      "rarity": "common",
+      "otherTags": []
+    },
+    "rules": [],
+    "slug": null,
+    "level": {
+      "value": 1
+    },
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": []
+    },
+    "location": null,
+    "publication": {
+      "title": "",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "_migration": {
+      "version": 0.94,
+      "previous": {
+        "schema": 0.935,
+        "foundry": "13.345",
+        "system": "7.2.0"
+      }
+    },
+    "category": "bonus",
+    "subfeatures": {
+      "proficiencies": {},
+      "senses": {},
+      "suppressedFeatures": []
+    }
+  },
+  "effects": [],
+  "flags": {
+    "core": {}
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "7.2.0",
+    "coreVersion": "13.345",
+    "compendiumSource": "Compendium.hopefinder.features.Item.FoOTs5QYrMl2KBCJ",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_id": "FoOTs5QYrMl2KBCJ",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "wzla4PE5p61vlV6O": 3
+  },
+  "_key": "!items!FoOTs5QYrMl2KBCJ"
+}

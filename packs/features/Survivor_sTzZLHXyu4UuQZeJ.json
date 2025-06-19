@@ -1,0 +1,596 @@
+{
+  "name": "Survivor",
+  "type": "class",
+  "img": "icons/svg/biohazard.svg",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Hopefinder is a game played without a class proper. This class item will set up some basic automation for Hopefinder on actors for you.</p>"
+    },
+    "rules": [
+      {
+        "key": "CriticalSpecialization"
+      },
+      {
+        "alternate": true,
+        "key": "CriticalSpecialization",
+        "predicate": [
+          "item:damage:type:bludgeoning"
+        ],
+        "text": "Critical hits from bludgeoning weapons also deal 1 @UUID[Compendium.hopefinder.effects.Item.KNcK8MtYgm6ka7PO]{Bruise}."
+      },
+      {
+        "alternate": true,
+        "key": "CriticalSpecialization",
+        "predicate": [
+          "item:damage:type:acid"
+        ],
+        "text": "<p>Critical hits from acid attacks cause [[/r 1[persistent,acid]]]{1} damage.</p>"
+      },
+      {
+        "alternate": true,
+        "key": "CriticalSpecialization",
+        "predicate": [
+          "item:damage:type:acid"
+        ],
+        "text": "<p>Critical hits from acid attacks cause [[/r 1[persistent,fire]]]{1} damage.</p>"
+      },
+      {
+        "alternate": true,
+        "key": "CriticalSpecialization",
+        "predicate": [
+          "item:damage:type:cold"
+        ],
+        "text": "<p>Critical hits from cold attacks cause the target to be @Compendium[pf2e.conditionitems.Slowed]{Slowed 1} for 1 minute.</p>"
+      },
+      {
+        "alternate": true,
+        "key": "CriticalSpecialization",
+        "predicate": [
+          "item:damage:type:electricity"
+        ],
+        "text": "<p>Critical hits from electricity attacks cause the target to be @Compendium[pf2e.conditionitems.Slowed]{Slowed 1} for 1 minute.</p>"
+      },
+      {
+        "alternate": true,
+        "key": "CriticalSpecialization",
+        "predicate": [
+          "item:damage:type:piercing"
+        ],
+        "text": "<p>Critical hits from piercing weapons cause the target to be @Compendium[pf2e.conditionitems.Sickened]{Sickened 1} until the target receives any amount of healing.</p>"
+      },
+      {
+        "alternate": true,
+        "key": "CriticalSpecialization",
+        "predicate": [
+          "item:damage:type:slashing"
+        ],
+        "text": "<p>Critical hits from slashing weapons cause the target to take [[/r 1[persistent,bleed]]]{1} damage.</p>"
+      },
+      {
+        "alternate": true,
+        "key": "CriticalSpecialization",
+        "predicate": [
+          "item:damage:type:poison"
+        ],
+        "text": "<p>Critical hits from poison attacks cause the target to be @Compendium[pf2e.conditionitems.Enfeebled]{Enfeebled 1} for 1 hour.</p>"
+      },
+      {
+        "alternate": true,
+        "key": "CriticalSpecialization",
+        "predicate": [
+          "item:damage:type:sonic"
+        ],
+        "text": "<p>Critical hits from sonic attacks cause the target to be @Compendium[pf2e.conditionitems.Deafened]{Deafened} for 1 hour.</p>"
+      },
+      {
+        "key": "Note",
+        "selector": "strike-damage",
+        "text": "Critical damage from this weapon is triple instead of double.",
+        "title": "Deadly",
+        "outcome": [
+          "criticalSuccess"
+        ],
+        "predicate": [
+          "item:trait:deadly"
+        ]
+      },
+      {
+        "ability": "str",
+        "force": true,
+        "key": "FlatModifier",
+        "selector": "strike-damage",
+        "type": "ability",
+        "slug": "strength-trait",
+        "predicate": [
+          {
+            "or": [
+              "item:trait:strength-0",
+              "item:trait:strength-1",
+              "item:trait:strength-2",
+              "item:trait:strength-3",
+              "item:trait:strength-4"
+            ]
+          }
+        ]
+      },
+      {
+        "key": "AdjustModifier",
+        "selector": "strike-damage",
+        "slug": "strength-trait",
+        "mode": "downgrade",
+        "predicate": [
+          "item:trait:strength-0"
+        ],
+        "value": 0
+      },
+      {
+        "key": "AdjustModifier",
+        "selector": "strike-damage",
+        "slug": "strength-trait",
+        "mode": "downgrade",
+        "predicate": [
+          "item:trait:strength-1"
+        ],
+        "value": 1
+      },
+      {
+        "key": "AdjustModifier",
+        "selector": "strike-damage",
+        "slug": "strength-trait",
+        "mode": "downgrade",
+        "predicate": [
+          "item:trait:strength-2"
+        ],
+        "value": 2
+      },
+      {
+        "key": "AdjustModifier",
+        "selector": "strike-damage",
+        "slug": "strength-trait",
+        "mode": "downgrade",
+        "predicate": [
+          "item:trait:strength-3"
+        ],
+        "value": 3
+      },
+      {
+        "key": "AdjustModifier",
+        "selector": "strike-damage",
+        "slug": "strength-trait",
+        "mode": "downgrade",
+        "predicate": [
+          "item:trait:strength-4"
+        ],
+        "value": 4
+      },
+      {
+        "key": "FlatModifier",
+        "selector": "hp",
+        "value": -4
+      },
+      {
+        "choices": [
+          {
+            "label": "PF2E.AbilityCha",
+            "value": "cha"
+          },
+          {
+            "label": "PF2E.AbilityCon",
+            "value": "con"
+          },
+          {
+            "label": "PF2E.AbilityDex",
+            "value": "dex"
+          },
+          {
+            "label": "PF2E.AbilityInt",
+            "value": "int"
+          },
+          {
+            "label": "PF2E.AbilityStr",
+            "value": "str"
+          },
+          {
+            "label": "PF2E.AbilityWis",
+            "value": "wis"
+          }
+        ],
+        "prompt": "Select an ability score to increase",
+        "key": "ChoiceSet",
+        "flag": "abilityOne",
+        "adjustName": false,
+        "rollOption": "class-boosts:ability-score-one"
+      },
+      {
+        "choices": [
+          {
+            "label": "PF2E.AbilityCha",
+            "value": "cha",
+            "predicate": [
+              {
+                "not": "class-boosts:ability-score-one:cha"
+              }
+            ]
+          },
+          {
+            "label": "PF2E.AbilityCon",
+            "value": "con",
+            "predicate": [
+              {
+                "not": "class-boosts:ability-score-one:con"
+              }
+            ]
+          },
+          {
+            "label": "PF2E.AbilityDex",
+            "value": "dex",
+            "predicate": [
+              {
+                "not": "class-boosts:ability-score-one:dex"
+              }
+            ]
+          },
+          {
+            "label": "PF2E.AbilityInt",
+            "value": "int",
+            "predicate": [
+              {
+                "not": "class-boosts:ability-score-one:int"
+              }
+            ]
+          },
+          {
+            "label": "PF2E.AbilityStr",
+            "value": "str",
+            "predicate": [
+              {
+                "not": "class-boosts:ability-score-one:str"
+              }
+            ]
+          },
+          {
+            "label": "PF2E.AbilityWis",
+            "value": "wis",
+            "predicate": [
+              {
+                "not": "class-boosts:ability-score-one:wis"
+              }
+            ]
+          }
+        ],
+        "prompt": "Select a second ability score to increase",
+        "key": "ChoiceSet",
+        "flag": "abilityTwo",
+        "rollOption": "class-boosts:ability-score-two",
+        "adjustName": false
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.abilities.{item|flags.pf2e.rulesSelections.abilityOne}.mod",
+        "value": 1
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.abilities.{item|flags.pf2e.rulesSelections.abilityTwo}.mod",
+        "value": 1
+      },
+      {
+        "choices": [
+          {
+            "label": "Take an ability flaw",
+            "value": "ability-flaw"
+          },
+          {
+            "label": "Don't take a flaw",
+            "value": "no-flaw"
+          }
+        ],
+        "prompt": "Take an ability flaw?",
+        "key": "ChoiceSet",
+        "flag": "abilityFlaw",
+        "rollOption": "class-boosts",
+        "adjustName": false
+      },
+      {
+        "choices": [
+          {
+            "label": "PF2E.AbilityCha",
+            "value": "cha",
+            "predicate": [
+              {
+                "nor": [
+                  "class-boosts:ability-score-one:cha",
+                  "class-boosts:ability-score-two:cha"
+                ]
+              }
+            ]
+          },
+          {
+            "label": "PF2E.AbilityCon",
+            "value": "con",
+            "predicate": [
+              {
+                "nor": [
+                  "class-boosts:ability-score-one:con",
+                  "class-boosts:ability-score-two:con"
+                ]
+              }
+            ]
+          },
+          {
+            "label": "PF2E.AbilityDex",
+            "value": "dex",
+            "predicate": [
+              {
+                "nor": [
+                  "class-boosts:ability-score-one:dex",
+                  "class-boosts:ability-score-two:dex"
+                ]
+              }
+            ]
+          },
+          {
+            "label": "PF2E.AbilityInt",
+            "value": "int",
+            "predicate": [
+              {
+                "nor": [
+                  "class-boosts:ability-score-one:int",
+                  "class-boosts:ability-score-two:int"
+                ]
+              }
+            ]
+          },
+          {
+            "label": "PF2E.AbilityStr",
+            "value": "str",
+            "predicate": [
+              {
+                "nor": [
+                  "class-boosts:ability-score-one:str",
+                  "class-boosts:ability-score-two:str"
+                ]
+              }
+            ]
+          },
+          {
+            "label": "PF2E.AbilityWis",
+            "value": "wis",
+            "predicate": [
+              {
+                "nor": [
+                  "class-boosts:ability-score-one:wis",
+                  "class-boosts:ability-score-two:wis"
+                ]
+              }
+            ]
+          }
+        ],
+        "prompt": "Select a third ability score to increase",
+        "key": "ChoiceSet",
+        "flag": "abilityThree",
+        "predicate": [
+          "class-boosts:ability-flaw"
+        ]
+      },
+      {
+        "choices": [
+          {
+            "label": "PF2E.AbilityCha",
+            "value": "cha"
+          },
+          {
+            "label": "PF2E.AbilityCon",
+            "value": "con"
+          },
+          {
+            "label": "PF2E.AbilityDex",
+            "value": "dex"
+          },
+          {
+            "label": "PF2E.AbilityInt",
+            "value": "int"
+          },
+          {
+            "label": "PF2E.AbilityStr",
+            "value": "str"
+          },
+          {
+            "label": "PF2E.AbilityWis",
+            "value": "wis"
+          }
+        ],
+        "prompt": "Select an ability score to decrease",
+        "key": "ChoiceSet",
+        "flag": "abilityFlaw",
+        "adjustName": false,
+        "predicate": [
+          "class-boosts:ability-flaw"
+        ]
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.abilities.{item|flags.pf2e.rulesSelections.abilityThree}.mod",
+        "value": 1,
+        "predicate": [
+          "class-boosts:ability-flaw"
+        ]
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.abilities.{item|flags.pf2e.rulesSelections.abilityFlaw}.mod",
+        "value": -1,
+        "predicate": [
+          "class-boosts:ability-flaw"
+        ]
+      },
+      {
+        "choices": [
+          {
+            "label": "PF2E.SavesFortitude",
+            "value": "fortitude"
+          },
+          {
+            "label": "PF2E.SavesReflex",
+            "value": "reflex"
+          },
+          {
+            "label": "PF2E.SavesWill",
+            "value": "will"
+          }
+        ],
+        "prompt": "Select a save to be expert in",
+        "key": "ChoiceSet",
+        "flag": "save",
+        "adjustName": false
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "upgrade",
+        "path": "system.saves.{item|flags.pf2e.rulesSelections.save}.rank",
+        "value": 2
+      },
+      {
+        "choices": [
+          {
+            "label": "PF2E.AbilityCha",
+            "value": "cha"
+          },
+          {
+            "label": "PF2E.AbilityCon",
+            "value": "con"
+          },
+          {
+            "label": "PF2E.AbilityDex",
+            "value": "dex"
+          },
+          {
+            "label": "PF2E.AbilityInt",
+            "value": "int"
+          },
+          {
+            "label": "PF2E.AbilityStr",
+            "value": "str"
+          },
+          {
+            "label": "PF2E.AbilityWis",
+            "value": "wis"
+          }
+        ],
+        "prompt": "Select an ability score to increase",
+        "key": "ChoiceSet",
+        "flag": "abilityFour",
+        "adjustName": false
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.abilities.{item|flags.pf2e.rulesSelections.abilityFour}.mod",
+        "value": 1
+      }
+    ],
+    "slug": null,
+    "_migration": {
+      "version": 0.94,
+      "previous": {
+        "schema": 0.935,
+        "foundry": "13.345",
+        "system": "7.2.0"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Hopefinder Survivor's Guide",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "keyAbility": {
+      "value": [],
+      "selected": null
+    },
+    "items": {},
+    "hp": 6,
+    "trainedSkills": {
+      "value": [],
+      "additional": 4
+    },
+    "perception": 1,
+    "savingThrows": {
+      "fortitude": 1,
+      "reflex": 1,
+      "will": 1
+    },
+    "attacks": {
+      "simple": 1,
+      "martial": 0,
+      "advanced": 0,
+      "unarmed": 0,
+      "other": {
+        "name": "",
+        "rank": 0
+      }
+    },
+    "defenses": {
+      "unarmored": 0,
+      "light": 1,
+      "medium": 0,
+      "heavy": 0
+    },
+    "spellcasting": 0,
+    "ancestryFeatLevels": {
+      "value": []
+    },
+    "classFeatLevels": {
+      "value": [
+        3,
+        5
+      ]
+    },
+    "generalFeatLevels": {
+      "value": []
+    },
+    "skillFeatLevels": {
+      "value": [
+        2,
+        4
+      ]
+    },
+    "skillIncreaseLevels": {
+      "value": [
+        2,
+        3,
+        4,
+        5
+      ]
+    }
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0,
+    "wzla4PE5p61vlV6O": 3
+  },
+  "flags": {
+    "core": {}
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "7.2.0",
+    "coreVersion": "13.345",
+    "compendiumSource": "Compendium.hopefinder.features.Item.sTzZLHXyu4UuQZeJ",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "_id": "sTzZLHXyu4UuQZeJ",
+  "_key": "!items!sTzZLHXyu4UuQZeJ"
+}

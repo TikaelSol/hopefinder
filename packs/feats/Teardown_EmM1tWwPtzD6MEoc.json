@@ -1,0 +1,88 @@
+{
+  "name": "Teardown",
+  "type": "feat",
+  "img": "systems/pf2e/icons/default-icons/feats.webp",
+  "system": {
+    "description": {
+      "value": "<p>Whenever you attempt to @Compendium[pf2e.actionspf2e.Force Open]{Force Open} an enclosure or Batter an object, you get a +2 circumstance bonus to your Athletics check. In addition, when take apart an item for parts and you succeed on the craft check, you get a number of parts equal to the items break value.</p>",
+      "gm": ""
+    },
+    "traits": {
+      "value": [],
+      "rarity": "common",
+      "otherTags": []
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "selector": "athletics",
+        "value": 2,
+        "type": "circumstance",
+        "predicate": [
+          {
+            "or": [
+              "action:force-open",
+              "action:batter"
+            ]
+          }
+        ]
+      }
+    ],
+    "slug": null,
+    "level": {
+      "value": 1
+    },
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": []
+    },
+    "location": null,
+    "publication": {
+      "title": "",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "_migration": {
+      "version": 0.94,
+      "previous": {
+        "schema": 0.935,
+        "foundry": "13.345",
+        "system": "7.2.0"
+      }
+    },
+    "category": "bonus",
+    "subfeatures": {
+      "proficiencies": {},
+      "senses": {},
+      "suppressedFeatures": []
+    }
+  },
+  "effects": [],
+  "flags": {
+    "core": {}
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "7.2.0",
+    "coreVersion": "13.345",
+    "compendiumSource": "Compendium.hopefinder.feats.Item.EmM1tWwPtzD6MEoc",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_id": "EmM1tWwPtzD6MEoc",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "wzla4PE5p61vlV6O": 3
+  },
+  "_key": "!items!EmM1tWwPtzD6MEoc"
+}

@@ -1,0 +1,76 @@
+{
+  "name": "Specialist",
+  "type": "feat",
+  "img": "systems/pf2e/icons/default-icons/feats.webp",
+  "system": {
+    "description": {
+      "value": "<p>You have learned of a way to treat the Z Plague if it has not progressed too far. Unfortunately, unlike doses of the highly coveted Z-Noc, your treatment is dangerous and far from certain. You can use @Compendium[pf2e.actionspf2e.Treat Disease]{Treat Disease} on the Z Plague if the victim is still in stage 1. Attempt a Medicine skill check against the DC of the plague +5. If successful, your treatment acts as one successful saving throw and it cures them entirely on a critical success. The creature you treat gains [[/r 1d4 #Bruises]]{1d4 bruises} from the harsh chemicals used.</p>",
+      "gm": ""
+    },
+    "traits": {
+      "value": [
+        "exploration",
+        "manipulate"
+      ],
+      "rarity": "common",
+      "otherTags": []
+    },
+    "rules": [],
+    "slug": null,
+    "level": {
+      "value": 1
+    },
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": []
+    },
+    "location": null,
+    "publication": {
+      "title": "",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "_migration": {
+      "version": 0.94,
+      "previous": {
+        "schema": 0.935,
+        "foundry": "13.345",
+        "system": "7.2.0"
+      }
+    },
+    "category": "bonus",
+    "subfeatures": {
+      "proficiencies": {},
+      "senses": {},
+      "suppressedFeatures": []
+    }
+  },
+  "effects": [],
+  "flags": {
+    "core": {}
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "7.2.0",
+    "coreVersion": "13.345",
+    "compendiumSource": "Compendium.hopefinder.feats.Item.1u0puTUOEVLcT7Qo",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_id": "1u0puTUOEVLcT7Qo",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "wzla4PE5p61vlV6O": 3
+  },
+  "_key": "!items!1u0puTUOEVLcT7Qo"
+}

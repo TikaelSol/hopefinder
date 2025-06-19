@@ -1,0 +1,73 @@
+{
+  "name": "Push",
+  "type": "feat",
+  "img": "systems/pf2e/icons/default-icons/feats.webp",
+  "system": {
+    "description": {
+      "value": "<p>Whenever you successfully @Compendium[pf2e.actionspf2e.Shove]{Shove} a creature, you also move a number of creatures behind it so long as your check would beat their Fortitude DC as well. You can only move up to a number of creatures equal to your Strength bonus in this way. Any creature that could be moved, but that cannot move to due insufficient space takes [[/r {1d6}[bludgeoning]]]{1d6 bludgeoning damage} plus your Strength.</p>",
+      "gm": ""
+    },
+    "traits": {
+      "value": [],
+      "rarity": "common",
+      "otherTags": []
+    },
+    "rules": [],
+    "slug": null,
+    "level": {
+      "value": 1
+    },
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": []
+    },
+    "location": null,
+    "publication": {
+      "title": "",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "_migration": {
+      "version": 0.94,
+      "previous": {
+        "schema": 0.935,
+        "foundry": "13.345",
+        "system": "7.2.0"
+      }
+    },
+    "category": "bonus",
+    "subfeatures": {
+      "proficiencies": {},
+      "senses": {},
+      "suppressedFeatures": []
+    }
+  },
+  "effects": [],
+  "flags": {
+    "core": {}
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "7.2.0",
+    "coreVersion": "13.345",
+    "compendiumSource": "Compendium.hopefinder.feats.Item.KIwvAdu1PAn0qoAi",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_id": "KIwvAdu1PAn0qoAi",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "wzla4PE5p61vlV6O": 3
+  },
+  "_key": "!items!KIwvAdu1PAn0qoAi"
+}

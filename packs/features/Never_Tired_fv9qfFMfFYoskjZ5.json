@@ -1,0 +1,80 @@
+{
+  "name": "Never Tired",
+  "type": "feat",
+  "img": "systems/pf2e/icons/spells/inspire-courage.webp",
+  "system": {
+    "description": {
+      "value": "<p>You do not get @Compendium[pf2e.conditionitems.Fatigued]{Fatigued} from bruises and you are not fatigued as long as you get 4 hours of sleep. In addition, you can carry 3 extra bulk worth of items (although this does not let you carry more items than will fit on your inventory sheet).</p>",
+      "gm": ""
+    },
+    "traits": {
+      "value": [],
+      "rarity": "common",
+      "otherTags": []
+    },
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "inventory.bulk.maxAddend",
+        "value": 3
+      }
+    ],
+    "slug": null,
+    "level": {
+      "value": 1
+    },
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": []
+    },
+    "location": null,
+    "publication": {
+      "title": "",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "_migration": {
+      "version": 0.94,
+      "previous": {
+        "schema": 0.935,
+        "foundry": "13.345",
+        "system": "7.2.0"
+      }
+    },
+    "category": "bonus",
+    "subfeatures": {
+      "proficiencies": {},
+      "senses": {},
+      "suppressedFeatures": []
+    }
+  },
+  "effects": [],
+  "flags": {
+    "core": {}
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "7.2.0",
+    "coreVersion": "13.345",
+    "compendiumSource": "Compendium.hopefinder.features.Item.fv9qfFMfFYoskjZ5",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_id": "fv9qfFMfFYoskjZ5",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "wzla4PE5p61vlV6O": 3
+  },
+  "_key": "!items!fv9qfFMfFYoskjZ5"
+}

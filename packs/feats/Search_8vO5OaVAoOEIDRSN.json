@@ -1,0 +1,73 @@
+{
+  "name": "Search",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>You are an expert at digging through the files and directories of computers to get the information that you need. Operating a computer is an action for you (instead of a 1 minute activity). In addition, you do not need to attempt a check to understand and catalog the public and easily accessible information contained within a device, giving you a list of topics and file names. Finally, if you are looking through a database, you receive a +4 circumstance bonus on any related skill checks (instead of the usual +2 for having reference materials).</p>",
+      "gm": ""
+    },
+    "traits": {
+      "value": [],
+      "rarity": "common",
+      "otherTags": []
+    },
+    "rules": [],
+    "slug": null,
+    "level": {
+      "value": 1
+    },
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": []
+    },
+    "location": null,
+    "publication": {
+      "title": "",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "_migration": {
+      "version": 0.94,
+      "previous": {
+        "schema": 0.935,
+        "foundry": "13.345",
+        "system": "7.2.0"
+      }
+    },
+    "category": "bonus",
+    "subfeatures": {
+      "proficiencies": {},
+      "senses": {},
+      "suppressedFeatures": []
+    }
+  },
+  "img": "systems/pf2e/icons/default-icons/feats.webp",
+  "effects": [],
+  "flags": {
+    "core": {}
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "7.2.0",
+    "coreVersion": "13.345",
+    "compendiumSource": "Compendium.hopefinder.feats.Item.8vO5OaVAoOEIDRSN",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_id": "8vO5OaVAoOEIDRSN",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "wzla4PE5p61vlV6O": 3
+  },
+  "_key": "!items!8vO5OaVAoOEIDRSN"
+}

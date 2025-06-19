@@ -1,0 +1,93 @@
+{
+  "name": "Bully",
+  "type": "background",
+  "img": "systems/pf2e/icons/default-icons/background.svg",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>After the Fall, you quickly came to realize that the easiest way to stay alive was to take what you needed from others, usually through manipulation or threats of violence. You have a reputation to settle.</p>\n<p><strong>Ability Modifiers:</strong> +1 Str, +1 Cha</p>\n<p><strong>Skill:</strong> Trained in Intimidation</p>\n<p><strong>Feat:</strong> @Compendium[pf2e.feats-srd.xQMz6eDgX75WX2ce]{Intimidating Glare} skill feat</p>\n<p><strong>Gear:</strong> @Compendium[hopefinder.equipment.dbVdqig4HeRGlflE]{Brass Knuckles} (weapon)</p>"
+    },
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.abilities.str.mod",
+        "value": 1
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.abilities.cha.mod",
+        "value": 1
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.hopefinder.equipment.Item.dbVdqig4HeRGlflE"
+      }
+    ],
+    "slug": null,
+    "_migration": {
+      "version": 0.94,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.935,
+        "foundry": "13.345",
+        "system": "7.2.0"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Hopefinder Survivor's Guide",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "boosts": {
+      "0": {
+        "value": []
+      },
+      "1": {
+        "value": []
+      }
+    },
+    "items": {
+      "CpQtY": {
+        "uuid": "Compendium.pf2e.feats-srd.Item.xQMz6eDgX75WX2ce",
+        "img": "systems/pf2e/icons/features/feats/feats.webp",
+        "name": "Intimidating Glare",
+        "level": 1
+      }
+    },
+    "trainedSkills": {
+      "value": [
+        "intimidation"
+      ],
+      "lore": [],
+      "custom": ""
+    }
+  },
+  "effects": [],
+  "flags": {
+    "core": {}
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "7.2.0",
+    "coreVersion": "13.345",
+    "compendiumSource": "Compendium.hopefinder.backgrounds.Item.3FTc4acgktgdRk36",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_id": "3FTc4acgktgdRk36",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "wzla4PE5p61vlV6O": 3
+  },
+  "_key": "!items!3FTc4acgktgdRk36"
+}

@@ -1,0 +1,79 @@
+{
+  "name": "First Responder",
+  "type": "heritage",
+  "img": "systems/pf2e/icons/default-icons/heritage.svg",
+  "system": {
+    "description": {
+      "value": "<p>You ran toward the danger. That was your job. You could have been a firefighter, an EMT, or a cop, but when the first zombies started rising, you saw it all happen. From the moments of panic to the complete collapse of services, you saw it all. The experience might have left you damaged, but the skills you learned on the job have saved your life a dozen times since then.</p>\n<p><strong>Grim Determination</strong> You saw the worst of the Fall and it takes a lot to shake your nerve. Increase your Will save by 1 step. If you are ever @Compendium[pf2e.conditionitems.Confused]{Confused}, @Compendium[pf2e.conditionitems.9qGBRpbX9NEwtAAr]{Controlled}, or @Compendium[pf2e.conditionitems.Fleeing]{Fleeing}, you get a new saving throw at the end of each of your turns to end the effect (if a saving throw is allowed).</p>\n<p><strong>Skills</strong>: Increase your Intimidation or Medicine by 1 step.</p>\n<p><strong>Feats</strong>: You can select from Agility, Healing, and Ranged feats.</p>",
+      "gm": ""
+    },
+    "traits": {
+      "value": [],
+      "rarity": "common",
+      "otherTags": []
+    },
+    "rules": [
+      {
+        "choices": [
+          {
+            "label": "PF2E.Skill.Intimidation",
+            "value": "intimidation"
+          },
+          {
+            "label": "PF2E.Skill.Medicine",
+            "value": "medicine"
+          }
+        ],
+        "flag": "skill",
+        "key": "ChoiceSet",
+        "prompt": "PF2E.SpecificRule.Prompt.Skill"
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.skills.{item|flags.pf2e.rulesSelections.skill}.rank",
+        "value": 1
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.hopefinder.features.wioPepKbfkxI5TIC"
+      }
+    ],
+    "slug": null,
+    "ancestry": null,
+    "publication": {
+      "title": "",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "_migration": {
+      "version": 0.94,
+      "previous": {
+        "schema": 0.935,
+        "foundry": "13.345",
+        "system": "7.2.0"
+      }
+    }
+  },
+  "effects": [],
+  "flags": {
+    "core": {}
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "7.2.0",
+    "coreVersion": "13.345",
+    "compendiumSource": "Compendium.hopefinder.roles.Item.oK3idyHG6utYzTT3",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_id": "oK3idyHG6utYzTT3",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "wzla4PE5p61vlV6O": 3
+  },
+  "_key": "!items!oK3idyHG6utYzTT3"
+}

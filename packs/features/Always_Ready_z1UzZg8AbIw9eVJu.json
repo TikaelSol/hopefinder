@@ -1,0 +1,79 @@
+{
+  "name": "Always Ready",
+  "type": "feat",
+  "img": "systems/pf2e/icons/spells/agile-feet.webp",
+  "system": {
+    "description": {
+      "value": "<p>You are methodical in your preparations and make sure to secure your surroundings. You get a +2 bonus on initiative checks and may draw a weapon as a free action at the start of your first turn if one is within reach or ready on your person.</p>",
+      "gm": ""
+    },
+    "traits": {
+      "value": [],
+      "rarity": "common",
+      "otherTags": []
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "selector": "initiative",
+        "value": 2
+      }
+    ],
+    "slug": null,
+    "level": {
+      "value": 1
+    },
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": []
+    },
+    "location": null,
+    "publication": {
+      "title": "",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "_migration": {
+      "version": 0.94,
+      "previous": {
+        "schema": 0.935,
+        "foundry": "13.345",
+        "system": "7.2.0"
+      }
+    },
+    "category": "bonus",
+    "subfeatures": {
+      "proficiencies": {},
+      "senses": {},
+      "suppressedFeatures": []
+    }
+  },
+  "effects": [],
+  "flags": {
+    "core": {}
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "7.2.0",
+    "coreVersion": "13.345",
+    "compendiumSource": "Compendium.hopefinder.features.Item.z1UzZg8AbIw9eVJu",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_id": "z1UzZg8AbIw9eVJu",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "wzla4PE5p61vlV6O": 3
+  },
+  "_key": "!items!z1UzZg8AbIw9eVJu"
+}

@@ -1,0 +1,93 @@
+{
+  "name": "Entertainer",
+  "type": "background",
+  "img": "systems/pf2e/icons/default-icons/background.svg",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>When they aren't terrified or running for their life most folks are just bored. With no radio, TV, or internet, you carved a niche by providing some simple entertainment.</p>\n<p><strong>Ability Modifiers:</strong> +1 Con, +1 Cha</p>\n<p><strong>Skill:</strong> Trained in Performance</p>\n<p><strong>Feat:</strong> @Compendium[pf2e.feats-srd.xqAdXRd2gSQcqp5E]{Impressive Performance} skill feat</p>\n<p><strong>Gear:</strong> A @Compendium[hopefinder.equipment.bc8sOVxvNVTEl9gB]{Musical Instrument}</p>"
+    },
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.abilities.con.mod",
+        "value": 1
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.abilities.cha.mod",
+        "value": 1
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.hopefinder.equipment.Item.bc8sOVxvNVTEl9gB"
+      }
+    ],
+    "slug": null,
+    "_migration": {
+      "version": 0.94,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.935,
+        "foundry": "13.345",
+        "system": "7.2.0"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Hopefinder Survivor's Guide",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "boosts": {
+      "0": {
+        "value": []
+      },
+      "1": {
+        "value": []
+      }
+    },
+    "items": {
+      "qzYzC": {
+        "uuid": "Compendium.pf2e.feats-srd.Item.xqAdXRd2gSQcqp5E",
+        "img": "systems/pf2e/icons/features/feats/feats.webp",
+        "name": "Impressive Performance",
+        "level": 1
+      }
+    },
+    "trainedSkills": {
+      "value": [
+        "performance"
+      ],
+      "lore": [],
+      "custom": ""
+    }
+  },
+  "effects": [],
+  "flags": {
+    "core": {}
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "7.2.0",
+    "coreVersion": "13.345",
+    "compendiumSource": "Compendium.hopefinder.backgrounds.Item.q5N89s0H6V3Svfwr",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_id": "q5N89s0H6V3Svfwr",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "wzla4PE5p61vlV6O": 3
+  },
+  "_key": "!items!q5N89s0H6V3Svfwr"
+}

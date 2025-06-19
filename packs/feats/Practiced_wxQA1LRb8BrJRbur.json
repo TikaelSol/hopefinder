@@ -1,0 +1,142 @@
+{
+  "name": "Practiced",
+  "type": "feat",
+  "img": "systems/pf2e/icons/default-icons/feats.webp",
+  "system": {
+    "description": {
+      "value": "<p>You know how to use one weapon very well. Increase your proficiency in one type of simple weapon by 1 step. Once per combat you can ignore one ding to that weapon caused by a critical failure on a Strike.</p>",
+      "gm": ""
+    },
+    "traits": {
+      "value": [],
+      "rarity": "common",
+      "otherTags": []
+    },
+    "rules": [
+      {
+        "adjustName": true,
+        "choices": [
+          {
+            "label": "Clubs",
+            "value": "club"
+          },
+          {
+            "label": "Tools",
+            "value": "tool"
+          },
+          {
+            "label": "Blades",
+            "value": "blade"
+          },
+          {
+            "label": "Patchwork",
+            "value": "patchwork"
+          },
+          {
+            "label": "Axes",
+            "value": "axe"
+          },
+          {
+            "label": "Bows",
+            "value": "bow"
+          },
+          {
+            "label": "Pistols",
+            "value": "pistol"
+          },
+          {
+            "label": "Rifles",
+            "value": "rifle"
+          },
+          {
+            "label": "Fuel",
+            "value": "fuel"
+          },
+          {
+            "label": "Grenades",
+            "value": "grenade"
+          },
+          {
+            "label": "Shotguns",
+            "value": "shotgun"
+          }
+        ],
+        "flag": "weaponType",
+        "key": "ChoiceSet",
+        "prompt": "PF2E.UI.RuleElements.ChoiceSet.Prompt"
+      },
+      {
+        "definition": [
+          "item:group:{item|flags.pf2e.rulesSelections.weaponType}",
+          "item:category:simple"
+        ],
+        "key": "MartialProficiency",
+        "label": "Practiced Weapons",
+        "slug": "practiced-weapons"
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "upgrade",
+        "path": "system.proficiencies.attacks.practiced-weapons.rank",
+        "value": "1+@actor.system.proficiencies.attacks.simple.rank",
+        "phase": "beforeDerived"
+      }
+    ],
+    "slug": null,
+    "level": {
+      "value": 1
+    },
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": []
+    },
+    "location": null,
+    "publication": {
+      "title": "",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "_migration": {
+      "version": 0.94,
+      "previous": {
+        "schema": 0.935,
+        "foundry": "13.345",
+        "system": "7.2.0"
+      }
+    },
+    "category": "bonus",
+    "subfeatures": {
+      "proficiencies": {},
+      "senses": {},
+      "suppressedFeatures": []
+    }
+  },
+  "effects": [],
+  "flags": {
+    "core": {}
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "7.2.0",
+    "coreVersion": "13.345",
+    "compendiumSource": "Compendium.hopefinder.feats.Item.wxQA1LRb8BrJRbur",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_id": "wxQA1LRb8BrJRbur",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "wzla4PE5p61vlV6O": 3
+  },
+  "_key": "!items!wxQA1LRb8BrJRbur"
+}

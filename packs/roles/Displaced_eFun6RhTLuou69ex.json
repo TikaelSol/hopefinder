@@ -1,0 +1,79 @@
+{
+  "name": "Displaced",
+  "type": "heritage",
+  "img": "systems/pf2e/icons/default-icons/heritage.svg",
+  "system": {
+    "description": {
+      "value": "<p>The world before was just about as unkind to you as the world after. You did not have a home, living with friends, in cars, or on the street, and relying on charity to get by and stay warm and fed. You might have a roof over your head now, but most of the people who ignored your existence before are now trying to eat you. At least your life before prepared you for the hell that is now and people turn to you for your knowledge and experience.</p>\n<p><strong>Urban Foraging</strong> (Exploration, Manipulate) You have a great eye for finding valuables in the discarded scraps. Spend 10 minutes going through the garbage and debris in a nearby area and attempt a Society skill check.</p>\n<p>The narrator sets the DC for this check based on how often scavengers may have already gone through this debris. A success turns up a random item with a barter value equal to your level (or 2 items that are at least 1 level lower). A critical success turns up a random item with a barter value equal to double your level. You can only use this once per scene.</p>\n<p><strong>Skills</strong>: Increase your Diplomacy or Society by 1 step.</p>\n<p><strong>Feats</strong>: You can select from Close, Cunning, and Leadership feats.</p>",
+      "gm": ""
+    },
+    "traits": {
+      "value": [],
+      "rarity": "common",
+      "otherTags": []
+    },
+    "rules": [
+      {
+        "choices": [
+          {
+            "label": "PF2E.Skill.Diplomacy",
+            "value": "diplomacy"
+          },
+          {
+            "label": "PF2E.Skill.Society",
+            "value": "society"
+          }
+        ],
+        "flag": "skill",
+        "key": "ChoiceSet",
+        "prompt": "PF2E.SpecificRule.Prompt.Skill"
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.skills.{item|flags.pf2e.rulesSelections.skill}.rank",
+        "value": 1
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.hopefinder.actions.gMsVOQY9i3crTuyw"
+      }
+    ],
+    "slug": null,
+    "ancestry": null,
+    "publication": {
+      "title": "",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "_migration": {
+      "version": 0.94,
+      "previous": {
+        "schema": 0.935,
+        "foundry": "13.345",
+        "system": "7.2.0"
+      }
+    }
+  },
+  "effects": [],
+  "flags": {
+    "core": {}
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "7.2.0",
+    "coreVersion": "13.345",
+    "compendiumSource": "Compendium.hopefinder.roles.Item.eFun6RhTLuou69ex",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_id": "eFun6RhTLuou69ex",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "wzla4PE5p61vlV6O": 3
+  },
+  "_key": "!items!eFun6RhTLuou69ex"
+}

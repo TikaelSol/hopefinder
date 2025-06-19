@@ -1,0 +1,76 @@
+{
+  "name": "Bruised",
+  "type": "effect",
+  "img": "systems/pf2e/icons/spells/travelers-transit.webp",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Your survivor will likely take quite the beating out there in the zombie apocalypse, and bruises are a lasting reminder of their struggles. The most common way to get a bruise is to have your armor absorb all of the damage from an attack. Other common ways involve falling, tripping, or other environmental dangers. Finally, some zombies and large animals will more easily deal bruises with their special attacks.</p>\n<ul>\n<li>Once the number of bruises you have is equal to or greater than your maximum Hit Points, you are @Compendium[pf2e.conditionitems.Fatigued]{Fatigued} and you cannot get rid of the condition until your number of bruises is less than you maximum Hit Points.</li>\n<li>If the number of bruises is ever equal or greater to twice your maximum Hit Points you are also @Compendium[pf2e.conditionitems.Slowed]{Slowed 1} and you cannot recover from this condition until the total number of bruises is less than twice your maximum Hit Points.</li>\n<li>Finally, if your number of bruises is ever equal to or greater than three times your maximum Hit Points, you are @Compendium[pf2e.conditionitems.Unconscious]{Unconscious} and cannot be roused until the total is less than that amount.</li>\n</ul>\n<p>You can recover from bruises in several ways.</p>\n<ul>\n<li>A successful use of @Compendium[hopefinder.actions.jIN7minzIXOY3YJk]{Treat Wounds} by someone trained in the Medicine skill heals 1 or more bruises.</li>\n<li>A full night's rest heals a number of bruises equal to your Constitution (minimum 1). Add your level to this number if you are fully fed and hydrated. A full day's rest heals doubles this number (minimum 2).</li>\n<li>@Compendium[hopefinder.equipment.QhQICRaozexpChof]{Aspirin} and Ice Packs heal 1 bruise and 1d4 bruises respectively after 10 minutes.</li>\n<li>@Compendium[hopefinder.equipment.SV0M9dfS2dEOUQqP]{Beer} and @Compendium[hopefinder.equipment.gf43bT7SBtUvVPFn]{Liquor} heal 1 and 2 bruises respectively, but it counts against your Hydration.</li>\n</ul>"
+    },
+    "rules": [],
+    "slug": null,
+    "_migration": {
+      "version": 0.94,
+      "previous": {
+        "schema": 0.935,
+        "foundry": "13.345",
+        "system": "7.2.0"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": []
+    },
+    "publication": {
+      "title": "Hopefinder Survivor's Guide",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": -1,
+      "unit": "unlimited",
+      "expiry": null,
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": {
+      "type": "counter",
+      "value": 1,
+      "labels": null,
+      "loop": false
+    },
+    "context": null,
+    "unidentified": false,
+    "fromSpell": false
+  },
+  "effects": [],
+  "flags": {
+    "core": {}
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "7.2.0",
+    "coreVersion": "13.345",
+    "compendiumSource": "Compendium.hopefinder.effects.Item.KNcK8MtYgm6ka7PO",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_id": "KNcK8MtYgm6ka7PO",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "wzla4PE5p61vlV6O": 3
+  },
+  "_key": "!items!KNcK8MtYgm6ka7PO"
+}

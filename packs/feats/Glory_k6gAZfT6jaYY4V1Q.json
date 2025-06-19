@@ -1,0 +1,82 @@
+{
+  "name": "Glory",
+  "type": "feat",
+  "img": "systems/pf2e/icons/default-icons/feats.webp",
+  "system": {
+    "description": {
+      "value": "<p>Your words can truly make a difference, inspiring those around you to greatness. Spend 10 minutes to grant 1 temporary Hope to those who can hear your voice. They can spend that Hope on a reroll any time in the next hour. They are immune to any further use of this ability (from anyone) for 24 hours.</p>",
+      "gm": ""
+    },
+    "traits": {
+      "value": [
+        "auditory",
+        "emotion",
+        "exploration",
+        "linguistic"
+      ],
+      "rarity": "common",
+      "otherTags": []
+    },
+    "rules": [],
+    "slug": null,
+    "level": {
+      "value": 1
+    },
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "Inspire feat"
+        }
+      ]
+    },
+    "location": null,
+    "publication": {
+      "title": "",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "_migration": {
+      "version": 0.94,
+      "previous": {
+        "schema": 0.935,
+        "foundry": "13.345",
+        "system": "7.2.0"
+      }
+    },
+    "category": "bonus",
+    "subfeatures": {
+      "proficiencies": {},
+      "senses": {},
+      "suppressedFeatures": []
+    }
+  },
+  "effects": [],
+  "flags": {
+    "core": {}
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "7.2.0",
+    "coreVersion": "13.345",
+    "compendiumSource": "Compendium.hopefinder.feats.Item.k6gAZfT6jaYY4V1Q",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_id": "k6gAZfT6jaYY4V1Q",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "wzla4PE5p61vlV6O": 3
+  },
+  "_key": "!items!k6gAZfT6jaYY4V1Q"
+}

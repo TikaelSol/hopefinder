@@ -1,0 +1,77 @@
+{
+  "name": "Surgery",
+  "type": "feat",
+  "img": "systems/pf2e/icons/default-icons/feats.webp",
+  "system": {
+    "description": {
+      "value": "<p>You can perform surgery to heal other survivors. This takes at least 1 hour to perform, you must have a surgical kit, and at the end you must attempt a Medicine skill check. The DC depends on how many Hit Points the target had remaining at the start of the operation (@Check[type:medicine|dc:25] if at less than 1/4, @Check[type:medicine|dc:20] if at less than 1/2, @Check[type:medicine|dc:15] if at less than 3/4, and @Check[type:medicine|dc:10] if at more than 3/4). If successful, you heal the target for half of the Hit Points it is missing (3/4 on a critical success). You do not need a sedative if the target has more than half its Hit Points at the start of the operation, but otherwise this check takes a -4 if the target is not @Compendium[pf2e.conditionitems.Unconscious]{Unconscious}.</p>",
+      "gm": ""
+    },
+    "traits": {
+      "value": [
+        "exploration",
+        "healing",
+        "manipulate"
+      ],
+      "rarity": "common",
+      "otherTags": []
+    },
+    "rules": [],
+    "slug": null,
+    "level": {
+      "value": 1
+    },
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": []
+    },
+    "location": null,
+    "publication": {
+      "title": "",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "_migration": {
+      "version": 0.94,
+      "previous": {
+        "schema": 0.935,
+        "foundry": "13.345",
+        "system": "7.2.0"
+      }
+    },
+    "category": "bonus",
+    "subfeatures": {
+      "proficiencies": {},
+      "senses": {},
+      "suppressedFeatures": []
+    }
+  },
+  "effects": [],
+  "flags": {
+    "core": {}
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "7.2.0",
+    "coreVersion": "13.345",
+    "compendiumSource": "Compendium.hopefinder.feats.Item.y9oAlWcDVlCAucqA",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_id": "y9oAlWcDVlCAucqA",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "wzla4PE5p61vlV6O": 3
+  },
+  "_key": "!items!y9oAlWcDVlCAucqA"
+}

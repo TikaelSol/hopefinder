@@ -1,0 +1,76 @@
+{
+  "name": "Dodge",
+  "type": "action",
+  "img": "systems/pf2e/icons/actions/Reaction.webp",
+  "system": {
+    "description": {
+      "value": "<p><strong>Trigger</strong> You are targeted by a melee attack and you can see the attacker.</p>\n<p><strong>Requirements</strong> You are not encumbered.</p>\n<hr />\n<p>You try to dodge the attack, making you harder to hit. You gain a +2 circumstance bonus to AC against the triggering attack.</p>",
+      "gm": ""
+    },
+    "traits": {
+      "value": [],
+      "otherTags": []
+    },
+    "rules": [
+      {
+        "domain": "ac",
+        "key": "RollOption",
+        "option": "action:dodge",
+        "toggleable": true
+      },
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          "action:dodge"
+        ],
+        "selector": "ac",
+        "type": "circumstance",
+        "value": 2,
+        "slug": "dodge"
+      }
+    ],
+    "slug": null,
+    "actionType": {
+      "value": "reaction"
+    },
+    "actions": {
+      "value": null
+    },
+    "deathNote": false,
+    "publication": {
+      "title": "",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "_migration": {
+      "version": 0.94,
+      "previous": {
+        "schema": 0.935,
+        "foundry": "13.345",
+        "system": "7.2.0"
+      }
+    },
+    "category": "offensive"
+  },
+  "effects": [],
+  "flags": {
+    "core": {}
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "7.2.0",
+    "coreVersion": "13.345",
+    "compendiumSource": "Compendium.hopefinder.actions.Item.YkMBGTj9qiBzOuQz",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_id": "YkMBGTj9qiBzOuQz",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "wzla4PE5p61vlV6O": 3
+  },
+  "_key": "!items!YkMBGTj9qiBzOuQz"
+}

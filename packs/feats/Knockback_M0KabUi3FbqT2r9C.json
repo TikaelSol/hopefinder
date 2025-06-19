@@ -1,0 +1,102 @@
+{
+  "name": "Knockback",
+  "type": "feat",
+  "img": "systems/pf2e/icons/default-icons/feats.webp",
+  "system": {
+    "description": {
+      "value": "<p>Whenever you score a critical hit with melee Strike the foe is pushed back 5 feet. If the weapon is 2 handed, increase this to 10 feet.</p>",
+      "gm": ""
+    },
+    "traits": {
+      "value": [],
+      "rarity": "common",
+      "otherTags": []
+    },
+    "rules": [
+      {
+        "key": "Note",
+        "selector": "strike-damage",
+        "text": "Whenever you score a critical hit with a two-handed melee Strike the foe is pushed back 10 feet.",
+        "title": "{item|name}",
+        "predicate": [
+          "item:melee",
+          "item:hands-held:2"
+        ],
+        "outcome": [
+          "criticalSuccess"
+        ]
+      },
+      {
+        "key": "Note",
+        "selector": "strike-damage",
+        "text": "Whenever you score a critical hit with melee Strike the foe is pushed back 5 feet.",
+        "title": "{item|name}",
+        "predicate": [
+          "item:melee",
+          {
+            "not": "item:hands-held:2"
+          }
+        ],
+        "outcome": [
+          "criticalSuccess"
+        ]
+      }
+    ],
+    "slug": null,
+    "level": {
+      "value": 1
+    },
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": []
+    },
+    "location": null,
+    "publication": {
+      "title": "",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "_migration": {
+      "version": 0.94,
+      "previous": {
+        "schema": 0.935,
+        "foundry": "13.345",
+        "system": "7.2.0"
+      }
+    },
+    "category": "bonus",
+    "subfeatures": {
+      "proficiencies": {},
+      "senses": {},
+      "suppressedFeatures": []
+    }
+  },
+  "effects": [],
+  "flags": {
+    "core": {}
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "7.2.0",
+    "coreVersion": "13.345",
+    "compendiumSource": "Compendium.hopefinder.feats.Item.M0KabUi3FbqT2r9C",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_id": "M0KabUi3FbqT2r9C",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "wzla4PE5p61vlV6O": 3
+  },
+  "_key": "!items!M0KabUi3FbqT2r9C"
+}

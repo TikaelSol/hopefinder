@@ -1,0 +1,59 @@
+{
+  "name": "Hack",
+  "type": "action",
+  "img": "systems/pf2e/icons/actions/TwoActions.webp",
+  "system": {
+    "description": {
+      "value": "<p>You attempt to bypass a computer or electronic system's security, from a simple password or keycard system to something more complex, such as a biometric ID scan. The DC of this check is determined by the complexity of the system (as determined by the narrator). Systems of higher quality likely require multiple consecutive successes to bypass their security, and some might even lock you out if you fail too many checks. A critical success on such systems counts as two successes toward completion, whereas a critical failure might immediately lock you out for a period of time.</p>",
+      "gm": ""
+    },
+    "traits": {
+      "value": [
+        "manipulate"
+      ],
+      "otherTags": []
+    },
+    "rules": [],
+    "slug": null,
+    "actionType": {
+      "value": "action"
+    },
+    "actions": {
+      "value": 2
+    },
+    "deathNote": false,
+    "publication": {
+      "title": "",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "_migration": {
+      "version": 0.94,
+      "previous": {
+        "schema": 0.935,
+        "foundry": "13.345",
+        "system": "7.2.0"
+      }
+    },
+    "category": "offensive"
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "7.2.0",
+    "coreVersion": "13.345",
+    "compendiumSource": "Compendium.hopefinder.actions.Item.tXtfx1ZQnyySXnUH",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_id": "tXtfx1ZQnyySXnUH",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "wzla4PE5p61vlV6O": 3
+  },
+  "_key": "!items!tXtfx1ZQnyySXnUH"
+}

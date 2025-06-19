@@ -1,0 +1,58 @@
+{
+  "name": "Delivery Driver",
+  "type": "heritage",
+  "img": "systems/pf2e/icons/default-icons/heritage.svg",
+  "system": {
+    "description": {
+      "value": "<p>You spent your life behind the wheel, either delivering packages, dropping off freight, or making sure people got their pizza in 30 minutes or less. Having a good sense of direction and a knack for learning the fast routes has certainly come in handy here in the apocalypse, but you still dream of the days when you spend long hours on the open road.</p>\n<p><strong>Mental Map</strong> Whenever you attempt a Driving check to navigate or Survival check to avoid getting lost or to find the safest route, you treat a failure as a success and a critical failure as just a failure. In addition, if you attempt a Perception check to avoid being surprised in a familiar area (somewhere you have been able to freely explore for 1 day or more), you gain a +2 circumstance bonus to the check.</p>\n<p><strong>Skills</strong>: Increase your Driving or Machinery by 1 step.</p>\n<p><strong>Feats</strong>: You can select from Brawn, Close, and Technology feats.</p>",
+      "gm": ""
+    },
+    "traits": {
+      "value": [],
+      "rarity": "common",
+      "otherTags": []
+    },
+    "rules": [
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.hopefinder.features.GKMZQQwQOXBilq3e"
+      }
+    ],
+    "slug": null,
+    "ancestry": null,
+    "publication": {
+      "title": "",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "_migration": {
+      "version": 0.94,
+      "previous": {
+        "schema": 0.935,
+        "foundry": "13.345",
+        "system": "7.2.0"
+      }
+    }
+  },
+  "effects": [],
+  "flags": {
+    "core": {}
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "7.2.0",
+    "coreVersion": "13.345",
+    "compendiumSource": "Compendium.hopefinder.roles.Item.DwoefL7t31D7qRbq",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_id": "DwoefL7t31D7qRbq",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "wzla4PE5p61vlV6O": 3
+  },
+  "_key": "!items!DwoefL7t31D7qRbq"
+}

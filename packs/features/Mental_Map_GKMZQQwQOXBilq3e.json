@@ -1,0 +1,83 @@
+{
+  "name": "Mental Map",
+  "type": "feat",
+  "img": "systems/pf2e/icons/spells/wanderer%27s-guide.webp",
+  "system": {
+    "description": {
+      "value": "<p>Whenever you attempt a Driving check to navigate or Survival check to avoid getting lost or to find the safest route, you treat a failure as a success and a critical failure as just a failure. In addition, if you attempt a Perception check to avoid being surprised in a familiar area (somewhere you have been able to freely explore for 1 day or more), you gain a +2 circumstance bonus to the check.</p>",
+      "gm": ""
+    },
+    "traits": {
+      "value": [],
+      "rarity": "common",
+      "otherTags": []
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "selector": "perception",
+        "value": 2,
+        "predicate": [
+          "mental-map"
+        ],
+        "type": "circumstance"
+      }
+    ],
+    "slug": null,
+    "level": {
+      "value": 1
+    },
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": []
+    },
+    "location": null,
+    "publication": {
+      "title": "",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "_migration": {
+      "version": 0.94,
+      "previous": {
+        "schema": 0.935,
+        "foundry": "13.345",
+        "system": "7.2.0"
+      }
+    },
+    "category": "bonus",
+    "subfeatures": {
+      "proficiencies": {},
+      "senses": {},
+      "suppressedFeatures": []
+    }
+  },
+  "effects": [],
+  "flags": {
+    "core": {}
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "7.2.0",
+    "coreVersion": "13.345",
+    "compendiumSource": "Compendium.hopefinder.features.Item.GKMZQQwQOXBilq3e",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_id": "GKMZQQwQOXBilq3e",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "wzla4PE5p61vlV6O": 3
+  },
+  "_key": "!items!GKMZQQwQOXBilq3e"
+}

@@ -1,0 +1,118 @@
+{
+  "name": "Close Training",
+  "type": "feat",
+  "img": "systems/pf2e/icons/default-icons/feats.webp",
+  "system": {
+    "description": {
+      "value": "<p>You become more skilled with melee weapons. Increase your training in all simple and martial melee weapons by 1 step. You can take this feat a second time as a Greater feat.</p>",
+      "gm": ""
+    },
+    "traits": {
+      "value": [],
+      "rarity": "common",
+      "otherTags": []
+    },
+    "rules": [
+      {
+        "definition": [
+          "item:melee",
+          "item:category:simple"
+        ],
+        "key": "MartialProficiency",
+        "label": "Simple Melee",
+        "slug": "simple-melee"
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "downgrade",
+        "path": "system.proficiencies.attacks.simple-melee.rank",
+        "value": 1
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.proficiencies.attacks.simple-melee.rank",
+        "value": 1,
+        "priority": 60
+      },
+      {
+        "definition": [
+          "item:melee",
+          "item:category:martial"
+        ],
+        "key": "MartialProficiency",
+        "label": "Martial Melee",
+        "slug": "martial-melee"
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "downgrade",
+        "path": "system.proficiencies.attacks.martial-melee.rank",
+        "value": 0
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.proficiencies.attacks.martial-melee.rank",
+        "value": 1,
+        "priority": 60
+      }
+    ],
+    "slug": null,
+    "level": {
+      "value": 1
+    },
+    "onlyLevel1": false,
+    "maxTakable": 2,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": []
+    },
+    "location": null,
+    "publication": {
+      "title": "",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "_migration": {
+      "version": 0.94,
+      "previous": {
+        "schema": 0.935,
+        "foundry": "13.345",
+        "system": "7.2.0"
+      }
+    },
+    "category": "bonus",
+    "subfeatures": {
+      "proficiencies": {},
+      "senses": {},
+      "suppressedFeatures": []
+    }
+  },
+  "effects": [],
+  "flags": {
+    "core": {}
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "7.2.0",
+    "coreVersion": "13.345",
+    "compendiumSource": "Compendium.hopefinder.feats.Item.IvnvKgvNG1MYi2SL",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_id": "IvnvKgvNG1MYi2SL",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "wzla4PE5p61vlV6O": 3
+  },
+  "_key": "!items!IvnvKgvNG1MYi2SL"
+}

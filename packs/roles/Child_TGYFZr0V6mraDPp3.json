@@ -1,0 +1,80 @@
+{
+  "name": "Child",
+  "type": "heritage",
+  "img": "systems/pf2e/icons/default-icons/heritage.svg",
+  "system": {
+    "description": {
+      "value": "<p>You were a young child when the world came undone. Maybe you weren't even quite born yet. In either case, you have had to grow up in a ruined world. Growing up in a world infested with zombies is not easy and your education has been patchy at best. You have learned to cope better than most, because this is the only life you have ever known.</p>\n<p><strong>Hope Springs Eternal</strong> You start each session with 1 extra Hope, but if you do not spend at least 1 hope in that session, it is lost. Also, there is no limit to the amount of hope that you can have at any one time.</p>\n<p><strong>Skill</strong>: Increase your Acrobatics or Survival by 1 step.</p>\n<p><strong>Feats</strong>: You can select from Agility, Building, and Close feats.</p>",
+      "gm": ""
+    },
+    "traits": {
+      "value": [],
+      "rarity": "common",
+      "otherTags": []
+    },
+    "rules": [
+      {
+        "choices": [
+          {
+            "label": "PF2E.Skill.Acrobatics",
+            "value": "acrobatics"
+          },
+          {
+            "label": "PF2E.Skill.Survival",
+            "value": "survival"
+          }
+        ],
+        "flag": "skill",
+        "key": "ChoiceSet",
+        "prompt": "PF2E.SpecificRule.Prompt.Skill"
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.skills.{item|flags.pf2e.rulesSelections.skill}.rank",
+        "value": 1
+      },
+      {
+        "key": "GrantItem",
+        "replaceSelf": true,
+        "uuid": "Compendium.hopefinder.features.GGBU6YmLPRjTSShb"
+      }
+    ],
+    "slug": null,
+    "ancestry": null,
+    "publication": {
+      "title": "",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "_migration": {
+      "version": 0.94,
+      "previous": {
+        "schema": 0.935,
+        "foundry": "13.345",
+        "system": "7.2.0"
+      }
+    }
+  },
+  "effects": [],
+  "flags": {
+    "core": {}
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "7.2.0",
+    "coreVersion": "13.345",
+    "compendiumSource": "Compendium.hopefinder.roles.Item.TGYFZr0V6mraDPp3",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_id": "TGYFZr0V6mraDPp3",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "wzla4PE5p61vlV6O": 3
+  },
+  "_key": "!items!TGYFZr0V6mraDPp3"
+}

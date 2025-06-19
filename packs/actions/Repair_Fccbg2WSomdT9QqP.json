@@ -1,0 +1,60 @@
+{
+  "name": "Repair",
+  "type": "action",
+  "img": "systems/pf2e/icons/actions/Passive.webp",
+  "system": {
+    "description": {
+      "value": "<p>You spend 10 minutes attempting to fix a damaged item by expending the necessary parts and using the applicable repair kit. Attempt a Crafting skill check. The DC is typically 10 + the break value of the item (+4 if it is an electronic, medicine, or synthetic item). Each attempt expends one part of the same type as the item. You cannot repair a destroyed item.</p>\n<hr />\n<p><strong>Critical Success</strong> Remove two dings from the item (three if you are a Crafting master, four if you are a legend).</p>\n<p><strong>Success</strong> Remove one ding from the item (two if you are a Crafting master).</p>\n<p><strong>Failure</strong> You do not repair the item, but you do not lose the part.</p>\n<p><strong>Critical Failure</strong> You damage the item, giving it one ding, and you lose the part.</p>",
+      "gm": ""
+    },
+    "traits": {
+      "value": [
+        "exploration",
+        "manipulate"
+      ],
+      "otherTags": []
+    },
+    "rules": [],
+    "slug": null,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "deathNote": false,
+    "publication": {
+      "title": "",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "_migration": {
+      "version": 0.94,
+      "previous": {
+        "schema": 0.935,
+        "foundry": "13.345",
+        "system": "7.2.0"
+      }
+    },
+    "category": "offensive"
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "7.2.0",
+    "coreVersion": "13.345",
+    "compendiumSource": "Compendium.hopefinder.actions.Item.Fccbg2WSomdT9QqP",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_id": "Fccbg2WSomdT9QqP",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "wzla4PE5p61vlV6O": 3
+  },
+  "_key": "!items!Fccbg2WSomdT9QqP"
+}

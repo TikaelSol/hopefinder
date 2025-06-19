@@ -1,0 +1,92 @@
+{
+  "name": "Herbalism",
+  "type": "feat",
+  "img": "systems/pf2e/icons/default-icons/feats.webp",
+  "system": {
+    "description": {
+      "value": "<p>You can perform First Aid checks without a kit as long as you spend 10 minutes foraging for herbs and other medicinal plants from any overgrown or wilderness area. In addition, you receive a +2 circumstance bonus on Medicine skill checks to treat ailments if you have similar access to herbs and medicinal plants.</p>",
+      "gm": ""
+    },
+    "traits": {
+      "value": [
+        "healing"
+      ],
+      "rarity": "common",
+      "otherTags": []
+    },
+    "rules": [
+      {
+        "domain": "all",
+        "key": "RollOption",
+        "option": "medicinal-herbs",
+        "toggleable": true,
+        "label": "Have access to herbs and medicinal plants"
+      },
+      {
+        "key": "FlatModifier",
+        "selector": "medicine",
+        "value": 2,
+        "type": "circumstance",
+        "predicate": [
+          "medicinal-herbs"
+        ]
+      }
+    ],
+    "slug": null,
+    "level": {
+      "value": 1
+    },
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": []
+    },
+    "location": null,
+    "publication": {
+      "title": "",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "_migration": {
+      "version": 0.94,
+      "previous": {
+        "schema": 0.935,
+        "foundry": "13.345",
+        "system": "7.2.0"
+      }
+    },
+    "category": "bonus",
+    "subfeatures": {
+      "proficiencies": {},
+      "senses": {},
+      "suppressedFeatures": []
+    }
+  },
+  "effects": [],
+  "flags": {
+    "core": {}
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "7.2.0",
+    "coreVersion": "13.345",
+    "compendiumSource": "Compendium.hopefinder.feats.Item.ZkC1dsvUoPkLUgyv",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_id": "ZkC1dsvUoPkLUgyv",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "wzla4PE5p61vlV6O": 3
+  },
+  "_key": "!items!ZkC1dsvUoPkLUgyv"
+}

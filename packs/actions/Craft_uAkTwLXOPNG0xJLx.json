@@ -1,0 +1,60 @@
+{
+  "name": "Craft",
+  "type": "action",
+  "img": "systems/pf2e/icons/actions/Passive.webp",
+  "system": {
+    "description": {
+      "value": "<p>Making items in the ruined world is not about money, its about access to the right parts. Each item has a type, indicating the broad category of materials used to make the time, and a break value, which roughly indicates the item's durability. To make an item, you must have a number of parts equal to twice the item's break value and all of these parts must be of the same type as the item (except for patchwork items, which can be made from any part). Electronics. medicine, and synthetic items require a number of parts equal to 4 times their break value to craft.</p>\n<p>Once you have all the necessary parts, you must spend time making the item. This is typically a number of hours equal to the number of parts spent, although the narrator might increase or reduce this time based on the item in question (crafting a bandage only takes a minute or two, whereas building a generator from parts may take many days). At the end of this time, you attempt a Crafting skill check, with a DC of 10 + the break value of the item (+4 if it is an electronic, medicine, or synthetic item).</p>\n<p>Computers or Machines can be crafted using the Computers or Machinery skills using these same rules.</p>\n<hr />\n<p><strong>Critical Success</strong> You make the item and spend 10% fewer parts than were required (minimum 1).</p>\n<p><strong>Success</strong> Your attempt was successful and item is finished.</p>\n<p><strong>Failure</strong> You did not create the item and you lost one part during the process.</p>\n<p><strong>Critical Failure</strong> The attempt was a disaster. Lose half the parts.</p>",
+      "gm": ""
+    },
+    "traits": {
+      "value": [
+        "downtime",
+        "manipulate"
+      ],
+      "otherTags": []
+    },
+    "rules": [],
+    "slug": null,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "deathNote": false,
+    "publication": {
+      "title": "",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "_migration": {
+      "version": 0.94,
+      "previous": {
+        "schema": 0.935,
+        "foundry": "13.345",
+        "system": "7.2.0"
+      }
+    },
+    "category": "offensive"
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "7.2.0",
+    "coreVersion": "13.345",
+    "compendiumSource": "Compendium.hopefinder.actions.Item.uAkTwLXOPNG0xJLx",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_id": "uAkTwLXOPNG0xJLx",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "wzla4PE5p61vlV6O": 3
+  },
+  "_key": "!items!uAkTwLXOPNG0xJLx"
+}

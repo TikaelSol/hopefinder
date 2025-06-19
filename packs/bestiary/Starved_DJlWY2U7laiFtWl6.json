@@ -1,0 +1,764 @@
+{
+  "name": "Starved",
+  "type": "npc",
+  "prototypeToken": {
+    "flags": {
+      "pf2e": {
+        "linkToActorSize": true
+      }
+    },
+    "height": 1,
+    "width": 1,
+    "name": "zomb",
+    "displayName": 0,
+    "actorLink": false,
+    "texture": {
+      "src": "systems/pf2e/icons/default-icons/npc.svg",
+      "scaleX": 1,
+      "scaleY": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "rotation": 0,
+      "tint": "#ffffff",
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "fit": "contain",
+      "alphaThreshold": 0.75
+    },
+    "lockRotation": false,
+    "rotation": 0,
+    "alpha": 1,
+    "disposition": -1,
+    "displayBars": 0,
+    "bar1": {
+      "attribute": "attributes.hp"
+    },
+    "bar2": {
+      "attribute": null
+    },
+    "light": {
+      "alpha": 0.5,
+      "angle": 360,
+      "bright": 0,
+      "color": null,
+      "coloration": 1,
+      "dim": 0,
+      "attenuation": 0.5,
+      "luminosity": 0.5,
+      "saturation": 0,
+      "contrast": 0,
+      "shadows": 0,
+      "animation": {
+        "type": null,
+        "speed": 5,
+        "intensity": 5,
+        "reverse": false
+      },
+      "darkness": {
+        "min": 0,
+        "max": 1
+      },
+      "negative": false,
+      "priority": 0
+    },
+    "sight": {
+      "enabled": false,
+      "range": 0,
+      "angle": 360,
+      "visionMode": "basic",
+      "color": null,
+      "attenuation": 0.1,
+      "brightness": 0,
+      "saturation": 0,
+      "contrast": 0
+    },
+    "detectionModes": [],
+    "randomImg": false,
+    "appendNumber": false,
+    "prependAdjective": false,
+    "occludable": {
+      "radius": 0
+    },
+    "ring": {
+      "enabled": false,
+      "colors": {
+        "ring": null,
+        "background": null
+      },
+      "effects": 1,
+      "subject": {
+        "scale": 1,
+        "texture": null
+      }
+    },
+    "turnMarker": {
+      "mode": 1,
+      "animation": null,
+      "src": null,
+      "disposition": false
+    },
+    "movementAction": null
+  },
+  "img": "systems/pf2e/icons/default-icons/npc.svg",
+  "system": {
+    "attributes": {
+      "hp": {
+        "value": 18,
+        "temp": 0,
+        "max": 18,
+        "details": ""
+      },
+      "speed": {
+        "value": 25,
+        "otherSpeeds": [],
+        "details": ""
+      },
+      "ac": {
+        "value": 15,
+        "details": ""
+      },
+      "allSaves": {
+        "value": ""
+      }
+    },
+    "initiative": {
+      "statistic": "perception"
+    },
+    "details": {
+      "languages": {
+        "value": [],
+        "details": ""
+      },
+      "level": {
+        "value": 1
+      },
+      "blurb": "",
+      "publicNotes": "",
+      "privateNotes": "",
+      "publication": {
+        "title": "Hopefinder Narrator's Guide",
+        "authors": "Jason Bulmahn",
+        "license": "OGL",
+        "remaster": false
+      },
+      "creatureType": ""
+    },
+    "resources": {},
+    "_migration": {
+      "version": 0.94,
+      "previous": {
+        "schema": 0.935,
+        "foundry": "13.345",
+        "system": "7.2.0"
+      }
+    },
+    "abilities": {
+      "str": {
+        "mod": 2
+      },
+      "dex": {
+        "mod": 2
+      },
+      "con": {
+        "mod": 1
+      },
+      "int": {
+        "mod": 0
+      },
+      "wis": {
+        "mod": 1
+      },
+      "cha": {
+        "mod": 1
+      }
+    },
+    "perception": {
+      "details": "",
+      "mod": 4,
+      "senses": [],
+      "vision": true
+    },
+    "saves": {
+      "fortitude": {
+        "value": 4,
+        "saveDetail": ""
+      },
+      "reflex": {
+        "value": 7,
+        "saveDetail": ""
+      },
+      "will": {
+        "value": 4,
+        "saveDetail": ""
+      }
+    },
+    "skills": {
+      "athletics": {
+        "base": 5
+      },
+      "intimidation": {
+        "base": 4
+      },
+      "stealth": {
+        "base": 5
+      },
+      "survival": {
+        "base": 4
+      }
+    },
+    "traits": {
+      "value": [
+        "human"
+      ],
+      "rarity": "common",
+      "size": {
+        "value": "med"
+      },
+      "di": {
+        "value": [],
+        "custom": ""
+      },
+      "dr": [
+        {
+          "type": "bludgeoning",
+          "value": 2,
+          "exceptions": ""
+        },
+        {
+          "type": "piercing",
+          "value": 2,
+          "exceptions": ""
+        },
+        {
+          "type": "slashing",
+          "value": 2,
+          "exceptions": ""
+        }
+      ],
+      "dv": []
+    }
+  },
+  "items": [
+    {
+      "name": "Bottle",
+      "type": "weapon",
+      "img": "systems/pf2e/icons/default-icons/weapon.svg",
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p><strong>Break</strong> C</p>"
+        },
+        "rules": [],
+        "slug": null,
+        "_migration": {
+          "version": 0.94,
+          "lastMigration": null,
+          "previous": {
+            "schema": 0.935,
+            "foundry": "13.345",
+            "system": "7.2.0"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [],
+          "rarity": "common",
+          "custom": ""
+        },
+        "publication": {
+          "title": "Hopefinder Survivor's Guide",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "level": {
+          "value": 0
+        },
+        "quantity": 2,
+        "baseItem": "bottle",
+        "bulk": {
+          "value": 0.1
+        },
+        "hp": {
+          "value": 0,
+          "max": 0
+        },
+        "hardness": 0,
+        "price": {
+          "value": {}
+        },
+        "equipped": {
+          "carryType": "worn",
+          "invested": null,
+          "handsHeld": 0
+        },
+        "containerId": null,
+        "size": "med",
+        "material": {
+          "type": null,
+          "grade": null
+        },
+        "identification": {
+          "status": "identified",
+          "unidentified": {
+            "name": "Unusual Weapon",
+            "img": "systems/pf2e/icons/unidentified_item_icons/weapon.webp",
+            "data": {
+              "description": {
+                "value": ""
+              }
+            }
+          },
+          "misidentified": {}
+        },
+        "usage": {
+          "value": "held-in-one-hand"
+        },
+        "category": "simple",
+        "group": null,
+        "bonus": {
+          "value": 0
+        },
+        "damage": {
+          "dice": 1,
+          "die": "d4",
+          "damageType": "slashing",
+          "persistent": null,
+          "value": ""
+        },
+        "splashDamage": {
+          "value": 0
+        },
+        "range": 20,
+        "expend": 1,
+        "reload": {
+          "value": "-"
+        },
+        "runes": {
+          "potency": 0,
+          "striking": 0,
+          "property": []
+        },
+        "specific": null,
+        "subitems": [],
+        "bonusDamage": {
+          "value": 0
+        },
+        "property1": {
+          "value": "",
+          "dice": 0,
+          "die": "",
+          "damageType": "",
+          "critDice": 0,
+          "critDie": "",
+          "critDamage": "",
+          "critDamageType": "",
+          "strikeConditionType": "",
+          "strikeConditionValue": null,
+          "criticalConditionType": "",
+          "criticalConditionValue": null
+        }
+      },
+      "effects": [],
+      "flags": {
+        "core": {}
+      },
+      "_stats": {
+        "systemId": "pf2e",
+        "systemVersion": "4.5.1",
+        "coreVersion": "13.345",
+        "compendiumSource": "Compendium.hopefinder.equipment.0O5HOhxzRDK9rOb1",
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_id": "JJWt9oLNjR9fQM4k",
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "wzla4PE5p61vlV6O": 3
+      },
+      "_key": "!actors.items!DJlWY2U7laiFtWl6.JJWt9oLNjR9fQM4k"
+    },
+    {
+      "name": "Golf Club",
+      "type": "weapon",
+      "img": "systems/pf2e/icons/default-icons/weapon.svg",
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p><strong>Break</strong> 4</p>"
+        },
+        "rules": [],
+        "slug": null,
+        "_migration": {
+          "version": 0.94,
+          "lastMigration": null,
+          "previous": {
+            "schema": 0.935,
+            "foundry": "13.345",
+            "system": "7.2.0"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [
+            "club"
+          ],
+          "rarity": "common",
+          "custom": ""
+        },
+        "publication": {
+          "title": "Hopefinder Survivor's Guide",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "level": {
+          "value": 0
+        },
+        "quantity": 1,
+        "baseItem": "golf-club",
+        "bulk": {
+          "value": 1
+        },
+        "hp": {
+          "value": 0,
+          "max": 0
+        },
+        "hardness": 0,
+        "price": {
+          "value": {
+            "gp": 1
+          }
+        },
+        "equipped": {
+          "carryType": "worn",
+          "invested": null,
+          "handsHeld": 0
+        },
+        "containerId": null,
+        "size": "med",
+        "material": {
+          "type": null,
+          "grade": null
+        },
+        "identification": {
+          "status": "identified",
+          "unidentified": {
+            "name": "Unusual Weapon",
+            "img": "systems/pf2e/icons/unidentified_item_icons/weapon.webp",
+            "data": {
+              "description": {
+                "value": ""
+              }
+            }
+          },
+          "misidentified": {}
+        },
+        "usage": {
+          "value": "held-in-two-hands"
+        },
+        "category": "simple",
+        "group": "club",
+        "bonus": {
+          "value": 0
+        },
+        "damage": {
+          "dice": 1,
+          "die": "d6",
+          "damageType": "bludgeoning",
+          "persistent": null,
+          "value": ""
+        },
+        "splashDamage": {
+          "value": 0
+        },
+        "range": null,
+        "expend": null,
+        "reload": {
+          "value": null
+        },
+        "runes": {
+          "potency": 0,
+          "striking": 0,
+          "property": []
+        },
+        "specific": null,
+        "subitems": [],
+        "bonusDamage": {
+          "value": 0
+        },
+        "property1": {
+          "value": "",
+          "dice": 0,
+          "die": "",
+          "damageType": "",
+          "critDice": 0,
+          "critDie": "",
+          "critDamage": "",
+          "critDamageType": "",
+          "strikeConditionType": "",
+          "strikeConditionValue": null,
+          "criticalConditionType": "",
+          "criticalConditionValue": null
+        }
+      },
+      "effects": [],
+      "flags": {
+        "core": {}
+      },
+      "_stats": {
+        "systemId": "pf2e",
+        "systemVersion": "4.5.1",
+        "coreVersion": "13.345",
+        "compendiumSource": "Compendium.hopefinder.equipment.AsaoUuB7jq86QOpt",
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_id": "5iJEYeKDJeFaovh6",
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "wzla4PE5p61vlV6O": 3
+      },
+      "_key": "!actors.items!DJlWY2U7laiFtWl6.5iJEYeKDJeFaovh6"
+    },
+    {
+      "name": "Golf Club",
+      "type": "melee",
+      "system": {
+        "description": {
+          "value": "",
+          "gm": ""
+        },
+        "traits": {
+          "value": [],
+          "otherTags": []
+        },
+        "rules": [],
+        "slug": null,
+        "damageRolls": {
+          "VjpvzXu1IfJnNBnW": {
+            "damage": "1d6+2",
+            "damageType": "bludgeoning",
+            "category": null
+          }
+        },
+        "bonus": {
+          "value": 5
+        },
+        "attackEffects": {
+          "value": []
+        },
+        "publication": {
+          "title": "",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "_migration": {
+          "version": 0.94,
+          "previous": {
+            "schema": 0.935,
+            "foundry": "13.345",
+            "system": "7.2.0"
+          }
+        }
+      },
+      "flags": {
+        "pf2e": {
+          "linkedWeapon": "5iJEYeKDJeFaovh6"
+        }
+      },
+      "_id": "X5gF7DmVxd70Upc0",
+      "img": "systems/pf2e/icons/default-icons/melee.svg",
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "wzla4PE5p61vlV6O": 3
+      },
+      "_stats": {
+        "systemId": "pf2e",
+        "systemVersion": "4.5.1",
+        "coreVersion": "13.345",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!actors.items!DJlWY2U7laiFtWl6.X5gF7DmVxd70Upc0"
+    },
+    {
+      "name": "Bottle",
+      "type": "melee",
+      "system": {
+        "description": {
+          "value": "",
+          "gm": ""
+        },
+        "traits": {
+          "value": [
+            "thrown-20"
+          ],
+          "otherTags": []
+        },
+        "rules": [],
+        "slug": null,
+        "damageRolls": {
+          "HD9W0AF2Z3U0DS1I": {
+            "damage": "1d4",
+            "damageType": "slashing",
+            "category": null
+          }
+        },
+        "bonus": {
+          "value": 5
+        },
+        "attackEffects": {
+          "value": []
+        },
+        "publication": {
+          "title": "",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "_migration": {
+          "version": 0.94,
+          "previous": {
+            "schema": 0.935,
+            "foundry": "13.345",
+            "system": "7.2.0"
+          }
+        }
+      },
+      "flags": {
+        "pf2e": {
+          "linkedWeapon": "JJWt9oLNjR9fQM4k"
+        }
+      },
+      "_id": "vGXTSgnh0S90GHxn",
+      "img": "systems/pf2e/icons/default-icons/melee.svg",
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "wzla4PE5p61vlV6O": 3
+      },
+      "_stats": {
+        "systemId": "pf2e",
+        "systemVersion": "4.5.1",
+        "coreVersion": "13.345",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!actors.items!DJlWY2U7laiFtWl6.vGXTSgnh0S90GHxn"
+    },
+    {
+      "type": "action",
+      "img": "systems/pf2e/icons/actions/OneAction.webp",
+      "name": "Hangry",
+      "system": {
+        "description": {
+          "value": "<p>The starved flies into a hangry rage that lasts for 1 minute. While raging the starved's AC is 13, but its melee attacks receive a +2 status bonus to damage. If the starved finds food while in a rage, it eats the food as soon as possible.</p>\n<p>@Compendium[pf2e.feat-effects.z3uyCMBddrPK5umr]{Effect: Rage}</p>",
+          "gm": ""
+        },
+        "traits": {
+          "value": [],
+          "otherTags": []
+        },
+        "rules": [
+          {
+            "key": "ActiveEffectLike",
+            "mode": "override",
+            "path": "flags.pf2e.rageTempHP",
+            "value": 0,
+            "phase": "beforeDerived"
+          },
+          {
+            "key": "FlatModifier",
+            "predicate": [
+              "self:effect:rage"
+            ],
+            "selector": "ac",
+            "value": -2
+          },
+          {
+            "key": "FlatModifier",
+            "predicate": [
+              "self:effect:rage",
+              "item:melee"
+            ],
+            "selector": "strike-damage",
+            "value": 2,
+            "type": "status"
+          }
+        ],
+        "slug": null,
+        "actionType": {
+          "value": "action"
+        },
+        "actions": {
+          "value": 1
+        },
+        "deathNote": false,
+        "publication": {
+          "title": "",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "_migration": {
+          "version": 0.94,
+          "previous": {
+            "schema": 0.935,
+            "foundry": "13.345",
+            "system": "7.2.0"
+          }
+        },
+        "category": null
+      },
+      "_id": "Wre8NfQKi9s3W5nO",
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "wzla4PE5p61vlV6O": 3
+      },
+      "flags": {},
+      "_stats": {
+        "systemId": "pf2e",
+        "systemVersion": "4.5.1",
+        "coreVersion": "13.345",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!actors.items!DJlWY2U7laiFtWl6.Wre8NfQKi9s3W5nO"
+    }
+  ],
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "7.2.0",
+    "coreVersion": "13.345",
+    "compendiumSource": "Compendium.hopefinder.hopefinder-bestiary.Actor.DJlWY2U7laiFtWl6",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_id": "DJlWY2U7laiFtWl6",
+  "ownership": {
+    "default": 0,
+    "wzla4PE5p61vlV6O": 3
+  },
+  "folder": null,
+  "sort": 0,
+  "_key": "!actors!DJlWY2U7laiFtWl6"
+}

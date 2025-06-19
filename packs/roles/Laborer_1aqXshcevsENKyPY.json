@@ -1,0 +1,58 @@
+{
+  "name": "Laborer",
+  "type": "heritage",
+  "img": "systems/pf2e/icons/default-icons/heritage.svg",
+  "system": {
+    "description": {
+      "value": "<p>You used to do the hard work that kept world fed, housed, and enjoying all the latest technological gadgets. Whether you worked in a farm, a construction site, or a factory, you are used to long, tiring work and that training has proven very useful in the world of today, where the ability to grow food and build defenses is critical to survival.</p>\n<p><strong>Never Tired</strong> You do not get @Compendium[pf2e.conditionitems.Fatigued]{Fatigued} from bruises and you are not fatigued as long as you get 4 hours of sleep. In addition, you can carry 3 extra bulk worth of items (although this does not let you carry more items than will fit on your inventory sheet).</p>\n<p><strong>Skills</strong>: Increase your Crafting or Machinery by 1 step.</p>\n<p><strong>Feats</strong>: You can select from Brawn, Building, Close.</p>",
+      "gm": ""
+    },
+    "traits": {
+      "value": [],
+      "rarity": "common",
+      "otherTags": []
+    },
+    "rules": [
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.hopefinder.features.fv9qfFMfFYoskjZ5"
+      }
+    ],
+    "slug": null,
+    "ancestry": null,
+    "publication": {
+      "title": "",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "_migration": {
+      "version": 0.94,
+      "previous": {
+        "schema": 0.935,
+        "foundry": "13.345",
+        "system": "7.2.0"
+      }
+    }
+  },
+  "effects": [],
+  "flags": {
+    "core": {}
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "7.2.0",
+    "coreVersion": "13.345",
+    "compendiumSource": "Compendium.hopefinder.roles.Item.1aqXshcevsENKyPY",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_id": "1aqXshcevsENKyPY",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "wzla4PE5p61vlV6O": 3
+  },
+  "_key": "!items!1aqXshcevsENKyPY"
+}

@@ -1,0 +1,92 @@
+{
+  "name": "Fixer",
+  "type": "background",
+  "img": "systems/pf2e/icons/default-icons/background.svg",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Everything is broken. Fortunately, you have a knack for understanding and fixing machinery. While much is beyond your reach, you can fix an engine, service a bandsaw, or get an old clock working again.</p>\n<p><strong>Ability Modifiers:</strong> +1 Str, +1 Wis</p>\n<p><strong>Skill:</strong> Trained in Machinery</p>\n<p><strong>Feat:</strong> @Compendium[pf2e.feats-srd.e4KB4pSkx2lDBNw3]{Quick Disguise} skill feat</p>\n<p><strong>Gear:</strong> @Compendium[hopefinder.equipment.zt0Qhn9fJxVLIKSH]{Machinery Kit} (tools to fix and service machinery)</p>"
+    },
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.abilities.str.mod",
+        "value": 1
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.abilities.wis.mod",
+        "value": 1
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.hopefinder.equipment.Item.zt0Qhn9fJxVLIKSH"
+      }
+    ],
+    "slug": null,
+    "_migration": {
+      "version": 0.94,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.935,
+        "foundry": "13.345",
+        "system": "7.2.0"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Hopefinder Survivor's Guide",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "boosts": {
+      "0": {
+        "value": []
+      },
+      "1": {
+        "value": []
+      }
+    },
+    "items": {
+      "63MBE": {
+        "uuid": "Compendium.pf2e.feats-srd.Item.e4KB4pSkx2lDBNw3",
+        "img": "systems/pf2e/icons/features/feats/feats.webp",
+        "name": "Quick Disguise",
+        "level": 2
+      }
+    },
+    "trainedSkills": {
+      "value": [
+        "machinery"
+      ],
+      "lore": []
+    }
+  },
+  "effects": [],
+  "flags": {
+    "core": {}
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "7.2.0",
+    "coreVersion": "13.345",
+    "compendiumSource": "Compendium.hopefinder.backgrounds.Item.V2gSVWRDUilmfk1j",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_id": "V2gSVWRDUilmfk1j",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "wzla4PE5p61vlV6O": 3
+  },
+  "_key": "!items!V2gSVWRDUilmfk1j"
+}

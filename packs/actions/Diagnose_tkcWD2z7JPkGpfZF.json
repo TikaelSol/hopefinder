@@ -1,0 +1,59 @@
+{
+  "name": "Diagnose",
+  "type": "action",
+  "img": "systems/pf2e/icons/actions/Passive.webp",
+  "system": {
+    "description": {
+      "value": "<p>You can figure out what is wrong with a device or system that is malfunctioning. Spend 10 minutes looking over a system or device that you can see in its entirely and attempt a @Check[type:computers|dc:15|immutable:true]{Computers}  or @Check[type:machinery|dc:15|immutable:true]{Machinery} skill check (@Check[type:computers|dc:20|immutable:true]{Computers} or @Check[type:machinery|dc:20|immutable:true]{Machinery} if you can only see most of it). If you succeed you learn about what problems, if any, are preventing the system from functioning normally. If you critically succeed you also detect any intentional sabotage.</p>",
+      "gm": ""
+    },
+    "traits": {
+      "value": [
+        "exploration"
+      ],
+      "otherTags": []
+    },
+    "rules": [],
+    "slug": null,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "deathNote": false,
+    "publication": {
+      "title": "",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "_migration": {
+      "version": 0.94,
+      "previous": {
+        "schema": 0.935,
+        "foundry": "13.345",
+        "system": "7.2.0"
+      }
+    },
+    "category": "offensive"
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "7.2.0",
+    "coreVersion": "13.345",
+    "compendiumSource": "Compendium.hopefinder.actions.Item.tkcWD2z7JPkGpfZF",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_id": "tkcWD2z7JPkGpfZF",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "wzla4PE5p61vlV6O": 3
+  },
+  "_key": "!items!tkcWD2z7JPkGpfZF"
+}

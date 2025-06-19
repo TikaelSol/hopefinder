@@ -1,0 +1,76 @@
+{
+  "name": "Hope",
+  "type": "effect",
+  "img": "systems/pf2e/icons/spells/moonlight-bridge.webp",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You can call upon your hope in the following ways.</p>\n<ul>\n<li>After you roll a check, but before the results are revealed, you can call upon your Hope to reroll and take the higher result.</li>\n<li>If you are hit in combat and the attack roll is a critical hit, you can call upon your Hope to treat the attack as a normal hit instead.</li>\n<li>If you are @Compendium[pf2e.conditionitems.Unconscious]{Unconscious} and dying, you can call upon your Hope to skip the dying check at the end of your turn. This does not reduce your dying value or stabilize you, and on your next turn you must check again as normal.</li>\n</ul>"
+    },
+    "rules": [],
+    "slug": null,
+    "_migration": {
+      "version": 0.94,
+      "previous": {
+        "schema": 0.935,
+        "foundry": "13.345",
+        "system": "7.2.0"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": []
+    },
+    "publication": {
+      "title": "Hopefinder Survivor's Guide",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": -1,
+      "unit": "unlimited",
+      "expiry": null,
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": {
+      "type": "counter",
+      "value": 1,
+      "labels": null,
+      "loop": false
+    },
+    "context": null,
+    "unidentified": false,
+    "fromSpell": false
+  },
+  "effects": [],
+  "flags": {
+    "core": {}
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "7.2.0",
+    "coreVersion": "13.345",
+    "compendiumSource": "Compendium.hopefinder.effects.Item.KyfszoGnkVsGoP0K",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_id": "KyfszoGnkVsGoP0K",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "wzla4PE5p61vlV6O": 3
+  },
+  "_key": "!items!KyfszoGnkVsGoP0K"
+}

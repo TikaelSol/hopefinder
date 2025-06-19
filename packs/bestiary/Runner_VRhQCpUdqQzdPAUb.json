@@ -1,0 +1,604 @@
+{
+  "name": "Runner",
+  "type": "npc",
+  "prototypeToken": {
+    "flags": {
+      "pf2e": {
+        "linkToActorSize": true
+      }
+    },
+    "height": 1,
+    "width": 1,
+    "name": "zomb",
+    "displayName": 0,
+    "actorLink": false,
+    "texture": {
+      "src": "systems/pf2e/icons/default-icons/npc.svg",
+      "scaleX": 1,
+      "scaleY": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "rotation": 0,
+      "tint": "#ffffff",
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "fit": "contain",
+      "alphaThreshold": 0.75
+    },
+    "lockRotation": false,
+    "rotation": 0,
+    "alpha": 1,
+    "disposition": -1,
+    "displayBars": 0,
+    "bar1": {
+      "attribute": "attributes.hp"
+    },
+    "bar2": {
+      "attribute": null
+    },
+    "light": {
+      "alpha": 0.5,
+      "angle": 360,
+      "bright": 0,
+      "color": null,
+      "coloration": 1,
+      "dim": 0,
+      "attenuation": 0.5,
+      "luminosity": 0.5,
+      "saturation": 0,
+      "contrast": 0,
+      "shadows": 0,
+      "animation": {
+        "type": null,
+        "speed": 5,
+        "intensity": 5,
+        "reverse": false
+      },
+      "darkness": {
+        "min": 0,
+        "max": 1
+      },
+      "negative": false,
+      "priority": 0
+    },
+    "sight": {
+      "enabled": false,
+      "range": 0,
+      "angle": 360,
+      "visionMode": "basic",
+      "color": null,
+      "attenuation": 0.1,
+      "brightness": 0,
+      "saturation": 0,
+      "contrast": 0
+    },
+    "detectionModes": [],
+    "randomImg": false,
+    "appendNumber": false,
+    "prependAdjective": false,
+    "occludable": {
+      "radius": 0
+    },
+    "ring": {
+      "enabled": false,
+      "colors": {
+        "ring": null,
+        "background": null
+      },
+      "effects": 1,
+      "subject": {
+        "scale": 1,
+        "texture": null
+      }
+    },
+    "turnMarker": {
+      "mode": 1,
+      "animation": null,
+      "src": null,
+      "disposition": false
+    },
+    "movementAction": null
+  },
+  "img": "systems/pf2e/icons/default-icons/npc.svg",
+  "system": {
+    "attributes": {
+      "hp": {
+        "value": 20,
+        "temp": 0,
+        "max": 20,
+        "details": ""
+      },
+      "speed": {
+        "value": 30,
+        "otherSpeeds": [],
+        "details": ""
+      },
+      "ac": {
+        "value": 15,
+        "details": ""
+      },
+      "allSaves": {
+        "value": ""
+      }
+    },
+    "initiative": {
+      "statistic": "perception"
+    },
+    "details": {
+      "languages": {
+        "value": [],
+        "details": ""
+      },
+      "level": {
+        "value": 1
+      },
+      "blurb": "",
+      "publicNotes": "",
+      "privateNotes": "",
+      "publication": {
+        "title": "Hopefinder Narrator's Guide",
+        "authors": "Jason Bulmahn",
+        "license": "OGL",
+        "remaster": false
+      },
+      "creatureType": ""
+    },
+    "resources": {},
+    "_migration": {
+      "version": 0.94,
+      "previous": {
+        "schema": 0.935,
+        "foundry": "13.345",
+        "system": "7.2.0"
+      }
+    },
+    "abilities": {
+      "str": {
+        "mod": 2
+      },
+      "dex": {
+        "mod": 2
+      },
+      "con": {
+        "mod": 2
+      },
+      "int": {
+        "mod": -4
+      },
+      "wis": {
+        "mod": 0
+      },
+      "cha": {
+        "mod": -2
+      }
+    },
+    "perception": {
+      "details": "",
+      "mod": 5,
+      "senses": [
+        {
+          "type": "darkvision"
+        }
+      ],
+      "vision": true
+    },
+    "saves": {
+      "fortitude": {
+        "value": 7,
+        "saveDetail": ""
+      },
+      "reflex": {
+        "value": 5,
+        "saveDetail": ""
+      },
+      "will": {
+        "value": 3,
+        "saveDetail": ""
+      }
+    },
+    "skills": {
+      "athletics": {
+        "base": 5
+      },
+      "acrobatics": {
+        "base": 5
+      }
+    },
+    "traits": {
+      "value": [
+        "human",
+        "zombie"
+      ],
+      "rarity": "common",
+      "size": {
+        "value": "med"
+      },
+      "di": {
+        "value": [],
+        "custom": ""
+      },
+      "dr": [],
+      "dv": []
+    }
+  },
+  "items": [
+    {
+      "type": "action",
+      "img": "systems/pf2e/icons/actions/Passive.webp",
+      "name": "Z-Plague",
+      "system": {
+        "description": {
+          "value": "<p>@Check[type:fortitude|dc:15|traits:secret] The runner transmits the Z Plague through its jaws and only on a critical hit.</p>\n<hr />\n<p>Those who survived the initial zombie outbreak that brought the Fall of civilization did so through a combination of precaution and a bit of genetic luck. That said, no one is fully immune. Even those who manage to get a dose of the coveted \"Z-Noc\" inoculation gain only a resistance to the infection while still in stage 1.</p>\n<p>If you are exposed to the Z-Plague (technically called Zynocol Amebic Encephalitis), the narrator will attempt a secret Fortitude save. If you fail this saving throw, you contract the first stage of the disease. If you critically fail, you contract the disease and lose 1 HOPE the next time you rest.</p>\n<p><strong>Stage 1</strong>: You lose 1 HOPE each day, becoming more and more morose. You cannot gain HOPE. Others around you can ask for @Compendium[pf2e.actionspf2e.Sense Motive]{Sense Motive} checks using Perception to notice something is amiss. At the end of each day, attempt a Fortitude saving throw against the original DC. If you succeed at 2 saves on consecutive days or critically succeed a save, you manage to shake off the infection and stop losing Hope. If you run out of Hope and are required to lose another you progress to Stage 2.</p>\n<p><strong>Stage 2</strong>: You become @Compendium[pf2e.conditionitems.Stupefied]{Stupefied 1} and the narrator secretly rolls a d20 to set the duration in hours. At the end of that duration, your stupefied value increases by 1 and the narrator rolls to set the duration again. When your stupefied value is greater than all three of your mental ability modifiers combined (Int, Wis, Cha), you progress to stage 3. There is no known way to save anyone who has reached Stage 2. Infected people in Stage 2 are contagious and they shed parasites through coughing and other body fluids. Anyone who spends more than 1 minute within 10 feet of a contagious individual must attempt a Fortitude save (at the same DC as the infected person) to avoid contracting the plague.</p>\n<p><strong>Stage 3</strong>: You fall @Compendium[pf2e.conditionitems.Unconscious]{Unconscious} and lose [[/r 1d4]] hit points per minute. When your hit points reach 0, you die and rise as a zombie within [[/r 1d10 #Minutes]]{1d10 minutes}.</p>",
+          "gm": ""
+        },
+        "traits": {
+          "value": [
+            "disease"
+          ],
+          "otherTags": []
+        },
+        "rules": [],
+        "slug": null,
+        "actionType": {
+          "value": "passive"
+        },
+        "actions": {
+          "value": null
+        },
+        "deathNote": false,
+        "publication": {
+          "title": "",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "_migration": {
+          "version": 0.94,
+          "previous": {
+            "schema": 0.935,
+            "foundry": "13.345",
+            "system": "7.2.0"
+          }
+        },
+        "category": null
+      },
+      "_id": "GUhbRWBhHOkYTEy3",
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "wzla4PE5p61vlV6O": 3
+      },
+      "flags": {},
+      "_stats": {
+        "systemId": "pf2e",
+        "systemVersion": "4.5.1",
+        "coreVersion": "13.345",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!actors.items!VRhQCpUdqQzdPAUb.GUhbRWBhHOkYTEy3"
+    },
+    {
+      "type": "action",
+      "img": "systems/pf2e/icons/actions/Passive.webp",
+      "name": "Zombie Immuinities",
+      "system": {
+        "description": {
+          "value": "<p>As dead things, zombies are immune to a number of things that affect the living. Unless otherwise noted, zombies are immune to disease, mental effects, poison, and anything that would render them @Compendium[pf2e.conditionitems.Unconscious]{Unconscious}. Zombies do not take bruises nor do they need to eat or drink (although some gain abilities if they have recently consumed living flesh). Zombies are destroyed immediately upon being reduce to 0 Hit Points.</p>",
+          "gm": ""
+        },
+        "traits": {
+          "value": [],
+          "otherTags": []
+        },
+        "rules": [],
+        "slug": null,
+        "actionType": {
+          "value": "passive"
+        },
+        "actions": {
+          "value": null
+        },
+        "deathNote": false,
+        "publication": {
+          "title": "",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "_migration": {
+          "version": 0.94,
+          "previous": {
+            "schema": 0.935,
+            "foundry": "13.345",
+            "system": "7.2.0"
+          }
+        },
+        "category": null
+      },
+      "_id": "wwN149KXg8CIVDOP",
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "wzla4PE5p61vlV6O": 3
+      },
+      "flags": {},
+      "_stats": {
+        "systemId": "pf2e",
+        "systemVersion": "4.5.1",
+        "coreVersion": "13.345",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!actors.items!VRhQCpUdqQzdPAUb.wwN149KXg8CIVDOP"
+    },
+    {
+      "_id": "MqhqlL1OrYk1cFBk",
+      "img": "systems/pf2e/icons/actions/Passive.webp",
+      "name": "Darkvision",
+      "system": {
+        "description": {
+          "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]</p>",
+          "gm": ""
+        },
+        "traits": {
+          "value": [],
+          "otherTags": []
+        },
+        "rules": [],
+        "slug": "darkvision",
+        "actionType": {
+          "value": "passive"
+        },
+        "actions": {
+          "value": null
+        },
+        "deathNote": false,
+        "publication": {
+          "title": "",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "_migration": {
+          "version": 0.94,
+          "previous": {
+            "schema": 0.935,
+            "foundry": "13.345",
+            "system": "7.2.0"
+          }
+        },
+        "category": null
+      },
+      "type": "action",
+      "flags": {
+        "core": {}
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "wzla4PE5p61vlV6O": 3
+      },
+      "_stats": {
+        "systemId": "pf2e",
+        "systemVersion": "4.5.1",
+        "coreVersion": "13.345",
+        "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.qCCLZhnp2HhP3Ex6",
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!actors.items!VRhQCpUdqQzdPAUb.MqhqlL1OrYk1cFBk"
+    },
+    {
+      "type": "melee",
+      "img": "systems/pf2e/icons/default-icons/melee.svg",
+      "name": "Jaws",
+      "system": {
+        "description": {
+          "value": "",
+          "gm": ""
+        },
+        "traits": {
+          "value": [],
+          "otherTags": []
+        },
+        "rules": [],
+        "slug": null,
+        "damageRolls": {
+          "LF3PZOFJHVmuOKTB": {
+            "damage": "1d4+2",
+            "damageType": "piercing",
+            "category": null
+          }
+        },
+        "bonus": {
+          "value": 7
+        },
+        "attackEffects": {
+          "value": [
+            "z-plague"
+          ]
+        },
+        "publication": {
+          "title": "",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "_migration": {
+          "version": 0.94,
+          "previous": {
+            "schema": 0.935,
+            "foundry": "13.345",
+            "system": "7.2.0"
+          }
+        }
+      },
+      "_id": "5qTjezwRA0dHFSPU",
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "wzla4PE5p61vlV6O": 3
+      },
+      "flags": {},
+      "_stats": {
+        "systemId": "pf2e",
+        "systemVersion": "4.5.1",
+        "coreVersion": "13.345",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!actors.items!VRhQCpUdqQzdPAUb.5qTjezwRA0dHFSPU"
+    },
+    {
+      "type": "melee",
+      "img": "systems/pf2e/icons/default-icons/melee.svg",
+      "name": "Fist",
+      "system": {
+        "description": {
+          "value": "",
+          "gm": ""
+        },
+        "traits": {
+          "value": [],
+          "otherTags": []
+        },
+        "rules": [],
+        "slug": null,
+        "damageRolls": {
+          "zT847GzWDc7kIhcp": {
+            "damage": "1d6+2",
+            "damageType": "bludgeoning",
+            "category": null
+          }
+        },
+        "bonus": {
+          "value": 5
+        },
+        "attackEffects": {
+          "value": []
+        },
+        "publication": {
+          "title": "",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "_migration": {
+          "version": 0.94,
+          "previous": {
+            "schema": 0.935,
+            "foundry": "13.345",
+            "system": "7.2.0"
+          }
+        }
+      },
+      "_id": "VgSuPHdcTQ8nPhDE",
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "wzla4PE5p61vlV6O": 3
+      },
+      "flags": {},
+      "_stats": {
+        "systemId": "pf2e",
+        "systemVersion": "4.5.1",
+        "coreVersion": "13.345",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!actors.items!VRhQCpUdqQzdPAUb.VgSuPHdcTQ8nPhDE"
+    },
+    {
+      "type": "action",
+      "img": "systems/pf2e/icons/actions/TwoActions.webp",
+      "name": "Body Slam",
+      "system": {
+        "description": {
+          "value": "<p>The runner moves up to twice its speed, ending in a space adjacent to another creature. It slams into that creature, attempting an Acrobatics check against their Fortitude DC. If the check succeeds, both the target and the runner are knocked @Compendium[pf2e.conditionitems.Prone]{Prone} (only the target on a critical success). On a failure, neither are knocked prone and on a critical failure only the runner is knocked prone.</p>",
+          "gm": ""
+        },
+        "traits": {
+          "value": [
+            "attack"
+          ],
+          "otherTags": []
+        },
+        "rules": [],
+        "slug": null,
+        "actionType": {
+          "value": "action"
+        },
+        "actions": {
+          "value": 2
+        },
+        "deathNote": false,
+        "publication": {
+          "title": "",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "_migration": {
+          "version": 0.94,
+          "previous": {
+            "schema": 0.935,
+            "foundry": "13.345",
+            "system": "7.2.0"
+          }
+        },
+        "category": null
+      },
+      "_id": "Ct0pyrMmmJa7Xz9M",
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "wzla4PE5p61vlV6O": 3
+      },
+      "flags": {},
+      "_stats": {
+        "systemId": "pf2e",
+        "systemVersion": "4.5.1",
+        "coreVersion": "13.345",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!actors.items!VRhQCpUdqQzdPAUb.Ct0pyrMmmJa7Xz9M"
+    }
+  ],
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "7.2.0",
+    "coreVersion": "13.345",
+    "compendiumSource": "Compendium.hopefinder.hopefinder-bestiary.Actor.VRhQCpUdqQzdPAUb",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_id": "VRhQCpUdqQzdPAUb",
+  "ownership": {
+    "default": 0,
+    "wzla4PE5p61vlV6O": 3
+  },
+  "folder": null,
+  "sort": 0,
+  "_key": "!actors!VRhQCpUdqQzdPAUb"
+}

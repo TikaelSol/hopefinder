@@ -1,0 +1,79 @@
+{
+  "name": "Soldier",
+  "type": "heritage",
+  "img": "systems/pf2e/icons/default-icons/heritage.svg",
+  "system": {
+    "description": {
+      "value": "<p>You served in some military unit before the Fall and up through the end, when chaos took over and the chain of command collapsed. In those chaotic days, many turned to you for protection and leadership and you did your best to keep them safe. The plague still took almost everyone, but you carry on, doing what you can to right a world gone wrong.</p>\n<p><strong>Always Ready</strong> You are methodical in your preparations and make sure to secure your surroundings. You get a +2 bonus on initiative checks and may draw a weapon as a free action at the start of your first turn if one is within reach or ready on your person.</p>\n<p><strong>Skills</strong>: Increase your Athletics or Intimidation by 1 step.</p>\n<p><strong>Feats</strong>: You can select Brawn, Leadership, or Ranged.</p>",
+      "gm": ""
+    },
+    "traits": {
+      "value": [],
+      "rarity": "common",
+      "otherTags": []
+    },
+    "rules": [
+      {
+        "choices": [
+          {
+            "label": "PF2E.Skill.Athletics",
+            "value": "athletics"
+          },
+          {
+            "label": "PF2E.Skill.Intimidation",
+            "value": "intimidation"
+          }
+        ],
+        "flag": "skill",
+        "key": "ChoiceSet",
+        "prompt": "PF2E.SpecificRule.Prompt.Skill"
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.skills.{item|flags.pf2e.rulesSelections.skill}.rank",
+        "value": 1
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.hopefinder.features.z1UzZg8AbIw9eVJu"
+      }
+    ],
+    "slug": null,
+    "ancestry": null,
+    "publication": {
+      "title": "",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "_migration": {
+      "version": 0.94,
+      "previous": {
+        "schema": 0.935,
+        "foundry": "13.345",
+        "system": "7.2.0"
+      }
+    }
+  },
+  "effects": [],
+  "flags": {
+    "core": {}
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "7.2.0",
+    "coreVersion": "13.345",
+    "compendiumSource": "Compendium.hopefinder.roles.Item.E0Y3aUHIHAu7lXUc",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_id": "E0Y3aUHIHAu7lXUc",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "wzla4PE5p61vlV6O": 3
+  },
+  "_key": "!items!E0Y3aUHIHAu7lXUc"
+}

@@ -1,0 +1,79 @@
+{
+  "name": "Student",
+  "type": "heritage",
+  "img": "systems/pf2e/icons/default-icons/heritage.svg",
+  "system": {
+    "description": {
+      "value": "<p>You were in high school or college when the plague struck and for a time, you were probably barricaded somewhere on campus with other desperate survivors. Eventually the food ran out and the zombies broke through the defenses and now you are on the run like everyone else. Your future was stolen, but you were flexible enough to adapt and even thrive in this ruined world.</p>\n<p><strong>Tireless Energy</strong> You are energetic. Increase your speed by 5 feet. If you succeed at a check to climb or swim, increase the distance traveled by 5 feet. Finally, you heal 1 additional bruise whenever you rest.</p>\n<p><strong>Skills</strong>: Increase your Athletics or Stealth by 1 step.</p>\n<p><strong>Feats</strong>: You can select Agility, Close, or Technology.</p>",
+      "gm": ""
+    },
+    "traits": {
+      "value": [],
+      "rarity": "common",
+      "otherTags": []
+    },
+    "rules": [
+      {
+        "choices": [
+          {
+            "label": "PF2E.Skill.Athletics",
+            "value": "athletics"
+          },
+          {
+            "label": "PF2E.Skill.Stealth",
+            "value": "stealth"
+          }
+        ],
+        "flag": "skill",
+        "key": "ChoiceSet",
+        "prompt": "PF2E.SpecificRule.Prompt.Skill"
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.skills.{item|flags.pf2e.rulesSelections.skill}.rank",
+        "value": 1
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.hopefinder.features.0ac36NmLHhYtJpCn"
+      }
+    ],
+    "slug": null,
+    "ancestry": null,
+    "publication": {
+      "title": "",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "_migration": {
+      "version": 0.94,
+      "previous": {
+        "schema": 0.935,
+        "foundry": "13.345",
+        "system": "7.2.0"
+      }
+    }
+  },
+  "effects": [],
+  "flags": {
+    "core": {}
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "7.2.0",
+    "coreVersion": "13.345",
+    "compendiumSource": "Compendium.hopefinder.roles.Item.6xV0xJGZM9mV95V1",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_id": "6xV0xJGZM9mV95V1",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "wzla4PE5p61vlV6O": 3
+  },
+  "_key": "!items!6xV0xJGZM9mV95V1"
+}

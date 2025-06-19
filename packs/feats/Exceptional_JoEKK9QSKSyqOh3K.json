@@ -1,0 +1,111 @@
+{
+  "name": "Exceptional",
+  "type": "feat",
+  "img": "systems/pf2e/icons/default-icons/feats.webp",
+  "system": {
+    "description": {
+      "value": "<p>You are just that good. Increase any one ability modifier by +1. You cannot increase your highest ability modifier in this way.</p>",
+      "gm": ""
+    },
+    "traits": {
+      "value": [],
+      "rarity": "common",
+      "otherTags": []
+    },
+    "rules": [
+      {
+        "choices": [
+          {
+            "label": "PF2E.AbilityCha",
+            "value": "cha"
+          },
+          {
+            "label": "PF2E.AbilityCon",
+            "value": "con"
+          },
+          {
+            "label": "PF2E.AbilityDex",
+            "value": "dex"
+          },
+          {
+            "label": "PF2E.AbilityInt",
+            "value": "int"
+          },
+          {
+            "label": "PF2E.AbilityStr",
+            "value": "str"
+          },
+          {
+            "label": "PF2E.AbilityWis",
+            "value": "wis"
+          }
+        ],
+        "prompt": "Select an ability score to increase",
+        "key": "ChoiceSet",
+        "flag": "ability"
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.abilities.{item|flags.pf2e.rulesSelections.ability}.mod",
+        "value": 1
+      }
+    ],
+    "slug": null,
+    "level": {
+      "value": 1
+    },
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": []
+    },
+    "location": null,
+    "publication": {
+      "title": "",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "_migration": {
+      "version": 0.94,
+      "previous": {
+        "schema": 0.935,
+        "foundry": "13.345",
+        "system": "7.2.0"
+      }
+    },
+    "category": "bonus",
+    "subfeatures": {
+      "proficiencies": {},
+      "senses": {},
+      "suppressedFeatures": []
+    }
+  },
+  "effects": [],
+  "flags": {
+    "core": {}
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "7.2.0",
+    "coreVersion": "13.345",
+    "compendiumSource": "Compendium.hopefinder.feats.Item.JoEKK9QSKSyqOh3K",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_id": "JoEKK9QSKSyqOh3K",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "wzla4PE5p61vlV6O": 3
+  },
+  "_key": "!items!JoEKK9QSKSyqOh3K"
+}

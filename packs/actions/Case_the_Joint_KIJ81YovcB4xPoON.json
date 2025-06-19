@@ -1,0 +1,61 @@
+{
+  "name": "Case the Joint",
+  "type": "action",
+  "img": "systems/pf2e/icons/actions/Passive.webp",
+  "system": {
+    "description": {
+      "value": "<p>Spend 10 minutes studying a location and attempt a @Check[type:perception|traits:action:case-the-joint] to learn about it. The DC is set by the narrator. A success tells you general details about what you might find in this location, including likely loot and any routine barriers or challenges you might encounter. A critical success reveals that plus one specific thing about this location that you might be able to see from your vantage point. This can only tell you about an area the size of a gas station. If the location is larger than that, you must focus on one part of it to learn about.</p>",
+      "gm": ""
+    },
+    "traits": {
+      "value": [
+        "exploration"
+      ],
+      "otherTags": []
+    },
+    "rules": [],
+    "slug": null,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "deathNote": false,
+    "publication": {
+      "title": "",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "_migration": {
+      "version": 0.94,
+      "previous": {
+        "schema": 0.935,
+        "foundry": "13.345",
+        "system": "7.2.0"
+      }
+    },
+    "category": "offensive"
+  },
+  "effects": [],
+  "flags": {
+    "core": {}
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "7.2.0",
+    "coreVersion": "13.345",
+    "compendiumSource": "Compendium.hopefinder.actions.Item.KIJ81YovcB4xPoON",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_id": "KIJ81YovcB4xPoON",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "wzla4PE5p61vlV6O": 3
+  },
+  "_key": "!items!KIJ81YovcB4xPoON"
+}

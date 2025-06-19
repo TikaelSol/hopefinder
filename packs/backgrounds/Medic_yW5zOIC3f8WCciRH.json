@@ -1,0 +1,93 @@
+{
+  "name": "Medic",
+  "type": "background",
+  "img": "systems/pf2e/icons/default-icons/background.svg",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>There might not be a cure for the plague, but you have learned to patch up just about every other kind of basic injury or ailment. Your skills are valued above just about all others and some will go to extreme lengths to secure your help.</p>\n<p><strong>Ability Modifiers:</strong> +1 Con, +1 Wis</p>\n<p><strong>Skill:</strong> Trained in Medicine</p>\n<p><strong>Feat:</strong> @Compendium[pf2e.feats-srd.wYerMk6F1RZb0Fwt]{Battle Medicine} skill feat</p>\n<p><strong>Gear:</strong> @Compendium[hopefinder.equipment.PHClSyVXwCmuYZRk]{First Aid Kit} (lets you @Compendium[pf2e.actionspf2e.1kGNdIIhuglAjIp9]{Treat Wounds})</p>"
+    },
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.abilities.con.mod",
+        "value": 1
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.abilities.wis.mod",
+        "value": 1
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.hopefinder.equipment.Item.PHClSyVXwCmuYZRk"
+      }
+    ],
+    "slug": null,
+    "_migration": {
+      "version": 0.94,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.935,
+        "foundry": "13.345",
+        "system": "7.2.0"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Hopefinder Survivor's Guide",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "boosts": {
+      "0": {
+        "value": []
+      },
+      "1": {
+        "value": []
+      }
+    },
+    "items": {
+      "UyJU8": {
+        "uuid": "Compendium.pf2e.feats-srd.Item.wYerMk6F1RZb0Fwt",
+        "img": "systems/pf2e/icons/features/feats/feats.webp",
+        "name": "Battle Medicine",
+        "level": 1
+      }
+    },
+    "trainedSkills": {
+      "value": [
+        "medicine"
+      ],
+      "lore": [],
+      "custom": ""
+    }
+  },
+  "effects": [],
+  "flags": {
+    "core": {}
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "7.2.0",
+    "coreVersion": "13.345",
+    "compendiumSource": "Compendium.hopefinder.backgrounds.Item.yW5zOIC3f8WCciRH",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_id": "yW5zOIC3f8WCciRH",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "wzla4PE5p61vlV6O": 3
+  },
+  "_key": "!items!yW5zOIC3f8WCciRH"
+}

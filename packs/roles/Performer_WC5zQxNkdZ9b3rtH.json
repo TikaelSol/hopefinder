@@ -1,0 +1,79 @@
+{
+  "name": "Performer",
+  "type": "heritage",
+  "img": "systems/pf2e/icons/default-icons/heritage.svg",
+  "system": {
+    "description": {
+      "value": "<p>Once upon a time people used to entertain others for a living, be it through art, dance, music, or theater. Survival is all that seems to matter now, but you can at least still bring some joy to people's lives with a song, dance, or drawing. It's not much, but it can mean the whole world to someone in these bleak times.</p>\n<p><strong>Rehearse</strong> (Exploration) You have learned how to clear you mind before undertaking an important task. Spend 10 minutes rehearsing, meditating, or otherwise preparing for a task. You get a +2 circumstance bonus on that task if you attempt the check within the next hour. You must name the task when you make your preparations. If you enter combat, this preparation is lost.</p>\n<p><strong>Skills</strong>: Increase your Acrobatics or Performance by 1 step.</p>\n<p><strong>Feats</strong>: You can select Agility, Cunning, or Leadership.</p>",
+      "gm": ""
+    },
+    "traits": {
+      "value": [],
+      "rarity": "common",
+      "otherTags": []
+    },
+    "rules": [
+      {
+        "choices": [
+          {
+            "label": "PF2E.Skill.Acrobatics",
+            "value": "acrobatics"
+          },
+          {
+            "label": "PF2E.Skill.Performance",
+            "value": "performance"
+          }
+        ],
+        "flag": "skill",
+        "key": "ChoiceSet",
+        "prompt": "PF2E.SpecificRule.Prompt.Skill"
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.skills.{item|flags.pf2e.rulesSelections.skill}.rank",
+        "value": 1
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.hopefinder.actions.1jNwU1gxzSLkuYa2"
+      }
+    ],
+    "slug": null,
+    "ancestry": null,
+    "publication": {
+      "title": "",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "_migration": {
+      "version": 0.94,
+      "previous": {
+        "schema": 0.935,
+        "foundry": "13.345",
+        "system": "7.2.0"
+      }
+    }
+  },
+  "effects": [],
+  "flags": {
+    "core": {}
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "7.2.0",
+    "coreVersion": "13.345",
+    "compendiumSource": "Compendium.hopefinder.roles.Item.WC5zQxNkdZ9b3rtH",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_id": "WC5zQxNkdZ9b3rtH",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "wzla4PE5p61vlV6O": 3
+  },
+  "_key": "!items!WC5zQxNkdZ9b3rtH"
+}

@@ -1,0 +1,77 @@
+{
+  "name": "Surrender",
+  "type": "feat",
+  "img": "systems/pf2e/icons/default-icons/feats.webp",
+  "system": {
+    "description": {
+      "value": "<p><strong>Requirements</strong> You are in combat with one human who has taken damage</p>\n<hr />\n<p>You attempt to get a human enemy to surrender. Attempt a Diplomacy or Intimidation skill check against the target's Will DC. Increase the DC by 5 if the target is not below half Hit Points. Increase the DC by 10 if the target has allies in the area. If you succeed, the target attempts to flee (if able, narrator's discretion) and surrenders if flight is impossible. If you critically succeed, the target gives up their weapon and surrenders to you. The target is immune to this feat for 24 hours.</p>",
+      "gm": ""
+    },
+    "traits": {
+      "value": [
+        "auditory",
+        "concentrate",
+        "mental"
+      ],
+      "rarity": "common",
+      "otherTags": []
+    },
+    "rules": [],
+    "slug": null,
+    "level": {
+      "value": 1
+    },
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": []
+    },
+    "location": null,
+    "publication": {
+      "title": "",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "_migration": {
+      "version": 0.94,
+      "previous": {
+        "schema": 0.935,
+        "foundry": "13.345",
+        "system": "7.2.0"
+      }
+    },
+    "category": "bonus",
+    "subfeatures": {
+      "proficiencies": {},
+      "senses": {},
+      "suppressedFeatures": []
+    }
+  },
+  "effects": [],
+  "flags": {
+    "core": {}
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "7.2.0",
+    "coreVersion": "13.345",
+    "compendiumSource": "Compendium.hopefinder.feats.Item.83WgB0BObDkcJ1ok",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_id": "83WgB0BObDkcJ1ok",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "wzla4PE5p61vlV6O": 3
+  },
+  "_key": "!items!83WgB0BObDkcJ1ok"
+}

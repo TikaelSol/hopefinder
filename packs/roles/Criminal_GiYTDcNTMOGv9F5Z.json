@@ -1,0 +1,79 @@
+{
+  "name": "Criminal",
+  "type": "heritage",
+  "img": "systems/pf2e/icons/default-icons/heritage.svg",
+  "system": {
+    "description": {
+      "value": "<p>You ran with some tough people before the Fall and had several run-ins with the law. There is a good chance you spent time in prison and maybe even had to escape there when society fell apart. Whether or not you were guilty, or innocent does not matter much now, the rules have changed, and you have learned how to thrive in what is left of the world.</p>\n<p><strong>Case the Joint</strong> (Exploration) Spend 10 minutes studying a location and attempt a Perception check to learn about it. The DC is set by the narrator. A success tells you general details about what you might find in this location, including likely loot and any routine barriers or challenges you might encounter. A critical success reveals that plus one specific thing about this location that you might be able to see from your vantage point. This can only tell you about an area the size of a gas station. If the location is larger than that, you must focus on one part of it to learn about.</p>\n<p><strong>Skill</strong>: Increase your Deception or Thievery by 1 step.</p>\n<p><strong>Feats</strong>: You can select from Agility, Cunning, and Ranged feats.</p>",
+      "gm": ""
+    },
+    "traits": {
+      "value": [],
+      "rarity": "common",
+      "otherTags": []
+    },
+    "rules": [
+      {
+        "choices": [
+          {
+            "label": "PF2E.Skill.Deception",
+            "value": "deception"
+          },
+          {
+            "label": "PF2E.Skill.Thievery",
+            "value": "thievery"
+          }
+        ],
+        "flag": "skill",
+        "key": "ChoiceSet",
+        "prompt": "PF2E.SpecificRule.Prompt.Skill"
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.skills.{item|flags.pf2e.rulesSelections.skill}.rank",
+        "value": 1
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.hopefinder.actions.KIJ81YovcB4xPoON"
+      }
+    ],
+    "slug": null,
+    "ancestry": null,
+    "publication": {
+      "title": "",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "_migration": {
+      "version": 0.94,
+      "previous": {
+        "schema": 0.935,
+        "foundry": "13.345",
+        "system": "7.2.0"
+      }
+    }
+  },
+  "effects": [],
+  "flags": {
+    "core": {}
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "7.2.0",
+    "coreVersion": "13.345",
+    "compendiumSource": "Compendium.hopefinder.roles.Item.GiYTDcNTMOGv9F5Z",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_id": "GiYTDcNTMOGv9F5Z",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "wzla4PE5p61vlV6O": 3
+  },
+  "_key": "!items!GiYTDcNTMOGv9F5Z"
+}

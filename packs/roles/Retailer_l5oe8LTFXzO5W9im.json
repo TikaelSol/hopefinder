@@ -1,0 +1,79 @@
+{
+  "name": "Retailer",
+  "type": "heritage",
+  "img": "systems/pf2e/icons/default-icons/heritage.svg",
+  "system": {
+    "description": {
+      "value": "<p>Before the plague your life was all about stocking shelves, working registers, and dealing with grumpy, irritating customers. Now it is only marginally worse since those same irritating people are now undead trying to bite you. At least you still have your people skills and a shrewd eye for bargaining.</p>\n<p><strong>Haggle</strong> Whenever you are trading for equipment, you can attempt a Diplomacy or Deception skill check against the trader's Will DC. If you succeed, treat one item you are offering up for barter as if it was worth 1 barter more. If you critically succeed, treat it as if it was worth 2 barter more. If you critically fail, the trader refuses to do business with you. You can only do this once per day with an individual trader.</p>\n<p><strong>Skills</strong>: Increase your Deception or Diplomacy by 1 step.</p>\n<p><strong>Feats</strong>: You can select Brawn, Building, or Cunning.</p>",
+      "gm": ""
+    },
+    "traits": {
+      "value": [],
+      "rarity": "common",
+      "otherTags": []
+    },
+    "rules": [
+      {
+        "choices": [
+          {
+            "label": "PF2E.Skill.Deception",
+            "value": "deception"
+          },
+          {
+            "label": "PF2E.Skill.Diplomacy",
+            "value": "diplomacy"
+          }
+        ],
+        "flag": "skill",
+        "key": "ChoiceSet",
+        "prompt": "PF2E.SpecificRule.Prompt.Skill"
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.skills.{item|flags.pf2e.rulesSelections.skill}.rank",
+        "value": 1
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.hopefinder.features.gFdCd2P4XAt1WN5i"
+      }
+    ],
+    "slug": null,
+    "ancestry": null,
+    "publication": {
+      "title": "",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "_migration": {
+      "version": 0.94,
+      "previous": {
+        "schema": 0.935,
+        "foundry": "13.345",
+        "system": "7.2.0"
+      }
+    }
+  },
+  "effects": [],
+  "flags": {
+    "core": {}
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "7.2.0",
+    "coreVersion": "13.345",
+    "compendiumSource": "Compendium.hopefinder.roles.Item.l5oe8LTFXzO5W9im",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_id": "l5oe8LTFXzO5W9im",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "wzla4PE5p61vlV6O": 3
+  },
+  "_key": "!items!l5oe8LTFXzO5W9im"
+}

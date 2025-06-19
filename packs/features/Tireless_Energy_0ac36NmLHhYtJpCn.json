@@ -1,0 +1,93 @@
+{
+  "name": "Tireless Energy",
+  "type": "feat",
+  "img": "systems/pf2e/icons/spells/elemental-motion.webp",
+  "system": {
+    "description": {
+      "value": "<p>You are energetic. Increase your speed by 5 feet. If you succeed at a check to climb or swim, increase the distance traveled by 5 feet. Finally, you heal 1 additional bruise whenever you rest.</p>",
+      "gm": ""
+    },
+    "traits": {
+      "value": [],
+      "rarity": "common",
+      "otherTags": []
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "selector": "land-speed",
+        "value": 5
+      },
+      {
+        "key": "Note",
+        "selector": "athletics",
+        "text": "If you succeed at a check to climb or swim, increase the distance traveled by 5 feet.",
+        "title": "{item|name}",
+        "predicate": [
+          {
+            "or": [
+              "action:climb",
+              "action:swim"
+            ]
+          }
+        ]
+      }
+    ],
+    "slug": null,
+    "level": {
+      "value": 1
+    },
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": []
+    },
+    "location": null,
+    "publication": {
+      "title": "",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "_migration": {
+      "version": 0.94,
+      "previous": {
+        "schema": 0.935,
+        "foundry": "13.345",
+        "system": "7.2.0"
+      }
+    },
+    "category": "bonus",
+    "subfeatures": {
+      "proficiencies": {},
+      "senses": {},
+      "suppressedFeatures": []
+    }
+  },
+  "effects": [],
+  "flags": {
+    "core": {}
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "7.2.0",
+    "coreVersion": "13.345",
+    "compendiumSource": "Compendium.hopefinder.features.Item.0ac36NmLHhYtJpCn",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_id": "0ac36NmLHhYtJpCn",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "wzla4PE5p61vlV6O": 3
+  },
+  "_key": "!items!0ac36NmLHhYtJpCn"
+}

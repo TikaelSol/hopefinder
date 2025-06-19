@@ -1,0 +1,79 @@
+{
+  "name": "Revive",
+  "type": "feat",
+  "img": "systems/pf2e/icons/default-icons/feats.webp",
+  "system": {
+    "description": {
+      "value": "<p>You can try and save someone who has died using the contents of a first aid kit. Attempt a @Check[type:medicine|dc:25] skill check on an adjacent creature that has died. If the creature died within 1 minute, the DC is 25. Increase the DC by 5 for each minute beyond the first. If successful, the creature is returned to life, at 0 hit points, and stable. The creature gains the @Compendium[pf2e.conditionitems.Yl48xTdMh3aeQYL2]{Wounded 2} condition. The DC increases by 1 for each time this check is failed. This has no effect on zombies.</p>",
+      "gm": ""
+    },
+    "traits": {
+      "value": [
+        "manipulate"
+      ],
+      "rarity": "common",
+      "otherTags": []
+    },
+    "rules": [],
+    "slug": null,
+    "level": {
+      "value": 1
+    },
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "action"
+    },
+    "actions": {
+      "value": 2
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "Rouse feat"
+        }
+      ]
+    },
+    "location": null,
+    "publication": {
+      "title": "",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "_migration": {
+      "version": 0.94,
+      "previous": {
+        "schema": 0.935,
+        "foundry": "13.345",
+        "system": "7.2.0"
+      }
+    },
+    "category": "bonus",
+    "subfeatures": {
+      "proficiencies": {},
+      "senses": {},
+      "suppressedFeatures": []
+    }
+  },
+  "effects": [],
+  "flags": {
+    "core": {}
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "7.2.0",
+    "coreVersion": "13.345",
+    "compendiumSource": "Compendium.hopefinder.feats.Item.1DjhmjG2U2SQg2tQ",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_id": "1DjhmjG2U2SQg2tQ",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "wzla4PE5p61vlV6O": 3
+  },
+  "_key": "!items!1DjhmjG2U2SQg2tQ"
+}

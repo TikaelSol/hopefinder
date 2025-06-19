@@ -1,0 +1,59 @@
+{
+  "name": "Maneuver",
+  "type": "action",
+  "img": "systems/pf2e/icons/actions/OneAction.webp",
+  "system": {
+    "description": {
+      "value": "<p>You try a difficult maneuver for the current speed of your vehicle. Attempt a Driving check. The narrator determines what maneuvers are possible at your speed and the DC of this check. On a success, you perform the maneuver. On a failure, you crash, the vehicle takes damage (typically [[/r 1d6 #Dings]] dings), but it is otherwise still functional. On a critical failure the crash deals [[/r 2d6 #Dings]] dings and the nature of the mishap prevents it from functioning without further repairs or checks (perhaps you drove into a ditch and are stuck, or you have a flat tire).</p>",
+      "gm": ""
+    },
+    "traits": {
+      "value": [
+        "manipulate"
+      ],
+      "otherTags": []
+    },
+    "rules": [],
+    "slug": null,
+    "actionType": {
+      "value": "action"
+    },
+    "actions": {
+      "value": 1
+    },
+    "deathNote": false,
+    "publication": {
+      "title": "",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "_migration": {
+      "version": 0.94,
+      "previous": {
+        "schema": 0.935,
+        "foundry": "13.345",
+        "system": "7.2.0"
+      }
+    },
+    "category": "offensive"
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "7.2.0",
+    "coreVersion": "13.345",
+    "compendiumSource": "Compendium.hopefinder.actions.Item.FI6bxo8Pk22YiyHf",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_id": "FI6bxo8Pk22YiyHf",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "wzla4PE5p61vlV6O": 3
+  },
+  "_key": "!items!FI6bxo8Pk22YiyHf"
+}

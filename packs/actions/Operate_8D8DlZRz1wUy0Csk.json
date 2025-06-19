@@ -1,0 +1,59 @@
+{
+  "name": "Operate",
+  "type": "action",
+  "img": "systems/pf2e/icons/actions/OneAction.webp",
+  "system": {
+    "description": {
+      "value": "<p>You use a computer system or machine to perform one of the functions it was designed to do. This is determined by the computer or machine itself, but typical uses include opening a database, transferring a file to a portable drive, or utilizing the function of devices attached to the computer system, such as a security camera or remotely operated door. This might include a Computers skill check to ensure you find what you are looking for quickly or that you use it in the right way.</p>\n<p>For a machine a task may include using a crane to pick up a car, triggering an iron press to crush a zombie, or to turn off a giant trash compactor. This might require a successful Machinery skill check if the machine is particularly complex.</p>",
+      "gm": ""
+    },
+    "traits": {
+      "value": [
+        "manipulate"
+      ],
+      "otherTags": []
+    },
+    "rules": [],
+    "slug": null,
+    "actionType": {
+      "value": "action"
+    },
+    "actions": {
+      "value": 1
+    },
+    "deathNote": false,
+    "publication": {
+      "title": "",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "_migration": {
+      "version": 0.94,
+      "previous": {
+        "schema": 0.935,
+        "foundry": "13.345",
+        "system": "7.2.0"
+      }
+    },
+    "category": "offensive"
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "7.2.0",
+    "coreVersion": "13.345",
+    "compendiumSource": "Compendium.hopefinder.actions.Item.8D8DlZRz1wUy0Csk",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_id": "8D8DlZRz1wUy0Csk",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "wzla4PE5p61vlV6O": 3
+  },
+  "_key": "!items!8D8DlZRz1wUy0Csk"
+}

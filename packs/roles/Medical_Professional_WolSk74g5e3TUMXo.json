@@ -1,0 +1,58 @@
+{
+  "name": "Medical Professional",
+  "type": "heritage",
+  "img": "systems/pf2e/icons/default-icons/heritage.svg",
+  "system": {
+    "description": {
+      "value": "<p>You were a trained doctor, nurse, or surgeon before the Fall and saw things you will never be able to forget in those grim first days. Now your skills are in very high demand and the people under your care are immensely grateful, but with supplies running out and no sign of the dead slowing down, you don't know how long you can keep it together.</p>\n<p><strong>Triage</strong> You can perform First Aid or @Compendium[pf2e.actionspf2e.Treat Wounds]{Treat Wounds} on up to 6 people in 20 minutes. When you successfully Treat Wounds, you heal an additional amount of Hit Points equal to your level.</p>\n<p><strong>Skills</strong>: Increase your Computers or Medicine by 1 step.</p>\n<p><strong>Feats</strong>: You can select Healing, Ranged, or Technology.</p>",
+      "gm": ""
+    },
+    "traits": {
+      "value": [],
+      "rarity": "common",
+      "otherTags": []
+    },
+    "rules": [
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.hopefinder.features.FoOTs5QYrMl2KBCJ"
+      }
+    ],
+    "slug": null,
+    "ancestry": null,
+    "publication": {
+      "title": "",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "_migration": {
+      "version": 0.94,
+      "previous": {
+        "schema": 0.935,
+        "foundry": "13.345",
+        "system": "7.2.0"
+      }
+    }
+  },
+  "effects": [],
+  "flags": {
+    "core": {}
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "7.2.0",
+    "coreVersion": "13.345",
+    "compendiumSource": "Compendium.hopefinder.roles.Item.WolSk74g5e3TUMXo",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_id": "WolSk74g5e3TUMXo",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "wzla4PE5p61vlV6O": 3
+  },
+  "_key": "!items!WolSk74g5e3TUMXo"
+}

@@ -1,0 +1,97 @@
+{
+  "name": "Resilient",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>You are capable of withstanding more than most. Increase your proficiency in one type of saving throw by 1 step. If you are a master in that saving throw, whenever you get a success, treat it as a critical success instead.</p>",
+      "gm": ""
+    },
+    "traits": {
+      "value": [],
+      "rarity": "common",
+      "otherTags": []
+    },
+    "rules": [
+      {
+        "choices": [
+          {
+            "label": "PF2E.SavesFortitude",
+            "value": "system.saves.fortitude.rank"
+          },
+          {
+            "label": "PF2E.SavesReflex",
+            "value": "system.saves.reflex.rank"
+          },
+          {
+            "label": "PF2E.SavesWill",
+            "value": "system.saves.will.rank"
+          }
+        ],
+        "key": "ChoiceSet"
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "{item|flags.pf2e.rulesSelections.resilient}",
+        "value": 1
+      }
+    ],
+    "slug": null,
+    "level": {
+      "value": 1
+    },
+    "onlyLevel1": false,
+    "maxTakable": null,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": []
+    },
+    "location": null,
+    "publication": {
+      "title": "",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "_migration": {
+      "version": 0.94,
+      "previous": {
+        "schema": 0.935,
+        "foundry": "13.345",
+        "system": "7.2.0"
+      }
+    },
+    "category": "bonus",
+    "subfeatures": {
+      "proficiencies": {},
+      "senses": {},
+      "suppressedFeatures": []
+    }
+  },
+  "img": "systems/pf2e/icons/default-icons/feats.webp",
+  "effects": [],
+  "ownership": {
+    "default": 0,
+    "wzla4PE5p61vlV6O": 3
+  },
+  "flags": {
+    "core": {}
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "7.2.0",
+    "coreVersion": "13.345",
+    "compendiumSource": "Compendium.hopefinder.feats.Item.0sPSBNPTqK0aLV1b",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "_id": "0sPSBNPTqK0aLV1b",
+  "_key": "!items!0sPSBNPTqK0aLV1b"
+}

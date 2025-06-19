@@ -1,0 +1,73 @@
+{
+  "name": "Lure",
+  "type": "feat",
+  "img": "systems/pf2e/icons/default-icons/feats.webp",
+  "system": {
+    "description": {
+      "value": "<p>By tossing an old can, broken bottle, or bit of debris, you attempt to lure the dead to a nearby location. Select a spot that is within 30 feet that you can target with a thrown object. Zombies within 30 feet of that location must attempt a @Check[type:will|dc:resolve(10+@actor.system.skills.deception.value)] save against your Deception DC. Those who fail move to investigate the noise, where they remain for 1 minute. Those that critically succeed on this check detect you instead. This ability cannot be used in combat and if you attempt to use it more than once against the same zombie in a 1-hour period, it instantly detects you.</p>",
+      "gm": ""
+    },
+    "traits": {
+      "value": [],
+      "rarity": "common",
+      "otherTags": []
+    },
+    "rules": [],
+    "slug": null,
+    "level": {
+      "value": 1
+    },
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": []
+    },
+    "location": null,
+    "publication": {
+      "title": "",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "_migration": {
+      "version": 0.94,
+      "previous": {
+        "schema": 0.935,
+        "foundry": "13.345",
+        "system": "7.2.0"
+      }
+    },
+    "category": "bonus",
+    "subfeatures": {
+      "proficiencies": {},
+      "senses": {},
+      "suppressedFeatures": []
+    }
+  },
+  "effects": [],
+  "flags": {
+    "core": {}
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "7.2.0",
+    "coreVersion": "13.345",
+    "compendiumSource": "Compendium.hopefinder.feats.Item.WXQQaYhSsAggaQYb",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_id": "WXQQaYhSsAggaQYb",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "wzla4PE5p61vlV6O": 3
+  },
+  "_key": "!items!WXQQaYhSsAggaQYb"
+}

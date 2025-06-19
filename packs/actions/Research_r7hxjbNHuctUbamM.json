@@ -1,0 +1,71 @@
+{
+  "name": "Research",
+  "type": "action",
+  "img": "systems/pf2e/icons/actions/OneAction.webp",
+  "system": {
+    "description": {
+      "value": "<p>There is not a problem you cannot solve by doing a little research. By spending 1 hour using a working computer or a research library, you can attempt any Lore skill check as if you were trained in that skill or give yourself a +2 circumstance bonus on the check if you are trained or higher in that Lore skill. You can also use this ability whenever you attempt a check to Recall Knowledge to give yourself a +2 circumstance bonus on the check.</p>",
+      "gm": ""
+    },
+    "traits": {
+      "value": [
+        "exploration"
+      ],
+      "otherTags": []
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "selector": "skill-check",
+        "value": 2,
+        "type": "circumstance",
+        "predicate": [
+          "research"
+        ]
+      }
+    ],
+    "slug": null,
+    "actionType": {
+      "value": "action"
+    },
+    "actions": {
+      "value": 1
+    },
+    "deathNote": false,
+    "publication": {
+      "title": "",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "_migration": {
+      "version": 0.94,
+      "previous": {
+        "schema": 0.935,
+        "foundry": "13.345",
+        "system": "7.2.0"
+      }
+    },
+    "category": "offensive"
+  },
+  "effects": [],
+  "flags": {
+    "core": {}
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "7.2.0",
+    "coreVersion": "13.345",
+    "compendiumSource": "Compendium.hopefinder.actions.Item.r7hxjbNHuctUbamM",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_id": "r7hxjbNHuctUbamM",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "wzla4PE5p61vlV6O": 3
+  },
+  "_key": "!items!r7hxjbNHuctUbamM"
+}

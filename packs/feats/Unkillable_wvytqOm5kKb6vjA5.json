@@ -1,0 +1,133 @@
+{
+  "name": "Unkillable",
+  "type": "feat",
+  "img": "systems/pf2e/icons/default-icons/feats.webp",
+  "system": {
+    "description": {
+      "value": "<p>You do not fall @Compendium[pf2e.conditionitems.Unconscious]{Unconscious} at 0 Hit Points. You still gain the dying condition and still check to see if it increases at the end of your turn. You take a penalty on all checks equal to your dying condition. When you reach dying 6, you fall down dead.</p>",
+      "gm": ""
+    },
+    "traits": {
+      "value": [],
+      "rarity": "common",
+      "otherTags": []
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "selector": "all",
+        "value": -1,
+        "predicate": [
+          "self:condition:dying"
+        ],
+        "slug": "unkillable"
+      },
+      {
+        "key": "AdjustModifier",
+        "mode": "override",
+        "predicate": [
+          "self:condition:dying:2"
+        ],
+        "selector": "all",
+        "slug": "unkillable",
+        "value": -2
+      },
+      {
+        "key": "AdjustModifier",
+        "mode": "override",
+        "predicate": [
+          "self:condition:dying:3"
+        ],
+        "selector": "all",
+        "slug": "unkillable",
+        "value": -3
+      },
+      {
+        "key": "AdjustModifier",
+        "mode": "override",
+        "predicate": [
+          "self:condition:dying:4"
+        ],
+        "selector": "all",
+        "slug": "unkillable",
+        "value": -4
+      },
+      {
+        "key": "AdjustModifier",
+        "mode": "override",
+        "predicate": [
+          "self:condition:dying:5"
+        ],
+        "selector": "all",
+        "slug": "unkillable",
+        "value": -5
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "upgrade",
+        "path": "system.attributes.dying.max",
+        "value": 6
+      }
+    ],
+    "slug": null,
+    "level": {
+      "value": 1
+    },
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "Tough feat"
+        }
+      ]
+    },
+    "location": null,
+    "publication": {
+      "title": "",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "_migration": {
+      "version": 0.94,
+      "previous": {
+        "schema": 0.935,
+        "foundry": "13.345",
+        "system": "7.2.0"
+      }
+    },
+    "category": "bonus",
+    "subfeatures": {
+      "proficiencies": {},
+      "senses": {},
+      "suppressedFeatures": []
+    }
+  },
+  "effects": [],
+  "flags": {
+    "core": {}
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "7.2.0",
+    "coreVersion": "13.345",
+    "compendiumSource": "Compendium.hopefinder.feats.Item.wvytqOm5kKb6vjA5",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_id": "wvytqOm5kKb6vjA5",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "wzla4PE5p61vlV6O": 3
+  },
+  "_key": "!items!wvytqOm5kKb6vjA5"
+}

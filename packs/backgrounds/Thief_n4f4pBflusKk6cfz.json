@@ -1,0 +1,93 @@
+{
+  "name": "Thief",
+  "type": "background",
+  "img": "systems/pf2e/icons/default-icons/background.svg",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Listen, people are greedy, and they will horde the things that folks need to survive, bartering it for their own profit. So what if you happen to sneak in and take a few things for yourself and others. It's not like they don't have enough to spare.</p>\n<p><strong>Ability Modifiers:</strong> +1 Dex, +1 Cha</p>\n<p><strong>Skill:</strong> Trained in Thievery</p>\n<p><strong>Feat:</strong> @Compendium[pf2e.feats-srd.jDdOqFmZLwE4dblQ]{Pickpocket} skill feat</p>\n<p><strong>Gear:</strong> @Compendium[hopefinder.equipment.l6TZHXAabM3ioaND]{Lockpicks} (allows you to open keyed locks)</p>"
+    },
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.abilities.dex.mod",
+        "value": 1
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.abilities.cha.mod",
+        "value": 1
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.hopefinder.equipment.Item.l6TZHXAabM3ioaND"
+      }
+    ],
+    "slug": null,
+    "_migration": {
+      "version": 0.94,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.935,
+        "foundry": "13.345",
+        "system": "7.2.0"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Hopefinder Survivor's Guide",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "boosts": {
+      "0": {
+        "value": []
+      },
+      "1": {
+        "value": []
+      }
+    },
+    "items": {
+      "7IXZj": {
+        "uuid": "Compendium.pf2e.feats-srd.Item.jDdOqFmZLwE4dblQ",
+        "img": "systems/pf2e/icons/features/feats/feats.webp",
+        "name": "Pickpocket",
+        "level": 1
+      }
+    },
+    "trainedSkills": {
+      "value": [
+        "thievery"
+      ],
+      "lore": [],
+      "custom": ""
+    }
+  },
+  "effects": [],
+  "flags": {
+    "core": {}
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "7.2.0",
+    "coreVersion": "13.345",
+    "compendiumSource": "Compendium.hopefinder.backgrounds.Item.n4f4pBflusKk6cfz",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_id": "n4f4pBflusKk6cfz",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "wzla4PE5p61vlV6O": 3
+  },
+  "_key": "!items!n4f4pBflusKk6cfz"
+}

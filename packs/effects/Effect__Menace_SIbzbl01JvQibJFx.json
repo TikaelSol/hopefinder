@@ -1,0 +1,86 @@
+{
+  "name": "Effect: Menace",
+  "type": "effect",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>The raider gets a +1 circumstance bonus on Intimidation checks made to demoralize for each other visible raider or road warrior in the area (maximum +4).</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "selector": "intimidation",
+        "value": "min(4,@item.badge.value)",
+        "predicate": [
+          "action:demoralize"
+        ],
+        "type": "circumstance"
+      }
+    ],
+    "slug": null,
+    "_migration": {
+      "version": 0.94,
+      "previous": {
+        "schema": 0.935,
+        "foundry": "13.345",
+        "system": "7.2.0"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": []
+    },
+    "publication": {
+      "title": "",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": -1,
+      "unit": "unlimited",
+      "expiry": null,
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": {
+      "type": "counter",
+      "value": 1,
+      "labels": null,
+      "loop": false
+    },
+    "context": null,
+    "unidentified": false,
+    "fromSpell": false
+  },
+  "img": "systems/pf2e/icons/spells/anima-invocation.webp",
+  "effects": [],
+  "ownership": {
+    "default": 0,
+    "wzla4PE5p61vlV6O": 3
+  },
+  "flags": {
+    "core": {}
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "7.2.0",
+    "coreVersion": "13.345",
+    "compendiumSource": "Compendium.hopefinder.effects.Item.SIbzbl01JvQibJFx",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "_id": "SIbzbl01JvQibJFx",
+  "_key": "!items!SIbzbl01JvQibJFx"
+}

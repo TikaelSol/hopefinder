@@ -1,0 +1,79 @@
+{
+  "name": "Effect: Burning Branch",
+  "type": "effect",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Attacks with the burning branch that hit deal an additional 1d4 fire damage.</p>"
+    },
+    "rules": [
+      {
+        "key": "DamageDice",
+        "selector": "branch-damage",
+        "damageType": "fire",
+        "dieSize": "d4",
+        "diceNumber": 1
+      }
+    ],
+    "slug": null,
+    "_migration": {
+      "version": 0.94,
+      "previous": {
+        "schema": 0.935,
+        "foundry": "13.345",
+        "system": "7.2.0"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": []
+    },
+    "publication": {
+      "title": "",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": 2,
+      "unit": "rounds",
+      "expiry": "turn-start",
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null,
+    "unidentified": false,
+    "fromSpell": false
+  },
+  "img": "systems/pf2e/icons/spells/burning-blossoms.webp",
+  "effects": [],
+  "ownership": {
+    "default": 0,
+    "wzla4PE5p61vlV6O": 3
+  },
+  "flags": {
+    "core": {}
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "7.2.0",
+    "coreVersion": "13.345",
+    "compendiumSource": "Compendium.hopefinder.effects.Item.AIkvpZ8dxtrrlrJ3",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "_id": "AIkvpZ8dxtrrlrJ3",
+  "_key": "!items!AIkvpZ8dxtrrlrJ3"
+}

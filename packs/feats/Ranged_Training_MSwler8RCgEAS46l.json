@@ -1,0 +1,118 @@
+{
+  "name": "Ranged Training",
+  "type": "feat",
+  "img": "systems/pf2e/icons/default-icons/feats.webp",
+  "system": {
+    "description": {
+      "value": "<p>You become more skilled with ranged weapons. Increase your training in all simple and martial ranged weapons by 1 step. You can take this feat a second time as a Greater feat.</p>",
+      "gm": ""
+    },
+    "traits": {
+      "value": [],
+      "rarity": "common",
+      "otherTags": []
+    },
+    "rules": [
+      {
+        "definition": [
+          "item:ranged",
+          "item:category:simple"
+        ],
+        "key": "MartialProficiency",
+        "label": "Simple Ranged",
+        "slug": "simple-ranged"
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "downgrade",
+        "path": "system.proficiencies.attacks.simple-ranged.rank",
+        "value": 1
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.proficiencies.attacks.simple-ranged.rank",
+        "value": 1,
+        "priority": 60
+      },
+      {
+        "definition": [
+          "item:ranged",
+          "item:category:martial"
+        ],
+        "key": "MartialProficiency",
+        "label": "Martial Ranged",
+        "slug": "martial-ranged"
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "downgrade",
+        "path": "system.proficiencies.attacks.martial-ranged.rank",
+        "value": 0
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.proficiencies.attacks.martial-ranged.rank",
+        "value": 1,
+        "priority": 60
+      }
+    ],
+    "slug": null,
+    "level": {
+      "value": 1
+    },
+    "onlyLevel1": false,
+    "maxTakable": 2,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": []
+    },
+    "location": null,
+    "publication": {
+      "title": "",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "_migration": {
+      "version": 0.94,
+      "previous": {
+        "schema": 0.935,
+        "foundry": "13.345",
+        "system": "7.2.0"
+      }
+    },
+    "category": "bonus",
+    "subfeatures": {
+      "proficiencies": {},
+      "senses": {},
+      "suppressedFeatures": []
+    }
+  },
+  "effects": [],
+  "flags": {
+    "core": {}
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "7.2.0",
+    "coreVersion": "13.345",
+    "compendiumSource": "Compendium.hopefinder.feats.Item.MSwler8RCgEAS46l",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_id": "MSwler8RCgEAS46l",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "wzla4PE5p61vlV6O": 3
+  },
+  "_key": "!items!MSwler8RCgEAS46l"
+}

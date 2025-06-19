@@ -1,0 +1,117 @@
+{
+  "name": "Improvised Shield",
+  "type": "shield",
+  "img": "systems/pf2e/icons/default-icons/shield.svg",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p><strong>Resist</strong> 4 All</p>\n<p><strong>Break</strong> 4</p>"
+    },
+    "rules": [
+      {
+        "key": "Resistance",
+        "type": "all-damage",
+        "value": 4,
+        "predicate": [
+          "self:shield:raised"
+        ]
+      }
+    ],
+    "slug": null,
+    "_migration": {
+      "version": 0.94,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.935,
+        "foundry": "13.345",
+        "system": "7.2.0"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "cover",
+        "patchwork"
+      ],
+      "rarity": "common",
+      "integrated": null
+    },
+    "publication": {
+      "title": "Hopefinder Survivor's Guide",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 0
+    },
+    "quantity": 1,
+    "baseItem": null,
+    "bulk": {
+      "value": 1
+    },
+    "hp": {
+      "value": 4,
+      "max": 4
+    },
+    "hardness": 0,
+    "price": {
+      "value": {}
+    },
+    "equipped": {
+      "carryType": "worn",
+      "invested": null,
+      "handsHeld": 0
+    },
+    "containerId": null,
+    "size": "med",
+    "material": {
+      "type": null,
+      "grade": null
+    },
+    "identification": {
+      "status": "identified",
+      "unidentified": {
+        "name": "Unusual Armor",
+        "img": "systems/pf2e/icons/unidentified_item_icons/armor.webp",
+        "data": {
+          "description": {
+            "value": ""
+          }
+        }
+      },
+      "misidentified": {}
+    },
+    "acBonus": 0,
+    "runes": {
+      "reinforcing": 0,
+      "potency": 0,
+      "resilient": 0,
+      "property": []
+    },
+    "specific": null,
+    "speedPenalty": 0,
+    "subitems": [],
+    "dex": {
+      "value": 10
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "7.2.0",
+    "coreVersion": "13.345",
+    "compendiumSource": "Compendium.hopefinder.equipment.Item.lozP2PiOnHWiQwEd",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_id": "lozP2PiOnHWiQwEd",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "wzla4PE5p61vlV6O": 3
+  },
+  "_key": "!items!lozP2PiOnHWiQwEd"
+}

@@ -1,0 +1,129 @@
+{
+  "name": "Deadeye",
+  "type": "feat",
+  "img": "systems/pf2e/icons/default-icons/feats.webp",
+  "system": {
+    "description": {
+      "value": "<p>You take a moment to line up your shot. When you take the @Compendium[hopefinder.actions.ly0oPyA1abcq0MNc]{Aim} action, you get a +2 circumstance bonus on the attack roll and may add your proficiency bonus with the weapon to the damage roll if your next attack hits.</p>",
+      "gm": ""
+    },
+    "traits": {
+      "value": [
+        "concentrate"
+      ],
+      "rarity": "common",
+      "otherTags": []
+    },
+    "rules": [
+      {
+        "key": "AdjustModifier",
+        "selector": "strike-attack-roll",
+        "slug": "aim",
+        "value": 2,
+        "mode": "override"
+      },
+      {
+        "key": "FlatModifier",
+        "selector": "strike-damage",
+        "value": "2+@actor.level",
+        "predicate": [
+          "item:ranged",
+          "action:aim",
+          {
+            "gte": [
+              "item:proficiency:rank",
+              1
+            ]
+          }
+        ],
+        "slug": "deadeye"
+      },
+      {
+        "key": "AdjustModifier",
+        "selector": "strike-damage",
+        "slug": "deadeye",
+        "value": 2,
+        "mode": "add",
+        "predicate": [
+          "item:proficiency:rank:2"
+        ]
+      },
+      {
+        "key": "AdjustModifier",
+        "selector": "strike-damage",
+        "slug": "deadeye",
+        "value": 4,
+        "mode": "add",
+        "predicate": [
+          "item:proficiency:rank:3"
+        ]
+      },
+      {
+        "key": "AdjustModifier",
+        "selector": "strike-damage",
+        "slug": "deadeye",
+        "value": 6,
+        "mode": "add",
+        "predicate": [
+          "item:proficiency:rank:4"
+        ]
+      }
+    ],
+    "slug": null,
+    "level": {
+      "value": 1
+    },
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "action"
+    },
+    "actions": {
+      "value": 1
+    },
+    "prerequisites": {
+      "value": []
+    },
+    "location": null,
+    "publication": {
+      "title": "",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "_migration": {
+      "version": 0.94,
+      "previous": {
+        "schema": 0.935,
+        "foundry": "13.345",
+        "system": "7.2.0"
+      }
+    },
+    "category": "bonus",
+    "subfeatures": {
+      "proficiencies": {},
+      "senses": {},
+      "suppressedFeatures": []
+    }
+  },
+  "effects": [],
+  "flags": {
+    "core": {}
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "7.2.0",
+    "coreVersion": "13.345",
+    "compendiumSource": "Compendium.hopefinder.feats.Item.gP3J32Yuf95EyfYY",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_id": "gP3J32Yuf95EyfYY",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "wzla4PE5p61vlV6O": 3
+  },
+  "_key": "!items!gP3J32Yuf95EyfYY"
+}

@@ -1,0 +1,116 @@
+{
+  "name": "Fatality",
+  "type": "feat",
+  "img": "systems/pf2e/icons/default-icons/feats.webp",
+  "system": {
+    "description": {
+      "value": "<p>You are especially lethal with melee weapons. All your melee weapons deal an additional die of damage. On a critical hit with a melee weapon, double the added critical effect of bludgeoning (@UUID[Compendium.hopefinder.effects.KNcK8MtYgm6ka7PO]{Bruised 2}), piercing (@Compendium[pf2e.conditionitems.Sickened]{Sickened 2}), and slashing ([[/r {2}[persistent,bleed]]]{2 persistent bleed}) weapons.</p>",
+      "gm": ""
+    },
+    "traits": {
+      "value": [],
+      "rarity": "common",
+      "otherTags": []
+    },
+    "rules": [
+      {
+        "alternate": true,
+        "key": "CriticalSpecialization",
+        "predicate": [
+          "item:damage:type:bludgeoning",
+          {
+            "nor": [
+              "unarmed",
+              "item:ranged"
+            ]
+          }
+        ],
+        "text": "Critical hits from bludgeoning weapons also deal 2 bruises."
+      },
+      {
+        "alternate": true,
+        "key": "CriticalSpecialization",
+        "predicate": [
+          "item:damage:type:slashing",
+          {
+            "nor": [
+              "unarmed",
+              "item:ranged"
+            ]
+          }
+        ],
+        "text": "<p>Critical hits from slashing weapons cause the target to take [[/r {2}[persistent,bleed]]]{2} @Compendium[pf2e.conditionitems.Persistent Damage]{Persistent bleed Damage}.</p>"
+      },
+      {
+        "alternate": true,
+        "key": "CriticalSpecialization",
+        "predicate": [
+          "item:damage:type:piercing",
+          {
+            "nor": [
+              "unarmed",
+              "item:ranged"
+            ]
+          }
+        ],
+        "text": "<p>Critical hits from piercing weapons cause the target to be @Compendium[pf2e.conditionitems.Sickened]{Sickened 2} until the target receives any amount of healing.</p>"
+      }
+    ],
+    "slug": null,
+    "level": {
+      "value": 1
+    },
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": []
+    },
+    "location": null,
+    "publication": {
+      "title": "",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "_migration": {
+      "version": 0.94,
+      "previous": {
+        "schema": 0.935,
+        "foundry": "13.345",
+        "system": "7.2.0"
+      }
+    },
+    "category": "bonus",
+    "subfeatures": {
+      "proficiencies": {},
+      "senses": {},
+      "suppressedFeatures": []
+    }
+  },
+  "effects": [],
+  "flags": {
+    "core": {}
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "7.2.0",
+    "coreVersion": "13.345",
+    "compendiumSource": "Compendium.hopefinder.feats.Item.miyi6uiLBLGrHsux",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_id": "miyi6uiLBLGrHsux",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "wzla4PE5p61vlV6O": 3
+  },
+  "_key": "!items!miyi6uiLBLGrHsux"
+}

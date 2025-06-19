@@ -1,0 +1,79 @@
+{
+  "name": "Homemaker",
+  "type": "heritage",
+  "img": "systems/pf2e/icons/default-icons/heritage.svg",
+  "system": {
+    "description": {
+      "value": "<p>Keeping a household tidy and well managed was a full-time job for you before the Fall, and you spent much of your time cleaning up, doing home repair, treating bumps and scrapes, and preparing meals. Fortunately these skills are still just as valuable now after the Fall, allowing you to work toward a better, safer community.</p>\n<p><strong>Scheduling Master</strong> Whenever you are performing a task that takes 10 minutes that only affects one target, like Repairing or First Aid, you can carefully budget your time to work on two targets instead. You can also use this ability to schedule someone else's time, granting them the same benefit, but you must spend that time directing them, to ensure they work efficiently.</p>\n<p><strong>Skills</strong>: Increase your Crafting or Diplomacy by 1 step.</p>\n<p><strong>Feats</strong>: You can select from Building, Healing, Ranged.</p>",
+      "gm": ""
+    },
+    "traits": {
+      "value": [],
+      "rarity": "common",
+      "otherTags": []
+    },
+    "rules": [
+      {
+        "choices": [
+          {
+            "label": "PF2E.Skill.Crafting",
+            "value": "crafting"
+          },
+          {
+            "label": "PF2E.Skill.Diplomacy",
+            "value": "diplomacy"
+          }
+        ],
+        "flag": "skill",
+        "key": "ChoiceSet",
+        "prompt": "PF2E.SpecificRule.Prompt.Skill"
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.skills.{item|flags.pf2e.rulesSelections.skill}.rank",
+        "value": 1
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.hopefinder.features.4bgr8Kt8qnVx85Lk"
+      }
+    ],
+    "slug": null,
+    "ancestry": null,
+    "publication": {
+      "title": "",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "_migration": {
+      "version": 0.94,
+      "previous": {
+        "schema": 0.935,
+        "foundry": "13.345",
+        "system": "7.2.0"
+      }
+    }
+  },
+  "effects": [],
+  "flags": {
+    "core": {}
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "7.2.0",
+    "coreVersion": "13.345",
+    "compendiumSource": "Compendium.hopefinder.roles.Item.QvBRx9dsoIGr2Q45",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_id": "QvBRx9dsoIGr2Q45",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "wzla4PE5p61vlV6O": 3
+  },
+  "_key": "!items!QvBRx9dsoIGr2Q45"
+}

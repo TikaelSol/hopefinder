@@ -1,0 +1,92 @@
+{
+  "name": "Driver",
+  "type": "background",
+  "img": "systems/pf2e/icons/default-icons/background.svg",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Most of the cars don't work anymore, but you know how to find the ones that do. Being able to travel long distances, making deliveries or picking up supplies makes your skills invaluable.</p>\n<p><strong>Ability Modifiers:</strong> +1 Dex, +1 Wis</p>\n<p><strong>Skill:</strong> Trained in Driving</p>\n<p><strong>Feat:</strong> @Compendium[hopefinder.feats.rrkN2kxrdsjfstvO]{Basic Maintenance} skill feat</p>\n<p><strong>Gear:</strong> @Compendium[hopefinder.equipment.EMwumrApcj1wb5tg]{Siphon Kit} (lets you pump liquid out of a tank)</p>"
+    },
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.abilities.dex.mod",
+        "value": 1
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.abilities.wis.mod",
+        "value": 1
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.hopefinder.equipment.Item.EMwumrApcj1wb5tg"
+      }
+    ],
+    "slug": null,
+    "_migration": {
+      "version": 0.94,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.935,
+        "foundry": "13.345",
+        "system": "7.2.0"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Hopefinder Survivor's Guide",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "boosts": {
+      "0": {
+        "value": []
+      },
+      "1": {
+        "value": []
+      }
+    },
+    "items": {
+      "zw4am": {
+        "uuid": "Compendium.hopefinder.feats.Item.rrkN2kxrdsjfstvO",
+        "img": "systems/pf2e/icons/default-icons/feats.webp",
+        "name": "Basic Maintenance",
+        "level": 0
+      }
+    },
+    "trainedSkills": {
+      "value": [
+        "driving"
+      ],
+      "lore": []
+    }
+  },
+  "effects": [],
+  "flags": {
+    "core": {}
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "7.2.0",
+    "coreVersion": "13.345",
+    "compendiumSource": "Compendium.hopefinder.backgrounds.Item.s5jjqzKn1kzPhQGu",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_id": "s5jjqzKn1kzPhQGu",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "wzla4PE5p61vlV6O": 3
+  },
+  "_key": "!items!s5jjqzKn1kzPhQGu"
+}

@@ -1,0 +1,58 @@
+{
+  "name": "Scientist",
+  "type": "heritage",
+  "img": "systems/pf2e/icons/default-icons/heritage.svg",
+  "system": {
+    "description": {
+      "value": "<p>You spent long days and longer nights in various research labs and libraries before the Fall, working on astrology, biology, chemistry, computers, engineering, or physics. It was rewarding work and you really had a chance at a breakthrough, until it all came apart. Now you can only tinker on the work that was once your passion. Maybe one day, your work will save the world.</p>\n<p><strong>Research</strong> (Exploration) There is not a problem you cannot solve by doing a little research. By spending 1 hour using a working computer or a research library, you can attempt any Lore skill check as if you were trained in that skill or give yourself a +2 circumstance bonus on the check if you are trained or higher in that Lore skill. You can also use this ability whenever you attempt a check to Recall Knowledge to give yourself a +2 circumstance bonus on the check.</p>\n<p><strong>Skills</strong>: Increase your Computers or Machinery by 1 step.</p>\n<p><strong>Feats</strong>: You can select Agility, Healing, or Technology.</p>",
+      "gm": ""
+    },
+    "traits": {
+      "value": [],
+      "rarity": "common",
+      "otherTags": []
+    },
+    "rules": [
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.hopefinder.actions.r7hxjbNHuctUbamM"
+      }
+    ],
+    "slug": null,
+    "ancestry": null,
+    "publication": {
+      "title": "",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "_migration": {
+      "version": 0.94,
+      "previous": {
+        "schema": 0.935,
+        "foundry": "13.345",
+        "system": "7.2.0"
+      }
+    }
+  },
+  "effects": [],
+  "flags": {
+    "core": {}
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "7.2.0",
+    "coreVersion": "13.345",
+    "compendiumSource": "Compendium.hopefinder.roles.Item.rknUQ5L2qO7HQBYg",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_id": "rknUQ5L2qO7HQBYg",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "wzla4PE5p61vlV6O": 3
+  },
+  "_key": "!items!rknUQ5L2qO7HQBYg"
+}

@@ -1,0 +1,114 @@
+{
+  "name": "Target",
+  "type": "feat",
+  "img": "systems/pf2e/icons/default-icons/feats.webp",
+  "system": {
+    "description": {
+      "value": "<p>By taking careful aim, you can target legs, hands, or the gaps in its armor. Declare the target and attempt a Strike. If you target the legs or hands, the strike is made at a -2 circumstance penalty. If you hit the legs the target falls @Compendium[pf2e.conditionitems.Prone]{Prone}. If you hit the hands, it drops one item it is carrying. If you target the gaps in its armor, the strike is made with a -4 circumstance penalty and the damage ignores the target's armor resistance. The Strike deals damage as normal.</p>",
+      "gm": ""
+    },
+    "traits": {
+      "value": [
+        "concentrate"
+      ],
+      "rarity": "common",
+      "otherTags": []
+    },
+    "rules": [
+      {
+        "domain": "all",
+        "key": "RollOption",
+        "option": "targeting-legs",
+        "toggleable": true,
+        "label": "Targeting legs or hands"
+      },
+      {
+        "domain": "all",
+        "key": "RollOption",
+        "option": "targeting-armor",
+        "toggleable": true,
+        "label": "Targeting gaps in armor"
+      },
+      {
+        "key": "FlatModifier",
+        "selector": "strike-attack-roll",
+        "value": -2,
+        "type": "circumstance",
+        "predicate": [
+          "targeting-legs"
+        ],
+        "label": "Targeting Legs or Hands"
+      },
+      {
+        "key": "FlatModifier",
+        "selector": "strike-attack-roll",
+        "value": -4,
+        "label": "Targeting Gaps in Armor",
+        "predicate": [
+          "targeting-armor"
+        ],
+        "type": "circumstance"
+      }
+    ],
+    "slug": null,
+    "level": {
+      "value": 1
+    },
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "Aim feat"
+        }
+      ]
+    },
+    "location": null,
+    "publication": {
+      "title": "",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "_migration": {
+      "version": 0.94,
+      "previous": {
+        "schema": 0.935,
+        "foundry": "13.345",
+        "system": "7.2.0"
+      }
+    },
+    "category": "bonus",
+    "subfeatures": {
+      "proficiencies": {},
+      "senses": {},
+      "suppressedFeatures": []
+    }
+  },
+  "effects": [],
+  "flags": {
+    "core": {}
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "7.2.0",
+    "coreVersion": "13.345",
+    "compendiumSource": "Compendium.hopefinder.feats.Item.g7gr5oR1vCROUeXv",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_id": "g7gr5oR1vCROUeXv",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "wzla4PE5p61vlV6O": 3
+  },
+  "_key": "!items!g7gr5oR1vCROUeXv"
+}

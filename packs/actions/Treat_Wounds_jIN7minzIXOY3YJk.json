@@ -1,0 +1,57 @@
+{
+  "name": "Treat Wounds",
+  "type": "action",
+  "img": "systems/pf2e/icons/actions/Passive.webp",
+  "system": {
+    "description": {
+      "value": "<p>This works as it does in Pathfinder (@Compendium[pf2e.actionspf2e.1kGNdIIhuglAjIp9]{Treat Wounds}),  but you need a @Compendium[hopefinder.equipment.PHClSyVXwCmuYZRk]{First Aid Kit} (not healer's tools) or a @Compendium[hopefinder.equipment.ozj1ME9TaDsTOYMF]{Bandage}. It can be performed untrained and the DC and amount of healing is different, as noted on the chart below (for a greater amount, see the @Compendium[hopefinder.feats.y9oAlWcDVlCAucqA]{Surgery} feat in the Advanced Feats section on page 57 of the Hopefinder Survivor's Guide). Treat wounds can also heal bruises at the same time (twice that number on a critical success).</p>\n<table style=\"border-width:1px;margin-left:0px;margin-right:auto\" border=\"1\">\n<tbody>\n<tr>\n<th style=\"border-width:1px\">Proficiency</th>\n<th style=\"border-width:1px\">DC</th>\n<th style=\"border-width:1px\">Success Healing</th>\n<th style=\"border-width:1px\">Critical Healing</th>\n<th style=\"border-width:1px\">Bruise</th>\n</tr>\n<tr>\n<td style=\"border-width:1px\">Untrained</td>\n<td style=\"border-width:1px\">@Check[type:medicine|dc:10]</td>\n<td style=\"border-width:1px\">[[/r {1d4}[healing]]]{1d4}</td>\n<td style=\"border-width:1px\">[[/r {2d4}[healing]]]{2d4}</td>\n<td style=\"border-width:1px\">0</td>\n</tr>\n<tr>\n<td style=\"border-width:1px\">Trained*</td>\n<td style=\"border-width:1px\">@Check[type:medicine|dc:15]</td>\n<td style=\"border-width:1px\">[[/r {1d4+2}[healing]]]{1d4+2}</td>\n<td style=\"border-width:1px\">[[/r {2d4+2}[healing]]]{2d4+2}</td>\n<td style=\"border-width:1px\">1</td>\n</tr>\n<tr>\n<td style=\"border-width:1px\">Expert*</td>\n<td style=\"border-width:1px\">@Check[type:medicine|dc:20]</td>\n<td style=\"border-width:1px\">[[/r {1d4+4}[healing]]]{1d4+4}</td>\n<td style=\"border-width:1px\">[[/r {2d4+4}[healing]]]{2d4+4}</td>\n<td style=\"border-width:1px\">1</td>\n</tr>\n<tr>\n<td style=\"border-width:1px\">Master*</td>\n<td style=\"border-width:1px\">@Check[type:medicine|dc:25]</td>\n<td style=\"border-width:1px\">[[/r {1d4+6}[healing]]]{1d4+6}</td>\n<td style=\"border-width:1px\">[[/r {2d4+6}[healing]]]{2d4+6}</td>\n<td style=\"border-width:1px\">2</td>\n</tr>\n<tr>\n<td style=\"border-width:1px\">Legendary*</td>\n<td style=\"border-width:1px\">@Check[type:medicine|dc:30]</td>\n<td style=\"border-width:1px\">[[/r {1d4+8}[healing]]]{1d4+8}</td>\n<td style=\"border-width:1px\">[[/r {2d4+8}[healing]]]{2d4+8}</td>\n<td style=\"border-width:1px\">2</td>\n</tr>\n</tbody>\n</table>\n<p>*Rolling against a higher DC is optional.</p>",
+      "gm": ""
+    },
+    "traits": {
+      "value": [],
+      "otherTags": []
+    },
+    "rules": [],
+    "slug": null,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "deathNote": false,
+    "publication": {
+      "title": "",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "_migration": {
+      "version": 0.94,
+      "previous": {
+        "schema": 0.935,
+        "foundry": "13.345",
+        "system": "7.2.0"
+      }
+    },
+    "category": "offensive"
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "7.2.0",
+    "coreVersion": "13.345",
+    "compendiumSource": "Compendium.hopefinder.actions.Item.jIN7minzIXOY3YJk",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_id": "jIN7minzIXOY3YJk",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "wzla4PE5p61vlV6O": 3
+  },
+  "_key": "!items!jIN7minzIXOY3YJk"
+}

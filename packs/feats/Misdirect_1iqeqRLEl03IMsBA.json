@@ -1,0 +1,83 @@
+{
+  "name": "Misdirect",
+  "type": "feat",
+  "img": "systems/pf2e/icons/default-icons/feats.webp",
+  "system": {
+    "description": {
+      "value": "<p>You can use @Compendium[pf2e.actionspf2e.Feint]{Feint} against any creature within 30 feet. On a success, that creature is @Compendium[pf2e.conditionitems.Off-Guard]{Off-Guard} to the next attack made against the creature before the start of your next turn. On a critical success, it is off-guard against all attacks made against the creature before the start of your next turn.</p>",
+      "gm": ""
+    },
+    "traits": {
+      "value": [],
+      "rarity": "common",
+      "otherTags": []
+    },
+    "rules": [
+      {
+        "key": "Note",
+        "selector": "deception",
+        "text": "{item|system.description.value}",
+        "title": "{item|name}",
+        "predicate": [
+          "action:feint"
+        ]
+      }
+    ],
+    "slug": null,
+    "level": {
+      "value": 1
+    },
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": []
+    },
+    "location": null,
+    "publication": {
+      "title": "",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "_migration": {
+      "version": 0.94,
+      "previous": {
+        "schema": 0.935,
+        "foundry": "13.345",
+        "system": "7.2.0"
+      }
+    },
+    "category": "bonus",
+    "subfeatures": {
+      "proficiencies": {},
+      "senses": {},
+      "suppressedFeatures": []
+    }
+  },
+  "effects": [],
+  "flags": {
+    "core": {}
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "7.2.0",
+    "coreVersion": "13.345",
+    "compendiumSource": "Compendium.hopefinder.feats.Item.1iqeqRLEl03IMsBA",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_id": "1iqeqRLEl03IMsBA",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "wzla4PE5p61vlV6O": 3
+  },
+  "_key": "!items!1iqeqRLEl03IMsBA"
+}

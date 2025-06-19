@@ -1,0 +1,78 @@
+{
+  "name": "Insult",
+  "type": "feat",
+  "img": "systems/pf2e/icons/default-icons/feats.webp",
+  "system": {
+    "description": {
+      "value": "<p>Your wit can drive people into a rage directed solely at you. When you use this feat, you spend two actions berating and belittling a human target. Attempt an Intimidation skill check against the target's Will DC. If you succeed, the target becomes enraged and takes a -2 circumstance penalty when attacking anyone except you (-4 on a critical success). This penalty lasts until you are @Compendium[pf2e.conditionitems.Unconscious]{Unconscious}, or the target hits you with a critical hit.</p>\n<p>@UUID[Compendium.hopefinder.effects.HZMvFstS4np7q83t]{Effect: Insulted}</p>",
+      "gm": ""
+    },
+    "traits": {
+      "value": [
+        "auditory",
+        "concentrate",
+        "linguistic",
+        "mental"
+      ],
+      "rarity": "common",
+      "otherTags": []
+    },
+    "rules": [],
+    "slug": null,
+    "level": {
+      "value": 1
+    },
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": []
+    },
+    "location": null,
+    "publication": {
+      "title": "",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "_migration": {
+      "version": 0.94,
+      "previous": {
+        "schema": 0.935,
+        "foundry": "13.345",
+        "system": "7.2.0"
+      }
+    },
+    "category": "bonus",
+    "subfeatures": {
+      "proficiencies": {},
+      "senses": {},
+      "suppressedFeatures": []
+    }
+  },
+  "effects": [],
+  "flags": {
+    "core": {}
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "7.2.0",
+    "coreVersion": "13.345",
+    "compendiumSource": "Compendium.hopefinder.feats.Item.HI4qbvbUunWSwnJM",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_id": "HI4qbvbUunWSwnJM",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "wzla4PE5p61vlV6O": 3
+  },
+  "_key": "!items!HI4qbvbUunWSwnJM"
+}

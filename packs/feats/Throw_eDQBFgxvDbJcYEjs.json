@@ -1,0 +1,79 @@
+{
+  "name": "Throw",
+  "type": "feat",
+  "img": "systems/pf2e/icons/default-icons/feats.webp",
+  "system": {
+    "description": {
+      "value": "<p>You can throw a creature that you are grappling. Attempt an Athletics check against the Fortitude DC of the creature you are grappling. If it is larger than you, increase it's DC by 5 for each step larger. If you succeed, you throw the creature a number of squares away from you equal to your Strength (minimum 1). On a critical success, it is thrown twice this distance. It also takes bludgeoning damage equal to [[/r {1d6}[bludgeoning]]]{1d6} + the total number of squares thrown. If thrown into another creature, that creature takes the damage as well (basic @Check[type:reflex|dc:15]). The creature thrown lands @Compendium[pf2e.conditionitems.Prone]{Prone}.</p>",
+      "gm": ""
+    },
+    "traits": {
+      "value": [
+        "attack"
+      ],
+      "rarity": "common",
+      "otherTags": []
+    },
+    "rules": [],
+    "slug": null,
+    "level": {
+      "value": 1
+    },
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "action"
+    },
+    "actions": {
+      "value": 2
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "Grapple feat"
+        }
+      ]
+    },
+    "location": null,
+    "publication": {
+      "title": "",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "_migration": {
+      "version": 0.94,
+      "previous": {
+        "schema": 0.935,
+        "foundry": "13.345",
+        "system": "7.2.0"
+      }
+    },
+    "category": "bonus",
+    "subfeatures": {
+      "proficiencies": {},
+      "senses": {},
+      "suppressedFeatures": []
+    }
+  },
+  "effects": [],
+  "flags": {
+    "core": {}
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "7.2.0",
+    "coreVersion": "13.345",
+    "compendiumSource": "Compendium.hopefinder.feats.Item.eDQBFgxvDbJcYEjs",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_id": "eDQBFgxvDbJcYEjs",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "wzla4PE5p61vlV6O": 3
+  },
+  "_key": "!items!eDQBFgxvDbJcYEjs"
+}

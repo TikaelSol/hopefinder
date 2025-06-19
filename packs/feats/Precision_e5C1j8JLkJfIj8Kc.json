@@ -1,0 +1,124 @@
+{
+  "name": "Precision",
+  "type": "feat",
+  "img": "systems/pf2e/icons/default-icons/feats.webp",
+  "system": {
+    "description": {
+      "value": "<p>Whenever you catch a foe unaware, you can deal extra damage to them. If you Strike a @Compendium[pf2e.conditionitems.Off-Guard]{Off-Guard} creature, you deal an additional 1d6 precision damage. This damage increases to 2d6 if you have at least 2 other agility feats.</p>",
+      "gm": ""
+    },
+    "traits": {
+      "value": [],
+      "rarity": "common",
+      "otherTags": []
+    },
+    "rules": [
+      {
+        "category": "precision",
+        "diceNumber": 1,
+        "key": "DamageDice",
+        "predicate": [
+          "target:condition:off-guard",
+          {
+            "lte": [
+              "agility-feats",
+              2
+            ]
+          }
+        ],
+        "selector": "strike-damage",
+        "dieSize": "d6"
+      },
+      {
+        "category": "precision",
+        "diceNumber": 2,
+        "key": "DamageDice",
+        "predicate": [
+          "target:condition:off-guard",
+          {
+            "gte": [
+              "agility-feats",
+              3
+            ]
+          }
+        ],
+        "selector": "strike-damage",
+        "dieSize": "d6"
+      },
+      {
+        "domain": "all",
+        "key": "RollOption",
+        "label": "PF2E.SpecificRule.TOTMToggle.OffGuard",
+        "option": "target:condition:off-guard",
+        "toggleable": "totm"
+      },
+      {
+        "key": "ActiveEffectLike",
+        "value": 1,
+        "mode": "add",
+        "path": "flags.pf2e.hopefinder.agilityFeats.count"
+      },
+      {
+        "key": "RollOption",
+        "domain": "all",
+        "option": "agility-feats:{actor|flags.pf2e.hopefinder.agilityFeats.count}"
+      }
+    ],
+    "slug": null,
+    "level": {
+      "value": 1
+    },
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": []
+    },
+    "location": null,
+    "publication": {
+      "title": "",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "_migration": {
+      "version": 0.94,
+      "previous": {
+        "schema": 0.935,
+        "foundry": "13.345",
+        "system": "7.2.0"
+      }
+    },
+    "category": "bonus",
+    "subfeatures": {
+      "proficiencies": {},
+      "senses": {},
+      "suppressedFeatures": []
+    }
+  },
+  "effects": [],
+  "flags": {
+    "core": {}
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "7.2.0",
+    "coreVersion": "13.345",
+    "compendiumSource": "Compendium.hopefinder.feats.Item.e5C1j8JLkJfIj8Kc",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_id": "e5C1j8JLkJfIj8Kc",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "wzla4PE5p61vlV6O": 3
+  },
+  "_key": "!items!e5C1j8JLkJfIj8Kc"
+}

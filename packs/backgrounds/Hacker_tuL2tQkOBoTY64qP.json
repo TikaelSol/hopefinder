@@ -1,0 +1,92 @@
+{
+  "name": "Hacker",
+  "type": "background",
+  "img": "systems/pf2e/icons/default-icons/background.svg",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>The power might be out, but many things are still controlled by computers. Getting them juice is only half the problem and that is where you come in. You know how to get computers to do what you want.</p>\n<p><strong>Ability Modifiers:</strong> +1 Dex, +1 Int</p>\n<p><strong>Skill:</strong> Trained in Computers</p>\n<p><strong>Feat:</strong> @Compendium[hopefinder.feats.83mMgDCDMELC7jRI]{Bypass Security} skill feat</p>\n<p><strong>Gear:</strong> @Compendium[hopefinder.equipment.KLYPmqyFUSUKfoff]{Power Shunt} (supply power to a device for a limited time)</p>"
+    },
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.abilities.dex.mod",
+        "value": 1
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.abilities.int.mod",
+        "value": 1
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.hopefinder.equipment.Item.KLYPmqyFUSUKfoff"
+      }
+    ],
+    "slug": null,
+    "_migration": {
+      "version": 0.94,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.935,
+        "foundry": "13.345",
+        "system": "7.2.0"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Hopefinder Survivor's Guide",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "boosts": {
+      "0": {
+        "value": []
+      },
+      "1": {
+        "value": []
+      }
+    },
+    "items": {
+      "Rpuvi": {
+        "uuid": "Compendium.hopefinder.feats.Item.83mMgDCDMELC7jRI",
+        "img": "systems/pf2e/icons/default-icons/feats.webp",
+        "name": "Bypass Security",
+        "level": 0
+      }
+    },
+    "trainedSkills": {
+      "value": [
+        "computers"
+      ],
+      "lore": []
+    }
+  },
+  "effects": [],
+  "flags": {
+    "core": {}
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "7.2.0",
+    "coreVersion": "13.345",
+    "compendiumSource": "Compendium.hopefinder.backgrounds.Item.tuL2tQkOBoTY64qP",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_id": "tuL2tQkOBoTY64qP",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "wzla4PE5p61vlV6O": 3
+  },
+  "_key": "!items!tuL2tQkOBoTY64qP"
+}

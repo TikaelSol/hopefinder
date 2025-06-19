@@ -1,0 +1,73 @@
+{
+  "name": "Haggle",
+  "type": "feat",
+  "img": "systems/pf2e/icons/spells/charitable-urge.webp",
+  "system": {
+    "description": {
+      "value": "<p>Whenever you are trading for equipment, you can attempt a Diplomacy or Deception skill check against the trader's Will DC. If you succeed, treat one item you are offering up for barter as if it was worth 1 barter more. If you critically succeed, treat it as if it was worth 2 barter more. If you critically fail, the trader refuses to do business with you. You can only do this once per day with an individual trader.</p>",
+      "gm": ""
+    },
+    "traits": {
+      "value": [],
+      "rarity": "common",
+      "otherTags": []
+    },
+    "rules": [],
+    "slug": null,
+    "level": {
+      "value": 1
+    },
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": []
+    },
+    "location": null,
+    "publication": {
+      "title": "",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "_migration": {
+      "version": 0.94,
+      "previous": {
+        "schema": 0.935,
+        "foundry": "13.345",
+        "system": "7.2.0"
+      }
+    },
+    "category": "bonus",
+    "subfeatures": {
+      "proficiencies": {},
+      "senses": {},
+      "suppressedFeatures": []
+    }
+  },
+  "effects": [],
+  "flags": {
+    "core": {}
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "7.2.0",
+    "coreVersion": "13.345",
+    "compendiumSource": "Compendium.hopefinder.features.Item.gFdCd2P4XAt1WN5i",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_id": "gFdCd2P4XAt1WN5i",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "wzla4PE5p61vlV6O": 3
+  },
+  "_key": "!items!gFdCd2P4XAt1WN5i"
+}

@@ -1,0 +1,60 @@
+{
+  "name": "Fix",
+  "type": "action",
+  "img": "systems/pf2e/icons/actions/Passive.webp",
+  "system": {
+    "description": {
+      "value": "<p>You attempt to repair a computer, electronic system, or machine that is broken or malfunctioning. Spend 10 minutes and attempt a Computers check for computers, or a Machinery check for machines. The DC of this check is determined by the difficulty of the problem, as determined by the narrator. Complex problems can take multiple successful checks to repair and in such cases, a critical success counts as two checks toward completing the task.</p>",
+      "gm": ""
+    },
+    "traits": {
+      "value": [
+        "exploration",
+        "manipulate"
+      ],
+      "otherTags": []
+    },
+    "rules": [],
+    "slug": null,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "deathNote": false,
+    "publication": {
+      "title": "",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "_migration": {
+      "version": 0.94,
+      "previous": {
+        "schema": 0.935,
+        "foundry": "13.345",
+        "system": "7.2.0"
+      }
+    },
+    "category": "offensive"
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "7.2.0",
+    "coreVersion": "13.345",
+    "compendiumSource": "Compendium.hopefinder.actions.Item.kKDBzhpz0UdYA7dq",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_id": "kKDBzhpz0UdYA7dq",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "wzla4PE5p61vlV6O": 3
+  },
+  "_key": "!items!kKDBzhpz0UdYA7dq"
+}

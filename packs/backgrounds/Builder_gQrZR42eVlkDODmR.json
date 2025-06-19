@@ -1,0 +1,93 @@
+{
+  "name": "Builder",
+  "type": "background",
+  "img": "systems/pf2e/icons/default-icons/background.svg",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>While everyone is focusing on surviving, you have learned how to build things using whatever parts and materials you have on hand. It might not be according to the instructions, but it works.</p>\n<p><strong>Ability Modifiers:</strong> +1 Str, +1 Int</p>\n<p><strong>Skill:</strong> Trained in Crafting</p>\n<p><strong>Feat:</strong> @Compendium[pf2e.feats-srd.QLeMH5mQgh28sa5o]{Specialty Crafting} skill feat (armor, gear, guns, structures, tools, weapons)</p>\n<p><strong>Gear:</strong> @Compendium[hopefinder.equipment.0GNgkcEEIchnM54I]{Tool Belt} (holds 4 tools on your belt as ready items)</p>"
+    },
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.abilities.str.mod",
+        "value": 1
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.abilities.int.mod",
+        "value": 1
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.hopefinder.equipment.Item.0GNgkcEEIchnM54I"
+      }
+    ],
+    "slug": null,
+    "_migration": {
+      "version": 0.94,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.935,
+        "foundry": "13.345",
+        "system": "7.2.0"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Hopefinder Survivor's Guide",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "boosts": {
+      "0": {
+        "value": []
+      },
+      "1": {
+        "value": []
+      }
+    },
+    "items": {
+      "hMuli": {
+        "uuid": "Compendium.pf2e.feats-srd.Item.QLeMH5mQgh28sa5o",
+        "img": "systems/pf2e/icons/features/feats/feats.webp",
+        "name": "Specialty Crafting",
+        "level": 1
+      }
+    },
+    "trainedSkills": {
+      "value": [
+        "crafting"
+      ],
+      "lore": [],
+      "custom": ""
+    }
+  },
+  "effects": [],
+  "flags": {
+    "core": {}
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "7.2.0",
+    "coreVersion": "13.345",
+    "compendiumSource": "Compendium.hopefinder.backgrounds.Item.gQrZR42eVlkDODmR",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_id": "gQrZR42eVlkDODmR",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "wzla4PE5p61vlV6O": 3
+  },
+  "_key": "!items!gQrZR42eVlkDODmR"
+}

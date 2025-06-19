@@ -1,0 +1,73 @@
+{
+  "name": "Sidekick",
+  "type": "feat",
+  "img": "systems/pf2e/icons/default-icons/feats.webp",
+  "system": {
+    "description": {
+      "value": "<p>You have formed a bond with a very close ally who follows you on your missions. You and the narrator work together to determine the name and personality of the sidekick. The sidekick does not enter dangerous areas, instead acting as a lookout outside. The sidekick can also make trips back to the nearest settlement to perform trades on your behalf. The sidekick can carry up to 5 bulk of items for you and can use the Craft and Medicine skills to aid you (both at a +6 bonus). If the sidekick dies, you must replace this feat at the start of the next session and carry their memory.</p>",
+      "gm": ""
+    },
+    "traits": {
+      "value": [],
+      "rarity": "common",
+      "otherTags": []
+    },
+    "rules": [],
+    "slug": null,
+    "level": {
+      "value": 1
+    },
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": []
+    },
+    "location": null,
+    "publication": {
+      "title": "",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "_migration": {
+      "version": 0.94,
+      "previous": {
+        "schema": 0.935,
+        "foundry": "13.345",
+        "system": "7.2.0"
+      }
+    },
+    "category": "bonus",
+    "subfeatures": {
+      "proficiencies": {},
+      "senses": {},
+      "suppressedFeatures": []
+    }
+  },
+  "effects": [],
+  "flags": {
+    "core": {}
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "7.2.0",
+    "coreVersion": "13.345",
+    "compendiumSource": "Compendium.hopefinder.feats.Item.xaFeqpt0lNcY9cai",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_id": "xaFeqpt0lNcY9cai",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "wzla4PE5p61vlV6O": 3
+  },
+  "_key": "!items!xaFeqpt0lNcY9cai"
+}

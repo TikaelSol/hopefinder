@@ -1,0 +1,73 @@
+{
+  "name": "Prepared",
+  "type": "feat",
+  "img": "systems/pf2e/icons/default-icons/feats.webp",
+  "system": {
+    "description": {
+      "value": "<p>By meticulous planning and preparation, you always have what you need to get the job done. Whenever you are at a trader, you can give them a single item with a barter value up to twice your level. When out exploring or on a mission, you can trade that item for any item of lesser value in the trader's inventory gaining that item immediately (because you traded for it when back in the settlement). You can get multiple items of the same type, but you cannot get multiple different items in this way. Excess barter value is lost. The item gained is placed on your person in any open spot (except your hands).</p>",
+      "gm": ""
+    },
+    "traits": {
+      "value": [],
+      "rarity": "common",
+      "otherTags": []
+    },
+    "rules": [],
+    "slug": null,
+    "level": {
+      "value": 1
+    },
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "free"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": []
+    },
+    "location": null,
+    "publication": {
+      "title": "",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "_migration": {
+      "version": 0.94,
+      "previous": {
+        "schema": 0.935,
+        "foundry": "13.345",
+        "system": "7.2.0"
+      }
+    },
+    "category": "bonus",
+    "subfeatures": {
+      "proficiencies": {},
+      "senses": {},
+      "suppressedFeatures": []
+    }
+  },
+  "effects": [],
+  "flags": {
+    "core": {}
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "7.2.0",
+    "coreVersion": "13.345",
+    "compendiumSource": "Compendium.hopefinder.feats.Item.Wrpa8GqiGkhaLwx1",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_id": "Wrpa8GqiGkhaLwx1",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "wzla4PE5p61vlV6O": 3
+  },
+  "_key": "!items!Wrpa8GqiGkhaLwx1"
+}

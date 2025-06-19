@@ -1,0 +1,125 @@
+{
+  "name": "Leather Armor",
+  "type": "armor",
+  "img": "systems/pf2e/icons/default-icons/armor.svg",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p><strong>Resist</strong> 4 B/P/S</p>\n<p><strong>Break</strong> 12</p>"
+    },
+    "rules": [
+      {
+        "key": "Resistance",
+        "type": [
+          "bludgeoning",
+          "piercing",
+          "slashing"
+        ],
+        "value": 4
+      }
+    ],
+    "slug": null,
+    "_migration": {
+      "version": 0.94,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.935,
+        "foundry": "13.345",
+        "system": "7.2.0"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "leather",
+        "warm"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Hopefinder Survivor's Guide",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 0
+    },
+    "quantity": 1,
+    "baseItem": null,
+    "bulk": {
+      "value": 0
+    },
+    "hp": {
+      "value": 12,
+      "max": 12
+    },
+    "hardness": 0,
+    "price": {
+      "value": {
+        "gp": 5
+      }
+    },
+    "equipped": {
+      "carryType": "worn",
+      "invested": null,
+      "handsHeld": 0,
+      "inSlot": false
+    },
+    "containerId": null,
+    "size": "med",
+    "material": {
+      "type": null,
+      "grade": null
+    },
+    "identification": {
+      "status": "identified",
+      "unidentified": {
+        "name": "Unusual Armor",
+        "img": "systems/pf2e/icons/unidentified_item_icons/armor.webp",
+        "data": {
+          "description": {
+            "value": ""
+          }
+        }
+      },
+      "misidentified": {}
+    },
+    "category": "light",
+    "group": null,
+    "acBonus": 1,
+    "strength": 0,
+    "dexCap": 5,
+    "checkPenalty": 0,
+    "speedPenalty": 0,
+    "runes": {
+      "potency": 0,
+      "resilient": 0,
+      "property": []
+    },
+    "subitems": [],
+    "dex": {
+      "value": 10
+    }
+  },
+  "effects": [],
+  "flags": {
+    "core": {}
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "7.2.0",
+    "coreVersion": "13.345",
+    "compendiumSource": "Compendium.hopefinder.equipment.Item.k8SiVsJshEtKEwSi",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_id": "k8SiVsJshEtKEwSi",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "wzla4PE5p61vlV6O": 3
+  },
+  "_key": "!items!k8SiVsJshEtKEwSi"
+}

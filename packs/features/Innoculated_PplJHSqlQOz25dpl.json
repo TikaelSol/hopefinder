@@ -1,0 +1,83 @@
+{
+  "name": "Innoculated",
+  "type": "feat",
+  "img": "systems/pf2e/icons/spells/breath-of-life.webp",
+  "system": {
+    "description": {
+      "value": "<p>While in Stage 1 of Z Plague infection infection, whenever you roll a Fortitude save, you may roll twice and take the better result.</p>",
+      "gm": ""
+    },
+    "traits": {
+      "value": [],
+      "rarity": "common",
+      "otherTags": []
+    },
+    "rules": [
+      {
+        "keep": "higher",
+        "key": "RollTwice",
+        "selector": "fortitude",
+        "predicate": [
+          "self:effect:z-plague:1",
+          "action:z-plague"
+        ]
+      }
+    ],
+    "slug": null,
+    "level": {
+      "value": 1
+    },
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": []
+    },
+    "location": null,
+    "publication": {
+      "title": "",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "_migration": {
+      "version": 0.94,
+      "previous": {
+        "schema": 0.935,
+        "foundry": "13.345",
+        "system": "7.2.0"
+      }
+    },
+    "category": "bonus",
+    "subfeatures": {
+      "proficiencies": {},
+      "senses": {},
+      "suppressedFeatures": []
+    }
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0,
+    "wzla4PE5p61vlV6O": 3
+  },
+  "flags": {
+    "core": {}
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "7.2.0",
+    "coreVersion": "13.345",
+    "compendiumSource": "Compendium.hopefinder.features.Item.PplJHSqlQOz25dpl",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "_id": "PplJHSqlQOz25dpl",
+  "_key": "!items!PplJHSqlQOz25dpl"
+}

@@ -1,0 +1,75 @@
+{
+  "name": "Requisition",
+  "type": "feat",
+  "img": "systems/pf2e/icons/default-icons/feats.webp",
+  "system": {
+    "description": {
+      "value": "<p>Before you head out on a mission, you can attempt to requisition one piece of gear or one weapon that the settlement might have to help you achieve your objective. Attempt a Diplomacy skill check with a DC equal to 10 + the barter value of the object. If you requisition food or basic ammunition, you can get 10 bullets or 2 food and 2 hydration for each member of your group.</p>",
+      "gm": ""
+    },
+    "traits": {
+      "value": [
+        "downtime"
+      ],
+      "rarity": "common",
+      "otherTags": []
+    },
+    "rules": [],
+    "slug": null,
+    "level": {
+      "value": 1
+    },
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": []
+    },
+    "location": null,
+    "publication": {
+      "title": "",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "_migration": {
+      "version": 0.94,
+      "previous": {
+        "schema": 0.935,
+        "foundry": "13.345",
+        "system": "7.2.0"
+      }
+    },
+    "category": "bonus",
+    "subfeatures": {
+      "proficiencies": {},
+      "senses": {},
+      "suppressedFeatures": []
+    }
+  },
+  "effects": [],
+  "flags": {
+    "core": {}
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "7.2.0",
+    "coreVersion": "13.345",
+    "compendiumSource": "Compendium.hopefinder.feats.Item.33R5oqnQGKNXwX5V",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_id": "33R5oqnQGKNXwX5V",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "wzla4PE5p61vlV6O": 3
+  },
+  "_key": "!items!33R5oqnQGKNXwX5V"
+}

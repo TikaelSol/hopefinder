@@ -1,0 +1,89 @@
+{
+  "name": "Zone Out",
+  "type": "feat",
+  "img": "systems/pf2e/icons/spells/hyperfocus.webp",
+  "system": {
+    "description": {
+      "value": "<p>You can easily get lost in a simple task, allowing you to focus on the smallest details. You get a +2 circumstance bonus on any check related to an exploration activity and on initiative checks.</p>",
+      "gm": ""
+    },
+    "traits": {
+      "value": [],
+      "rarity": "common",
+      "otherTags": []
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "selector": "initiative",
+        "value": 2,
+        "type": "circumstance"
+      },
+      {
+        "key": "FlatModifier",
+        "selector": "all",
+        "value": 2,
+        "predicate": [
+          "exploration"
+        ],
+        "type": "circumstance"
+      }
+    ],
+    "slug": null,
+    "level": {
+      "value": 1
+    },
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": []
+    },
+    "location": null,
+    "publication": {
+      "title": "",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "_migration": {
+      "version": 0.94,
+      "previous": {
+        "schema": 0.935,
+        "foundry": "13.345",
+        "system": "7.2.0"
+      }
+    },
+    "category": "bonus",
+    "subfeatures": {
+      "proficiencies": {},
+      "senses": {},
+      "suppressedFeatures": []
+    }
+  },
+  "effects": [],
+  "flags": {
+    "core": {}
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "7.2.0",
+    "coreVersion": "13.345",
+    "compendiumSource": "Compendium.hopefinder.features.Item.M9QdXQp0Cd0homSY",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_id": "M9QdXQp0Cd0homSY",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "wzla4PE5p61vlV6O": 3
+  },
+  "_key": "!items!M9QdXQp0Cd0homSY"
+}
